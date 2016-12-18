@@ -1,0 +1,20 @@
+{
+  "name": "package.json",
+  "description": " ",
+  "main": "index.js",
+  "authors": [
+    "natapaulis <natalia.sokalska@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "^4.6.3"
+  }
+}

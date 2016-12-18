@@ -1,0 +1,23 @@
+@mixin tablet {
+    @media(#{$tablet}) {
+        @content;
+    }
+}
+
+@mixin lg-tablet {
+    @media(#{$lg-tablet}) {
+        @content;
+    }
+}
+
+@mixin smartphone {
+    @media(#{$smartphone}) {
+        @content;
+    }
+}
+
+@mixin vSmallScreen {
+    @media(#{$vSmallScreen}) {
+        @content;
+    }
+}
