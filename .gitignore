@@ -4,3 +4,4 @@
 *.psd
 /src/
 /external/
+.ftpconfig
