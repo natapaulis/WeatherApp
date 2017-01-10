@@ -12,6 +12,8 @@ $(document).ready(function(){
     var $sunPosition = $(".day-time");
     var $temp;
     var $tempToShow;
+    var $sunMoon = $('.sun-moon');
+    var $stars = $('.star');
 
     function showSearch() {
         $searchBtn.on('click', function() {
@@ -123,9 +125,15 @@ $(document).ready(function(){
         if(time >= sunriseCity && time <= sunsetCity) {
             $body.removeClass("night");
             $body.addClass("day");
+            $sunMoon.removeClass("moon");
+            $sunMoon.addClass("sun");
+            $stars.fadeOut();
         } else {
             $body.removeClass("day");
             $body.addClass("night");
+            $sunMoon.removeClass("sun");
+            $sunMoon.addClass("moon");
+            $stars.fadeIn(1500);
         }
         console.log("sunrise: " + sunriseCity + ", sunset: " + sunsetCity);
     }
