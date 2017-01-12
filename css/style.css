@@ -11,25 +11,15 @@
   to {
     transform: scale(1.5, 1.5); } }
 
-@keyframes flying {
+@keyframes snowFall {
   from {
-    transform: translate(20vw, -20vh); }
+    transform: translateY(5vh); }
   to {
-    transform: translate(70vw, -20vh); } }
+    transform: translatey(110vh); } }
 
-@keyframes sizeFLy {
-  20% {
-    width: 30px;
-    height: 30px; }
-  40% {
-    width: 50px;
-    height: 50px; }
-  60% {
-    width: 30px;
-    height: 30px; }
+@keyframes rotateSnow {
   100% {
-    width: 50px;
-    height: 50px; } }
+    transform: rotate(180deg); } }
 
 * {
   font-family: 'Advent Pro', sans-serif; }
@@ -40,7 +30,8 @@
   margin: 2.5vh auto;
   background-color: #F0F2FA;
   position: relative;
-  color: #0E1A2A; }
+  color: #0E1A2A;
+  overflow: hidden; }
 
 .search-btn img {
   width: 50px;
@@ -92,14 +83,16 @@ input[type=text] {
   font-size: 85px;
   line-height: 85px;
   padding-bottom: 0;
-  text-align: center; }
+  text-align: center;
+  z-index: 200; }
 
 .weather-info {
   position: absolute;
   top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 85px; }
+  font-size: 85px;
+  z-index: 200; }
 
 .weather-description {
   position: absolute;
@@ -109,10 +102,11 @@ input[type=text] {
   padding: 0;
   text-align: center;
   text-transform: capitalize;
-  font-size: 55px; }
+  font-size: 55px;
+  z-index: 200; }
 
 span:nth-child(1) {
-  animation: flipSide 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) both; }
+  animation: flipSide 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 0 both; }
 
 span:nth-child(2) {
   animation: flipSide 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 0.2s both; }
@@ -131,6 +125,9 @@ span:nth-child(6) {
 
 span:nth-child(7) {
   animation: flipSide 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 1.2s both; }
+
+span:nth-child(8) {
+  animation: flipSide 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 1.4s both; }
 
 .animate-name {
   animation: flipSide 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) both; }
@@ -162,22 +159,26 @@ span:nth-child(7) {
   z-index: 50;
   animation: drift 20s 3s linear infinite backwards reverse; }
 
-.bee {
-  width: 50px;
-  height: 50px;
-  position: absolute;
-  background: transparent url(../images/bee.png) 0 0 no-repeat;
-  background-size: contain;
-  bottom: 0;
-  z-index: 100;
-  animation: flying 5s linear forwards, sizeFLy 5s linear forwards; }
-
 .night {
-  background-color: #001652;
+  background: #000a45;
+  background: -moz-linear-gradient(top, #000a45 0%, #3c7496 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #000a45), color-stop(100%, #3c7496));
+  background: -webkit-linear-gradient(top, #000a45 0%, #3c7496 100%);
+  background: -o-linear-gradient(top, #000a45 0%, #3c7496 100%);
+  background: -ms-linear-gradient(top, #000a45 0%, #3c7496 100%);
+  background: linear-gradient(to bottom, #000a45 0%, #3c7496 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000a45', endColorstr='#3c7496', GradientType=0 );
   color: #dfdccb; }
 
 .day {
-  background-color: #F0F2FA;
+  background: #86aecc;
+  background: -moz-linear-gradient(top, #86aecc 0%, #d4e4ef 50%, #d4e4ef 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #86aecc), color-stop(50%, #d4e4ef), color-stop(100%, #d4e4ef));
+  background: -webkit-linear-gradient(top, #86aecc 0%, #d4e4ef 50%, #d4e4ef 100%);
+  background: -o-linear-gradient(top, #86aecc 0%, #d4e4ef 50%, #d4e4ef 100%);
+  background: -ms-linear-gradient(top, #86aecc 0%, #d4e4ef 50%, #d4e4ef 100%);
+  background: linear-gradient(to bottom, #86aecc 0%, #d4e4ef 50%, #d4e4ef 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#86aecc', endColorstr='#d4e4ef', GradientType=0 );
   color: #0E1A2A; }
 
 .sun, .moon {
@@ -282,132 +283,1036 @@ span:nth-child(7) {
     -moz-border-radius: 200px 200px 200px 200px;
     -webkit-border-radius: 200px 200px 200px 200px; }
   .star div:nth-child(2n) {
-    background-color: #fffad8;
     width: 3px;
     height: 3px;
+    background-color: #fffad8;
     -webkit-box-shadow: 0px 0px 2px 2px rgba(255, 250, 216, 0.5);
     -moz-box-shadow: 0px 0px 2px 2px rgba(255, 250, 216, 0.5);
     box-shadow: 0px 0px 2px 2px rgba(255, 250, 216, 0.5); }
   .star div:nth-child(2n + 1) {
-    background-color: #fff3a8;
     width: 5px;
-    height: 5px; }
+    height: 5px;
+    background-color: #fff3a8; }
   .star div:nth-child(3n) {
-    background-color: #95a4d5;
     width: 5px;
-    height: 5px; }
+    height: 5px;
+    background-color: #95a4d5; }
   .star div:nth-child(5n) {
+    width: 3px;
+    height: 3px;
     background-color: #ffcc55;
     -webkit-box-shadow: 0px 0px 2px 2px rgba(255, 204, 85, 0.75);
     -moz-box-shadow: 0px 0px 2px 2px rgba(255, 204, 85, 0.75);
-    box-shadow: 0px 0px 2px 2px rgba(255, 204, 85, 0.75);
-    width: 3px;
-    height: 3px; }
+    box-shadow: 0px 0px 2px 2px rgba(255, 204, 85, 0.75); }
   .star div:nth-child(1) {
-    top: 97%;
-    left: 74%; }
-  .star div:nth-child(2) {
-    top: 74%;
-    left: 51%; }
-  .star div:nth-child(3) {
-    top: 15%;
-    left: 34%; }
-  .star div:nth-child(4) {
-    top: 33%;
-    left: 86%; }
-  .star div:nth-child(5) {
-    top: 100%;
-    left: 89%; }
-  .star div:nth-child(6) {
-    top: 3%;
-    left: 42%; }
-  .star div:nth-child(7) {
-    top: 77%;
-    left: 19%; }
-  .star div:nth-child(8) {
-    top: 99%;
-    left: 57%; }
-  .star div:nth-child(9) {
-    top: 47%;
-    left: 65%; }
-  .star div:nth-child(10) {
-    top: 53%;
-    left: 13%; }
-  .star div:nth-child(11) {
-    top: 7%;
-    left: 41%; }
-  .star div:nth-child(12) {
-    top: 18%;
-    left: 13%; }
-  .star div:nth-child(13) {
-    top: 65%;
-    left: 75%; }
-  .star div:nth-child(14) {
-    top: 40%;
-    left: 25%; }
-  .star div:nth-child(15) {
-    top: 69%;
-    left: 67%; }
-  .star div:nth-child(16) {
-    top: 42%;
-    left: 86%; }
-  .star div:nth-child(17) {
-    top: 12%;
-    left: 71%; }
-  .star div:nth-child(18) {
-    top: 45%;
-    left: 64%; }
-  .star div:nth-child(19) {
-    top: 80%;
-    left: 18%; }
-  .star div:nth-child(20) {
-    top: 77%;
-    left: 84%; }
-  .star div:nth-child(21) {
-    top: 47%;
-    left: 86%; }
-  .star div:nth-child(22) {
-    top: 100%;
-    left: 31%; }
-  .star div:nth-child(23) {
-    top: 93%;
-    left: 54%; }
-  .star div:nth-child(24) {
-    top: 51%;
-    left: 47%; }
-  .star div:nth-child(25) {
-    top: 5%;
-    left: 36%; }
-  .star div:nth-child(26) {
-    top: 91%;
-    left: 32%; }
-  .star div:nth-child(27) {
-    top: 80%;
-    left: 40%; }
-  .star div:nth-child(28) {
-    top: 47%;
-    left: 47%; }
-  .star div:nth-child(29) {
-    top: 7%;
-    left: 51%; }
-  .star div:nth-child(30) {
-    top: 12%;
-    left: 13%; }
-  .star div:nth-child(31) {
-    top: 59%;
-    left: 81%; }
-  .star div:nth-child(32) {
-    top: 75%;
-    left: 29%; }
-  .star div:nth-child(33) {
-    top: 90%;
-    left: 82%; }
-  .star div:nth-child(34) {
-    top: 35%;
-    left: 15%; }
-  .star div:nth-child(35) {
-    top: 77%;
-    left: 72%; }
-  .star div:nth-child(36) {
-    top: 46%;
+    top: 55%;
     left: 14%; }
+  .star div:nth-child(2) {
+    top: 30%;
+    left: 43%; }
+  .star div:nth-child(3) {
+    top: 86%;
+    left: 30%; }
+  .star div:nth-child(4) {
+    top: 73%;
+    left: 80%; }
+  .star div:nth-child(5) {
+    top: 79%;
+    left: 45%; }
+  .star div:nth-child(6) {
+    top: 82%;
+    left: 87%; }
+  .star div:nth-child(7) {
+    top: 59%;
+    left: 37%; }
+  .star div:nth-child(8) {
+    top: 80%;
+    left: 59%; }
+  .star div:nth-child(9) {
+    top: 65%;
+    left: 52%; }
+  .star div:nth-child(10) {
+    top: 18%;
+    left: 48%; }
+  .star div:nth-child(11) {
+    top: 85%;
+    left: 54%; }
+  .star div:nth-child(12) {
+    top: 67%;
+    left: 8%; }
+  .star div:nth-child(13) {
+    top: 91%;
+    left: 80%; }
+  .star div:nth-child(14) {
+    top: 1%;
+    left: 74%; }
+  .star div:nth-child(15) {
+    top: 41%;
+    left: 48%; }
+  .star div:nth-child(16) {
+    top: 40%;
+    left: 62%; }
+  .star div:nth-child(17) {
+    top: 93%;
+    left: 39%; }
+  .star div:nth-child(18) {
+    top: 87%;
+    left: 65%; }
+  .star div:nth-child(19) {
+    top: 85%;
+    left: 26%; }
+  .star div:nth-child(20) {
+    top: 91%;
+    left: 83%; }
+  .star div:nth-child(21) {
+    top: 6%;
+    left: 80%; }
+  .star div:nth-child(22) {
+    top: 39%;
+    left: 65%; }
+  .star div:nth-child(23) {
+    top: 94%;
+    left: 85%; }
+  .star div:nth-child(24) {
+    top: 66%;
+    left: 24%; }
+  .star div:nth-child(25) {
+    top: 45%;
+    left: 66%; }
+  .star div:nth-child(26) {
+    top: 12%;
+    left: 40%; }
+  .star div:nth-child(27) {
+    top: 28%;
+    left: 63%; }
+  .star div:nth-child(28) {
+    top: 19%;
+    left: 78%; }
+  .star div:nth-child(29) {
+    top: 70%;
+    left: 68%; }
+  .star div:nth-child(30) {
+    top: 38%;
+    left: 97%; }
+  .star div:nth-child(31) {
+    top: 38%;
+    left: 52%; }
+  .star div:nth-child(32) {
+    top: 4%;
+    left: 91%; }
+  .star div:nth-child(33) {
+    top: 24%;
+    left: 50%; }
+  .star div:nth-child(34) {
+    top: 33%;
+    left: 16%; }
+  .star div:nth-child(35) {
+    top: 67%;
+    left: 36%; }
+  .star div:nth-child(36) {
+    top: 7%;
+    left: 18%; }
+
+.snowflake div {
+  position: absolute;
+  top: -11vh;
+  width: 20px;
+  height: 20px;
+  background: url(../images/snowflake_white.png) 0 0 no-repeat;
+  background-size: contain; }
+
+.snowflake div:nth-child(1) {
+  left: 97%;
+  -webkit-box-animation: snowFall 10s 0.5s linear infinite backwards;
+  -moz-box-animation: snowFall 10s 0.5s linear infinite backwards;
+  animation: snowFall 10s 0.5s linear infinite backwards; }
+
+.snowflake div:nth-child(2) {
+  left: 27%;
+  -webkit-box-animation: snowFall 10s 1s linear infinite backwards;
+  -moz-box-animation: snowFall 10s 1s linear infinite backwards;
+  animation: snowFall 10s 1s linear infinite backwards; }
+
+.snowflake div:nth-child(3) {
+  left: 78%;
+  -webkit-box-animation: snowFall 10s 1.5s linear infinite backwards;
+  -moz-box-animation: snowFall 10s 1.5s linear infinite backwards;
+  animation: snowFall 10s 1.5s linear infinite backwards; }
+
+.snowflake div:nth-child(4) {
+  left: 14%;
+  -webkit-box-animation: snowFall 10s 2s linear infinite backwards;
+  -moz-box-animation: snowFall 10s 2s linear infinite backwards;
+  animation: snowFall 10s 2s linear infinite backwards; }
+
+.snowflake div:nth-child(5) {
+  left: 70%;
+  -webkit-box-animation: snowFall 10s 2.5s linear infinite backwards;
+  -moz-box-animation: snowFall 10s 2.5s linear infinite backwards;
+  animation: snowFall 10s 2.5s linear infinite backwards; }
+
+.snowflake div:nth-child(6) {
+  left: 45%;
+  -webkit-box-animation: snowFall 10s 3s linear infinite backwards;
+  -moz-box-animation: snowFall 10s 3s linear infinite backwards;
+  animation: snowFall 10s 3s linear infinite backwards; }
+
+.snowflake div:nth-child(7) {
+  left: 46%;
+  -webkit-box-animation: snowFall 10s 3.5s linear infinite backwards;
+  -moz-box-animation: snowFall 10s 3.5s linear infinite backwards;
+  animation: snowFall 10s 3.5s linear infinite backwards; }
+
+.snowflake div:nth-child(8) {
+  left: 100%;
+  -webkit-box-animation: snowFall 10s 4s linear infinite backwards;
+  -moz-box-animation: snowFall 10s 4s linear infinite backwards;
+  animation: snowFall 10s 4s linear infinite backwards; }
+
+.snowflake div:nth-child(9) {
+  left: 76%;
+  -webkit-box-animation: snowFall 10s 4.5s linear infinite backwards;
+  -moz-box-animation: snowFall 10s 4.5s linear infinite backwards;
+  animation: snowFall 10s 4.5s linear infinite backwards; }
+
+.snowflake div:nth-child(10) {
+  left: 52%;
+  -webkit-box-animation: snowFall 10s 5s linear infinite backwards;
+  -moz-box-animation: snowFall 10s 5s linear infinite backwards;
+  animation: snowFall 10s 5s linear infinite backwards; }
+
+.snowflake div:nth-child(11) {
+  left: 4%;
+  -webkit-box-animation: snowFall 10s 5.5s linear infinite backwards;
+  -moz-box-animation: snowFall 10s 5.5s linear infinite backwards;
+  animation: snowFall 10s 5.5s linear infinite backwards; }
+
+.snowflake div:nth-child(12) {
+  left: 83%;
+  -webkit-box-animation: snowFall 10s 6s linear infinite backwards;
+  -moz-box-animation: snowFall 10s 6s linear infinite backwards;
+  animation: snowFall 10s 6s linear infinite backwards; }
+
+.snowflake div:nth-child(13) {
+  left: 40%;
+  -webkit-box-animation: snowFall 10s 6.5s linear infinite backwards;
+  -moz-box-animation: snowFall 10s 6.5s linear infinite backwards;
+  animation: snowFall 10s 6.5s linear infinite backwards; }
+
+.snowflake div:nth-child(14) {
+  left: 92%;
+  -webkit-box-animation: snowFall 10s 7s linear infinite backwards;
+  -moz-box-animation: snowFall 10s 7s linear infinite backwards;
+  animation: snowFall 10s 7s linear infinite backwards; }
+
+.snowflake div:nth-child(15) {
+  left: 47%;
+  -webkit-box-animation: snowFall 10s 7.5s linear infinite backwards;
+  -moz-box-animation: snowFall 10s 7.5s linear infinite backwards;
+  animation: snowFall 10s 7.5s linear infinite backwards; }
+
+.snowflake div:nth-child(16) {
+  left: 24%;
+  -webkit-box-animation: snowFall 10s 8s linear infinite backwards;
+  -moz-box-animation: snowFall 10s 8s linear infinite backwards;
+  animation: snowFall 10s 8s linear infinite backwards; }
+
+.snowflake div:nth-child(17) {
+  left: 60%;
+  -webkit-box-animation: snowFall 10s 8.5s linear infinite backwards;
+  -moz-box-animation: snowFall 10s 8.5s linear infinite backwards;
+  animation: snowFall 10s 8.5s linear infinite backwards; }
+
+.snowflake div:nth-child(18) {
+  left: 73%;
+  -webkit-box-animation: snowFall 10s 9s linear infinite backwards;
+  -moz-box-animation: snowFall 10s 9s linear infinite backwards;
+  animation: snowFall 10s 9s linear infinite backwards; }
+
+.snowflake div:nth-child(19) {
+  left: 3%;
+  -webkit-box-animation: snowFall 10s 9.5s linear infinite backwards;
+  -moz-box-animation: snowFall 10s 9.5s linear infinite backwards;
+  animation: snowFall 10s 9.5s linear infinite backwards; }
+
+.snowflake div:nth-child(20) {
+  left: 37%;
+  -webkit-box-animation: snowFall 10s 10s linear infinite backwards;
+  -moz-box-animation: snowFall 10s 10s linear infinite backwards;
+  animation: snowFall 10s 10s linear infinite backwards; }
+
+.snowflake div:nth-child(21) {
+  left: 66%;
+  -webkit-box-animation: snowFall 10s 10.5s linear infinite backwards;
+  -moz-box-animation: snowFall 10s 10.5s linear infinite backwards;
+  animation: snowFall 10s 10.5s linear infinite backwards; }
+
+.snowflake div:nth-child(22) {
+  left: 72%;
+  -webkit-box-animation: snowFall 10s 11s linear infinite backwards;
+  -moz-box-animation: snowFall 10s 11s linear infinite backwards;
+  animation: snowFall 10s 11s linear infinite backwards; }
+
+.snowflake div:nth-child(23) {
+  left: 50%;
+  -webkit-box-animation: snowFall 10s 11.5s linear infinite backwards;
+  -moz-box-animation: snowFall 10s 11.5s linear infinite backwards;
+  animation: snowFall 10s 11.5s linear infinite backwards; }
+
+.snowflake div:nth-child(24) {
+  left: 27%;
+  -webkit-box-animation: snowFall 10s 12s linear infinite backwards;
+  -moz-box-animation: snowFall 10s 12s linear infinite backwards;
+  animation: snowFall 10s 12s linear infinite backwards; }
+
+.snowflake div:nth-child(25) {
+  left: 28%;
+  -webkit-box-animation: snowFall 10s 12.5s linear infinite backwards;
+  -moz-box-animation: snowFall 10s 12.5s linear infinite backwards;
+  animation: snowFall 10s 12.5s linear infinite backwards; }
+
+.snowflake div:nth-child(26) {
+  left: 38%;
+  -webkit-box-animation: snowFall 10s 13s linear infinite backwards;
+  -moz-box-animation: snowFall 10s 13s linear infinite backwards;
+  animation: snowFall 10s 13s linear infinite backwards; }
+
+.snowflake div:nth-child(27) {
+  left: 69%;
+  -webkit-box-animation: snowFall 10s 13.5s linear infinite backwards;
+  -moz-box-animation: snowFall 10s 13.5s linear infinite backwards;
+  animation: snowFall 10s 13.5s linear infinite backwards; }
+
+.snowflake div:nth-child(28) {
+  left: 39%;
+  -webkit-box-animation: snowFall 10s 14s linear infinite backwards;
+  -moz-box-animation: snowFall 10s 14s linear infinite backwards;
+  animation: snowFall 10s 14s linear infinite backwards; }
+
+.snowflake div:nth-child(29) {
+  left: 66%;
+  -webkit-box-animation: snowFall 10s 14.5s linear infinite backwards;
+  -moz-box-animation: snowFall 10s 14.5s linear infinite backwards;
+  animation: snowFall 10s 14.5s linear infinite backwards; }
+
+.snowflake div:nth-child(30) {
+  left: 85%;
+  -webkit-box-animation: snowFall 10s 15s linear infinite backwards;
+  -moz-box-animation: snowFall 10s 15s linear infinite backwards;
+  animation: snowFall 10s 15s linear infinite backwards; }
+
+.snowflake div:nth-child(31) {
+  left: 38%;
+  -webkit-box-animation: snowFall 10s 15.5s linear infinite backwards;
+  -moz-box-animation: snowFall 10s 15.5s linear infinite backwards;
+  animation: snowFall 10s 15.5s linear infinite backwards; }
+
+.snowflake div:nth-child(32) {
+  left: 52%;
+  -webkit-box-animation: snowFall 10s 16s linear infinite backwards;
+  -moz-box-animation: snowFall 10s 16s linear infinite backwards;
+  animation: snowFall 10s 16s linear infinite backwards; }
+
+.snowflake div:nth-child(33) {
+  left: 26%;
+  -webkit-box-animation: snowFall 10s 16.5s linear infinite backwards;
+  -moz-box-animation: snowFall 10s 16.5s linear infinite backwards;
+  animation: snowFall 10s 16.5s linear infinite backwards; }
+
+.snowflake div:nth-child(34) {
+  left: 61%;
+  -webkit-box-animation: snowFall 10s 17s linear infinite backwards;
+  -moz-box-animation: snowFall 10s 17s linear infinite backwards;
+  animation: snowFall 10s 17s linear infinite backwards; }
+
+.snowflake div:nth-child(35) {
+  left: 78%;
+  -webkit-box-animation: snowFall 10s 17.5s linear infinite backwards;
+  -moz-box-animation: snowFall 10s 17.5s linear infinite backwards;
+  animation: snowFall 10s 17.5s linear infinite backwards; }
+
+.snowflake div:nth-child(36) {
+  left: 43%;
+  -webkit-box-animation: snowFall 10s 18s linear infinite backwards;
+  -moz-box-animation: snowFall 10s 18s linear infinite backwards;
+  animation: snowFall 10s 18s linear infinite backwards; }
+
+.snowflake div:nth-child(37) {
+  left: 37%;
+  -webkit-box-animation: snowFall 10s 18.5s linear infinite backwards;
+  -moz-box-animation: snowFall 10s 18.5s linear infinite backwards;
+  animation: snowFall 10s 18.5s linear infinite backwards; }
+
+.snowflake div:nth-child(38) {
+  left: 74%;
+  -webkit-box-animation: snowFall 10s 19s linear infinite backwards;
+  -moz-box-animation: snowFall 10s 19s linear infinite backwards;
+  animation: snowFall 10s 19s linear infinite backwards; }
+
+.snowflake div:nth-child(39) {
+  left: 1%;
+  -webkit-box-animation: snowFall 10s 19.5s linear infinite backwards;
+  -moz-box-animation: snowFall 10s 19.5s linear infinite backwards;
+  animation: snowFall 10s 19.5s linear infinite backwards; }
+
+.snowflake div:nth-child(40) {
+  left: 79%;
+  -webkit-box-animation: snowFall 10s 20s linear infinite backwards;
+  -moz-box-animation: snowFall 10s 20s linear infinite backwards;
+  animation: snowFall 10s 20s linear infinite backwards; }
+
+.snowflake div:nth-child(41) {
+  left: 64%;
+  -webkit-box-animation: snowFall 10s 20.5s linear infinite backwards;
+  -moz-box-animation: snowFall 10s 20.5s linear infinite backwards;
+  animation: snowFall 10s 20.5s linear infinite backwards; }
+
+.snowflake div:nth-child(42) {
+  left: 58%;
+  -webkit-box-animation: snowFall 10s 21s linear infinite backwards;
+  -moz-box-animation: snowFall 10s 21s linear infinite backwards;
+  animation: snowFall 10s 21s linear infinite backwards; }
+
+.snowflake div:nth-child(43) {
+  left: 47%;
+  -webkit-box-animation: snowFall 10s 21.5s linear infinite backwards;
+  -moz-box-animation: snowFall 10s 21.5s linear infinite backwards;
+  animation: snowFall 10s 21.5s linear infinite backwards; }
+
+.snowflake div:nth-child(44) {
+  left: 26%;
+  -webkit-box-animation: snowFall 10s 22s linear infinite backwards;
+  -moz-box-animation: snowFall 10s 22s linear infinite backwards;
+  animation: snowFall 10s 22s linear infinite backwards; }
+
+.snowflake div:nth-child(45) {
+  left: 3%;
+  -webkit-box-animation: snowFall 10s 22.5s linear infinite backwards;
+  -moz-box-animation: snowFall 10s 22.5s linear infinite backwards;
+  animation: snowFall 10s 22.5s linear infinite backwards; }
+
+.snowflake div:nth-child(46) {
+  left: 61%;
+  -webkit-box-animation: snowFall 10s 23s linear infinite backwards;
+  -moz-box-animation: snowFall 10s 23s linear infinite backwards;
+  animation: snowFall 10s 23s linear infinite backwards; }
+
+.snowflake div:nth-child(47) {
+  left: 54%;
+  -webkit-box-animation: snowFall 10s 23.5s linear infinite backwards;
+  -moz-box-animation: snowFall 10s 23.5s linear infinite backwards;
+  animation: snowFall 10s 23.5s linear infinite backwards; }
+
+.snowflake div:nth-child(48) {
+  left: 60%;
+  -webkit-box-animation: snowFall 10s 24s linear infinite backwards;
+  -moz-box-animation: snowFall 10s 24s linear infinite backwards;
+  animation: snowFall 10s 24s linear infinite backwards; }
+
+.snowflake div:nth-child(49) {
+  left: 87%;
+  -webkit-box-animation: snowFall 10s 24.5s linear infinite backwards;
+  -moz-box-animation: snowFall 10s 24.5s linear infinite backwards;
+  animation: snowFall 10s 24.5s linear infinite backwards; }
+
+.snowflake div:nth-child(50) {
+  left: 48%;
+  -webkit-box-animation: snowFall 10s 25s linear infinite backwards;
+  -moz-box-animation: snowFall 10s 25s linear infinite backwards;
+  animation: snowFall 10s 25s linear infinite backwards; }
+
+.snowflake div:nth-child(51) {
+  left: 91%;
+  -webkit-box-animation: snowFall 10s 25.5s linear infinite backwards;
+  -moz-box-animation: snowFall 10s 25.5s linear infinite backwards;
+  animation: snowFall 10s 25.5s linear infinite backwards; }
+
+.snowflake div:nth-child(52) {
+  left: 71%;
+  -webkit-box-animation: snowFall 10s 26s linear infinite backwards;
+  -moz-box-animation: snowFall 10s 26s linear infinite backwards;
+  animation: snowFall 10s 26s linear infinite backwards; }
+
+.snowflake div:nth-child(53) {
+  left: 59%;
+  -webkit-box-animation: snowFall 10s 26.5s linear infinite backwards;
+  -moz-box-animation: snowFall 10s 26.5s linear infinite backwards;
+  animation: snowFall 10s 26.5s linear infinite backwards; }
+
+.snowflake div:nth-child(54) {
+  left: 56%;
+  -webkit-box-animation: snowFall 10s 27s linear infinite backwards;
+  -moz-box-animation: snowFall 10s 27s linear infinite backwards;
+  animation: snowFall 10s 27s linear infinite backwards; }
+
+.snowflake div:nth-child(55) {
+  left: 33%;
+  -webkit-box-animation: snowFall 10s 27.5s linear infinite backwards;
+  -moz-box-animation: snowFall 10s 27.5s linear infinite backwards;
+  animation: snowFall 10s 27.5s linear infinite backwards; }
+
+.snowflake div:nth-child(56) {
+  left: 88%;
+  -webkit-box-animation: snowFall 10s 28s linear infinite backwards;
+  -moz-box-animation: snowFall 10s 28s linear infinite backwards;
+  animation: snowFall 10s 28s linear infinite backwards; }
+
+.snowflake div:nth-child(57) {
+  left: 28%;
+  -webkit-box-animation: snowFall 10s 28.5s linear infinite backwards;
+  -moz-box-animation: snowFall 10s 28.5s linear infinite backwards;
+  animation: snowFall 10s 28.5s linear infinite backwards; }
+
+.snowflake div:nth-child(58) {
+  left: 97%;
+  -webkit-box-animation: snowFall 10s 29s linear infinite backwards;
+  -moz-box-animation: snowFall 10s 29s linear infinite backwards;
+  animation: snowFall 10s 29s linear infinite backwards; }
+
+.snowflake div:nth-child(59) {
+  left: 7%;
+  -webkit-box-animation: snowFall 10s 29.5s linear infinite backwards;
+  -moz-box-animation: snowFall 10s 29.5s linear infinite backwards;
+  animation: snowFall 10s 29.5s linear infinite backwards; }
+
+.snowflake div:nth-child(60) {
+  left: 1%;
+  -webkit-box-animation: snowFall 10s 30s linear infinite backwards;
+  -moz-box-animation: snowFall 10s 30s linear infinite backwards;
+  animation: snowFall 10s 30s linear infinite backwards; }
+
+.snowflake div:nth-child(61) {
+  left: 19%;
+  -webkit-box-animation: snowFall 10s 30.5s linear infinite backwards;
+  -moz-box-animation: snowFall 10s 30.5s linear infinite backwards;
+  animation: snowFall 10s 30.5s linear infinite backwards; }
+
+.snowflake div:nth-child(62) {
+  left: 16%;
+  -webkit-box-animation: snowFall 10s 31s linear infinite backwards;
+  -moz-box-animation: snowFall 10s 31s linear infinite backwards;
+  animation: snowFall 10s 31s linear infinite backwards; }
+
+.snowflake div:nth-child(63) {
+  left: 6%;
+  -webkit-box-animation: snowFall 10s 31.5s linear infinite backwards;
+  -moz-box-animation: snowFall 10s 31.5s linear infinite backwards;
+  animation: snowFall 10s 31.5s linear infinite backwards; }
+
+.snowflake div:nth-child(64) {
+  left: 9%;
+  -webkit-box-animation: snowFall 10s 32s linear infinite backwards;
+  -moz-box-animation: snowFall 10s 32s linear infinite backwards;
+  animation: snowFall 10s 32s linear infinite backwards; }
+
+.snowflake div:nth-child(65) {
+  left: 76%;
+  -webkit-box-animation: snowFall 10s 32.5s linear infinite backwards;
+  -moz-box-animation: snowFall 10s 32.5s linear infinite backwards;
+  animation: snowFall 10s 32.5s linear infinite backwards; }
+
+.snowflake div:nth-child(66) {
+  left: 70%;
+  -webkit-box-animation: snowFall 10s 33s linear infinite backwards;
+  -moz-box-animation: snowFall 10s 33s linear infinite backwards;
+  animation: snowFall 10s 33s linear infinite backwards; }
+
+.snowflake div:nth-child(67) {
+  left: 73%;
+  -webkit-box-animation: snowFall 10s 33.5s linear infinite backwards;
+  -moz-box-animation: snowFall 10s 33.5s linear infinite backwards;
+  animation: snowFall 10s 33.5s linear infinite backwards; }
+
+.snowflake div:nth-child(68) {
+  left: 65%;
+  -webkit-box-animation: snowFall 10s 34s linear infinite backwards;
+  -moz-box-animation: snowFall 10s 34s linear infinite backwards;
+  animation: snowFall 10s 34s linear infinite backwards; }
+
+.snowflake div:nth-child(69) {
+  left: 21%;
+  -webkit-box-animation: snowFall 10s 34.5s linear infinite backwards;
+  -moz-box-animation: snowFall 10s 34.5s linear infinite backwards;
+  animation: snowFall 10s 34.5s linear infinite backwards; }
+
+.snowflake div:nth-child(70) {
+  left: 89%;
+  -webkit-box-animation: snowFall 10s 35s linear infinite backwards;
+  -moz-box-animation: snowFall 10s 35s linear infinite backwards;
+  animation: snowFall 10s 35s linear infinite backwards; }
+
+.snowflake div:nth-child(71) {
+  left: 80%;
+  -webkit-box-animation: snowFall 10s 35.5s linear infinite backwards;
+  -moz-box-animation: snowFall 10s 35.5s linear infinite backwards;
+  animation: snowFall 10s 35.5s linear infinite backwards; }
+
+.snowflake div:nth-child(72) {
+  left: 33%;
+  -webkit-box-animation: snowFall 10s 36s linear infinite backwards;
+  -moz-box-animation: snowFall 10s 36s linear infinite backwards;
+  animation: snowFall 10s 36s linear infinite backwards; }
+
+.snowflake div:nth-child(2n + 1) {
+  width: 15px;
+  height: 15px; }
+
+.snowflake div:nth-child(3n) {
+  width: 10px;
+  height: 10px; }
+
+.snowflake div:nth-child(5n) {
+  width: 5px;
+  height: 5px; }
+
+.rain div {
+  position: absolute;
+  top: -11vh;
+  width: 20px;
+  height: 20px;
+  background: url(../images/raindrop_1.png) 0 0 no-repeat;
+  background-size: contain; }
+
+.rain div:nth-child(1) {
+  left: 80%;
+  -webkit-box-animation: snowFall 5s 0.2s linear infinite backwards;
+  -moz-box-animation: snowFall 5s 0.2s linear infinite backwards;
+  animation: snowFall 5s 0.2s linear infinite backwards; }
+
+.rain div:nth-child(2) {
+  left: 35%;
+  -webkit-box-animation: snowFall 5s 0.4s linear infinite backwards;
+  -moz-box-animation: snowFall 5s 0.4s linear infinite backwards;
+  animation: snowFall 5s 0.4s linear infinite backwards; }
+
+.rain div:nth-child(3) {
+  left: 10%;
+  -webkit-box-animation: snowFall 5s 0.6s linear infinite backwards;
+  -moz-box-animation: snowFall 5s 0.6s linear infinite backwards;
+  animation: snowFall 5s 0.6s linear infinite backwards; }
+
+.rain div:nth-child(4) {
+  left: 7%;
+  -webkit-box-animation: snowFall 5s 0.8s linear infinite backwards;
+  -moz-box-animation: snowFall 5s 0.8s linear infinite backwards;
+  animation: snowFall 5s 0.8s linear infinite backwards; }
+
+.rain div:nth-child(5) {
+  left: 50%;
+  -webkit-box-animation: snowFall 5s 1s linear infinite backwards;
+  -moz-box-animation: snowFall 5s 1s linear infinite backwards;
+  animation: snowFall 5s 1s linear infinite backwards; }
+
+.rain div:nth-child(6) {
+  left: 69%;
+  -webkit-box-animation: snowFall 5s 1.2s linear infinite backwards;
+  -moz-box-animation: snowFall 5s 1.2s linear infinite backwards;
+  animation: snowFall 5s 1.2s linear infinite backwards; }
+
+.rain div:nth-child(7) {
+  left: 16%;
+  -webkit-box-animation: snowFall 5s 1.4s linear infinite backwards;
+  -moz-box-animation: snowFall 5s 1.4s linear infinite backwards;
+  animation: snowFall 5s 1.4s linear infinite backwards; }
+
+.rain div:nth-child(8) {
+  left: 63%;
+  -webkit-box-animation: snowFall 5s 1.6s linear infinite backwards;
+  -moz-box-animation: snowFall 5s 1.6s linear infinite backwards;
+  animation: snowFall 5s 1.6s linear infinite backwards; }
+
+.rain div:nth-child(9) {
+  left: 45%;
+  -webkit-box-animation: snowFall 5s 1.8s linear infinite backwards;
+  -moz-box-animation: snowFall 5s 1.8s linear infinite backwards;
+  animation: snowFall 5s 1.8s linear infinite backwards; }
+
+.rain div:nth-child(10) {
+  left: 35%;
+  -webkit-box-animation: snowFall 5s 2s linear infinite backwards;
+  -moz-box-animation: snowFall 5s 2s linear infinite backwards;
+  animation: snowFall 5s 2s linear infinite backwards; }
+
+.rain div:nth-child(11) {
+  left: 29%;
+  -webkit-box-animation: snowFall 5s 2.2s linear infinite backwards;
+  -moz-box-animation: snowFall 5s 2.2s linear infinite backwards;
+  animation: snowFall 5s 2.2s linear infinite backwards; }
+
+.rain div:nth-child(12) {
+  left: 44%;
+  -webkit-box-animation: snowFall 5s 2.4s linear infinite backwards;
+  -moz-box-animation: snowFall 5s 2.4s linear infinite backwards;
+  animation: snowFall 5s 2.4s linear infinite backwards; }
+
+.rain div:nth-child(13) {
+  left: 45%;
+  -webkit-box-animation: snowFall 5s 2.6s linear infinite backwards;
+  -moz-box-animation: snowFall 5s 2.6s linear infinite backwards;
+  animation: snowFall 5s 2.6s linear infinite backwards; }
+
+.rain div:nth-child(14) {
+  left: 16%;
+  -webkit-box-animation: snowFall 5s 2.8s linear infinite backwards;
+  -moz-box-animation: snowFall 5s 2.8s linear infinite backwards;
+  animation: snowFall 5s 2.8s linear infinite backwards; }
+
+.rain div:nth-child(15) {
+  left: 16%;
+  -webkit-box-animation: snowFall 5s 3s linear infinite backwards;
+  -moz-box-animation: snowFall 5s 3s linear infinite backwards;
+  animation: snowFall 5s 3s linear infinite backwards; }
+
+.rain div:nth-child(16) {
+  left: 27%;
+  -webkit-box-animation: snowFall 5s 3.2s linear infinite backwards;
+  -moz-box-animation: snowFall 5s 3.2s linear infinite backwards;
+  animation: snowFall 5s 3.2s linear infinite backwards; }
+
+.rain div:nth-child(17) {
+  left: 50%;
+  -webkit-box-animation: snowFall 5s 3.4s linear infinite backwards;
+  -moz-box-animation: snowFall 5s 3.4s linear infinite backwards;
+  animation: snowFall 5s 3.4s linear infinite backwards; }
+
+.rain div:nth-child(18) {
+  left: 16%;
+  -webkit-box-animation: snowFall 5s 3.6s linear infinite backwards;
+  -moz-box-animation: snowFall 5s 3.6s linear infinite backwards;
+  animation: snowFall 5s 3.6s linear infinite backwards; }
+
+.rain div:nth-child(19) {
+  left: 87%;
+  -webkit-box-animation: snowFall 5s 3.8s linear infinite backwards;
+  -moz-box-animation: snowFall 5s 3.8s linear infinite backwards;
+  animation: snowFall 5s 3.8s linear infinite backwards; }
+
+.rain div:nth-child(20) {
+  left: 89%;
+  -webkit-box-animation: snowFall 5s 4s linear infinite backwards;
+  -moz-box-animation: snowFall 5s 4s linear infinite backwards;
+  animation: snowFall 5s 4s linear infinite backwards; }
+
+.rain div:nth-child(21) {
+  left: 64%;
+  -webkit-box-animation: snowFall 5s 4.2s linear infinite backwards;
+  -moz-box-animation: snowFall 5s 4.2s linear infinite backwards;
+  animation: snowFall 5s 4.2s linear infinite backwards; }
+
+.rain div:nth-child(22) {
+  left: 58%;
+  -webkit-box-animation: snowFall 5s 4.4s linear infinite backwards;
+  -moz-box-animation: snowFall 5s 4.4s linear infinite backwards;
+  animation: snowFall 5s 4.4s linear infinite backwards; }
+
+.rain div:nth-child(23) {
+  left: 24%;
+  -webkit-box-animation: snowFall 5s 4.6s linear infinite backwards;
+  -moz-box-animation: snowFall 5s 4.6s linear infinite backwards;
+  animation: snowFall 5s 4.6s linear infinite backwards; }
+
+.rain div:nth-child(24) {
+  left: 43%;
+  -webkit-box-animation: snowFall 5s 4.8s linear infinite backwards;
+  -moz-box-animation: snowFall 5s 4.8s linear infinite backwards;
+  animation: snowFall 5s 4.8s linear infinite backwards; }
+
+.rain div:nth-child(25) {
+  left: 43%;
+  -webkit-box-animation: snowFall 5s 5s linear infinite backwards;
+  -moz-box-animation: snowFall 5s 5s linear infinite backwards;
+  animation: snowFall 5s 5s linear infinite backwards; }
+
+.rain div:nth-child(26) {
+  left: 42%;
+  -webkit-box-animation: snowFall 5s 5.2s linear infinite backwards;
+  -moz-box-animation: snowFall 5s 5.2s linear infinite backwards;
+  animation: snowFall 5s 5.2s linear infinite backwards; }
+
+.rain div:nth-child(27) {
+  left: 15%;
+  -webkit-box-animation: snowFall 5s 5.4s linear infinite backwards;
+  -moz-box-animation: snowFall 5s 5.4s linear infinite backwards;
+  animation: snowFall 5s 5.4s linear infinite backwards; }
+
+.rain div:nth-child(28) {
+  left: 69%;
+  -webkit-box-animation: snowFall 5s 5.6s linear infinite backwards;
+  -moz-box-animation: snowFall 5s 5.6s linear infinite backwards;
+  animation: snowFall 5s 5.6s linear infinite backwards; }
+
+.rain div:nth-child(29) {
+  left: 61%;
+  -webkit-box-animation: snowFall 5s 5.8s linear infinite backwards;
+  -moz-box-animation: snowFall 5s 5.8s linear infinite backwards;
+  animation: snowFall 5s 5.8s linear infinite backwards; }
+
+.rain div:nth-child(30) {
+  left: 54%;
+  -webkit-box-animation: snowFall 5s 6s linear infinite backwards;
+  -moz-box-animation: snowFall 5s 6s linear infinite backwards;
+  animation: snowFall 5s 6s linear infinite backwards; }
+
+.rain div:nth-child(31) {
+  left: 43%;
+  -webkit-box-animation: snowFall 5s 6.2s linear infinite backwards;
+  -moz-box-animation: snowFall 5s 6.2s linear infinite backwards;
+  animation: snowFall 5s 6.2s linear infinite backwards; }
+
+.rain div:nth-child(32) {
+  left: 19%;
+  -webkit-box-animation: snowFall 5s 6.4s linear infinite backwards;
+  -moz-box-animation: snowFall 5s 6.4s linear infinite backwards;
+  animation: snowFall 5s 6.4s linear infinite backwards; }
+
+.rain div:nth-child(33) {
+  left: 2%;
+  -webkit-box-animation: snowFall 5s 6.6s linear infinite backwards;
+  -moz-box-animation: snowFall 5s 6.6s linear infinite backwards;
+  animation: snowFall 5s 6.6s linear infinite backwards; }
+
+.rain div:nth-child(34) {
+  left: 59%;
+  -webkit-box-animation: snowFall 5s 6.8s linear infinite backwards;
+  -moz-box-animation: snowFall 5s 6.8s linear infinite backwards;
+  animation: snowFall 5s 6.8s linear infinite backwards; }
+
+.rain div:nth-child(35) {
+  left: 82%;
+  -webkit-box-animation: snowFall 5s 7s linear infinite backwards;
+  -moz-box-animation: snowFall 5s 7s linear infinite backwards;
+  animation: snowFall 5s 7s linear infinite backwards; }
+
+.rain div:nth-child(36) {
+  left: 49%;
+  -webkit-box-animation: snowFall 5s 7.2s linear infinite backwards;
+  -moz-box-animation: snowFall 5s 7.2s linear infinite backwards;
+  animation: snowFall 5s 7.2s linear infinite backwards; }
+
+.rain div:nth-child(37) {
+  left: 97%;
+  -webkit-box-animation: snowFall 5s 7.4s linear infinite backwards;
+  -moz-box-animation: snowFall 5s 7.4s linear infinite backwards;
+  animation: snowFall 5s 7.4s linear infinite backwards; }
+
+.rain div:nth-child(38) {
+  left: 86%;
+  -webkit-box-animation: snowFall 5s 7.6s linear infinite backwards;
+  -moz-box-animation: snowFall 5s 7.6s linear infinite backwards;
+  animation: snowFall 5s 7.6s linear infinite backwards; }
+
+.rain div:nth-child(39) {
+  left: 81%;
+  -webkit-box-animation: snowFall 5s 7.8s linear infinite backwards;
+  -moz-box-animation: snowFall 5s 7.8s linear infinite backwards;
+  animation: snowFall 5s 7.8s linear infinite backwards; }
+
+.rain div:nth-child(40) {
+  left: 99%;
+  -webkit-box-animation: snowFall 5s 8s linear infinite backwards;
+  -moz-box-animation: snowFall 5s 8s linear infinite backwards;
+  animation: snowFall 5s 8s linear infinite backwards; }
+
+.rain div:nth-child(41) {
+  left: 91%;
+  -webkit-box-animation: snowFall 5s 8.2s linear infinite backwards;
+  -moz-box-animation: snowFall 5s 8.2s linear infinite backwards;
+  animation: snowFall 5s 8.2s linear infinite backwards; }
+
+.rain div:nth-child(42) {
+  left: 7%;
+  -webkit-box-animation: snowFall 5s 8.4s linear infinite backwards;
+  -moz-box-animation: snowFall 5s 8.4s linear infinite backwards;
+  animation: snowFall 5s 8.4s linear infinite backwards; }
+
+.rain div:nth-child(43) {
+  left: 27%;
+  -webkit-box-animation: snowFall 5s 8.6s linear infinite backwards;
+  -moz-box-animation: snowFall 5s 8.6s linear infinite backwards;
+  animation: snowFall 5s 8.6s linear infinite backwards; }
+
+.rain div:nth-child(44) {
+  left: 77%;
+  -webkit-box-animation: snowFall 5s 8.8s linear infinite backwards;
+  -moz-box-animation: snowFall 5s 8.8s linear infinite backwards;
+  animation: snowFall 5s 8.8s linear infinite backwards; }
+
+.rain div:nth-child(45) {
+  left: 47%;
+  -webkit-box-animation: snowFall 5s 9s linear infinite backwards;
+  -moz-box-animation: snowFall 5s 9s linear infinite backwards;
+  animation: snowFall 5s 9s linear infinite backwards; }
+
+.rain div:nth-child(46) {
+  left: 15%;
+  -webkit-box-animation: snowFall 5s 9.2s linear infinite backwards;
+  -moz-box-animation: snowFall 5s 9.2s linear infinite backwards;
+  animation: snowFall 5s 9.2s linear infinite backwards; }
+
+.rain div:nth-child(47) {
+  left: 91%;
+  -webkit-box-animation: snowFall 5s 9.4s linear infinite backwards;
+  -moz-box-animation: snowFall 5s 9.4s linear infinite backwards;
+  animation: snowFall 5s 9.4s linear infinite backwards; }
+
+.rain div:nth-child(48) {
+  left: 43%;
+  -webkit-box-animation: snowFall 5s 9.6s linear infinite backwards;
+  -moz-box-animation: snowFall 5s 9.6s linear infinite backwards;
+  animation: snowFall 5s 9.6s linear infinite backwards; }
+
+.rain div:nth-child(49) {
+  left: 3%;
+  -webkit-box-animation: snowFall 5s 9.8s linear infinite backwards;
+  -moz-box-animation: snowFall 5s 9.8s linear infinite backwards;
+  animation: snowFall 5s 9.8s linear infinite backwards; }
+
+.rain div:nth-child(50) {
+  left: 19%;
+  -webkit-box-animation: snowFall 5s 10s linear infinite backwards;
+  -moz-box-animation: snowFall 5s 10s linear infinite backwards;
+  animation: snowFall 5s 10s linear infinite backwards; }
+
+.rain div:nth-child(51) {
+  left: 21%;
+  -webkit-box-animation: snowFall 5s 10.2s linear infinite backwards;
+  -moz-box-animation: snowFall 5s 10.2s linear infinite backwards;
+  animation: snowFall 5s 10.2s linear infinite backwards; }
+
+.rain div:nth-child(52) {
+  left: 20%;
+  -webkit-box-animation: snowFall 5s 10.4s linear infinite backwards;
+  -moz-box-animation: snowFall 5s 10.4s linear infinite backwards;
+  animation: snowFall 5s 10.4s linear infinite backwards; }
+
+.rain div:nth-child(53) {
+  left: 67%;
+  -webkit-box-animation: snowFall 5s 10.6s linear infinite backwards;
+  -moz-box-animation: snowFall 5s 10.6s linear infinite backwards;
+  animation: snowFall 5s 10.6s linear infinite backwards; }
+
+.rain div:nth-child(54) {
+  left: 75%;
+  -webkit-box-animation: snowFall 5s 10.8s linear infinite backwards;
+  -moz-box-animation: snowFall 5s 10.8s linear infinite backwards;
+  animation: snowFall 5s 10.8s linear infinite backwards; }
+
+.rain div:nth-child(55) {
+  left: 5%;
+  -webkit-box-animation: snowFall 5s 11s linear infinite backwards;
+  -moz-box-animation: snowFall 5s 11s linear infinite backwards;
+  animation: snowFall 5s 11s linear infinite backwards; }
+
+.rain div:nth-child(56) {
+  left: 15%;
+  -webkit-box-animation: snowFall 5s 11.2s linear infinite backwards;
+  -moz-box-animation: snowFall 5s 11.2s linear infinite backwards;
+  animation: snowFall 5s 11.2s linear infinite backwards; }
+
+.rain div:nth-child(57) {
+  left: 28%;
+  -webkit-box-animation: snowFall 5s 11.4s linear infinite backwards;
+  -moz-box-animation: snowFall 5s 11.4s linear infinite backwards;
+  animation: snowFall 5s 11.4s linear infinite backwards; }
+
+.rain div:nth-child(58) {
+  left: 85%;
+  -webkit-box-animation: snowFall 5s 11.6s linear infinite backwards;
+  -moz-box-animation: snowFall 5s 11.6s linear infinite backwards;
+  animation: snowFall 5s 11.6s linear infinite backwards; }
+
+.rain div:nth-child(59) {
+  left: 22%;
+  -webkit-box-animation: snowFall 5s 11.8s linear infinite backwards;
+  -moz-box-animation: snowFall 5s 11.8s linear infinite backwards;
+  animation: snowFall 5s 11.8s linear infinite backwards; }
+
+.rain div:nth-child(60) {
+  left: 79%;
+  -webkit-box-animation: snowFall 5s 12s linear infinite backwards;
+  -moz-box-animation: snowFall 5s 12s linear infinite backwards;
+  animation: snowFall 5s 12s linear infinite backwards; }
+
+.rain div:nth-child(61) {
+  left: 22%;
+  -webkit-box-animation: snowFall 5s 12.2s linear infinite backwards;
+  -moz-box-animation: snowFall 5s 12.2s linear infinite backwards;
+  animation: snowFall 5s 12.2s linear infinite backwards; }
+
+.rain div:nth-child(62) {
+  left: 66%;
+  -webkit-box-animation: snowFall 5s 12.4s linear infinite backwards;
+  -moz-box-animation: snowFall 5s 12.4s linear infinite backwards;
+  animation: snowFall 5s 12.4s linear infinite backwards; }
+
+.rain div:nth-child(63) {
+  left: 74%;
+  -webkit-box-animation: snowFall 5s 12.6s linear infinite backwards;
+  -moz-box-animation: snowFall 5s 12.6s linear infinite backwards;
+  animation: snowFall 5s 12.6s linear infinite backwards; }
+
+.rain div:nth-child(64) {
+  left: 61%;
+  -webkit-box-animation: snowFall 5s 12.8s linear infinite backwards;
+  -moz-box-animation: snowFall 5s 12.8s linear infinite backwards;
+  animation: snowFall 5s 12.8s linear infinite backwards; }
+
+.rain div:nth-child(65) {
+  left: 80%;
+  -webkit-box-animation: snowFall 5s 13s linear infinite backwards;
+  -moz-box-animation: snowFall 5s 13s linear infinite backwards;
+  animation: snowFall 5s 13s linear infinite backwards; }
+
+.rain div:nth-child(66) {
+  left: 27%;
+  -webkit-box-animation: snowFall 5s 13.2s linear infinite backwards;
+  -moz-box-animation: snowFall 5s 13.2s linear infinite backwards;
+  animation: snowFall 5s 13.2s linear infinite backwards; }
+
+.rain div:nth-child(67) {
+  left: 100%;
+  -webkit-box-animation: snowFall 5s 13.4s linear infinite backwards;
+  -moz-box-animation: snowFall 5s 13.4s linear infinite backwards;
+  animation: snowFall 5s 13.4s linear infinite backwards; }
+
+.rain div:nth-child(68) {
+  left: 30%;
+  -webkit-box-animation: snowFall 5s 13.6s linear infinite backwards;
+  -moz-box-animation: snowFall 5s 13.6s linear infinite backwards;
+  animation: snowFall 5s 13.6s linear infinite backwards; }
+
+.rain div:nth-child(69) {
+  left: 49%;
+  -webkit-box-animation: snowFall 5s 13.8s linear infinite backwards;
+  -moz-box-animation: snowFall 5s 13.8s linear infinite backwards;
+  animation: snowFall 5s 13.8s linear infinite backwards; }
+
+.rain div:nth-child(70) {
+  left: 83%;
+  -webkit-box-animation: snowFall 5s 14s linear infinite backwards;
+  -moz-box-animation: snowFall 5s 14s linear infinite backwards;
+  animation: snowFall 5s 14s linear infinite backwards; }
+
+.rain div:nth-child(71) {
+  left: 2%;
+  -webkit-box-animation: snowFall 5s 14.2s linear infinite backwards;
+  -moz-box-animation: snowFall 5s 14.2s linear infinite backwards;
+  animation: snowFall 5s 14.2s linear infinite backwards; }
+
+.rain div:nth-child(72) {
+  left: 39%;
+  -webkit-box-animation: snowFall 5s 14.4s linear infinite backwards;
+  -moz-box-animation: snowFall 5s 14.4s linear infinite backwards;
+  animation: snowFall 5s 14.4s linear infinite backwards; }
+
+.rain div:nth-child(2n + 1) {
+  width: 15px;
+  height: 15px; }
+
+.rain div:nth-child(3n) {
+  width: 10px;
+  height: 10px; }
+
+.rain div:nth-child(5n) {
+  width: 5px;
+  height: 5px; }

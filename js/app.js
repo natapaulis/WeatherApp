@@ -14,6 +14,7 @@ $(document).ready(function(){
     var $tempToShow;
     var $sunMoon = $('.sun-moon');
     var $stars = $('.star');
+    var $weatherEffect = $('#weather');
 
     function showSearch() {
         $searchBtn.on('click', function() {
@@ -66,6 +67,10 @@ $(document).ready(function(){
                 var timeOfSunrise = convertUnix(sunrise);
                 sunsetSunrise(longitude, $timeInCity, timeOfSunrise, timeOfSunset);
 
+                //Checking weather conditions
+                var weather = response.weather[0].id;
+                console.log(weather);
+                ilustrateWeather(weather);
             }).fail(function(error){
                 console.log(error);
             });
@@ -133,8 +138,43 @@ $(document).ready(function(){
             $body.addClass("night");
             $sunMoon.removeClass("sun");
             $sunMoon.addClass("moon");
-            $stars.fadeIn(1500);
+            $stars.fadeIn(1700);
         }
         console.log("sunrise: " + sunriseCity + ", sunset: " + sunsetCity);
     }
+
+    //Adjusting background animation depending on weather conditions
+
+    function ilustrateWeather(weatherID) {
+        if(weatherID >= 200 && weatherID <= 234) {
+            $weatherEffect.removeClass();
+            console.log("thunderstorm");
+        } else if(weatherID >= 300 && weatherID <= 321){
+            $weatherEffect.removeClass();
+            console.log("drizzle");
+        } else if(weatherID >= 500 && weatherID <= 531){
+            console.log("rain");
+            $stars.fadeOut();
+            $weatherEffect.removeClass();
+            $weatherEffect.addClass("rain");
+        } else if(weatherID >= 600 && weatherID <= 622){
+            console.log("snow");
+            $stars.fadeOut();
+            $weatherEffect.removeClass();
+            $weatherEffect.addClass("snowflake");
+        } else if(weatherID >= 701 && weatherID <= 781){
+            $weatherEffect.removeClass();
+            console.log("atmosphere");
+        } else if(weatherID == 800){
+            $weatherEffect.removeClass();
+            console.log("clear");
+        } else if(weatherID >= 801 && weatherID <= 804){
+            $weatherEffect.removeClass();
+            console.log("clouds");
+        } else if(weatherID >= 900 && weatherID <= 962){
+            $weatherEffect.removeClass();
+            console.log("extreme/additional");
+        }
+    }
+
 });

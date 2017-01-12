@@ -14,10 +14,22 @@ $center: 0 auto;
     -webkit-border-radius: $size;
 }
 
+@mixin shadow($shadow...){
+    -webkit-box-shadow: $shadow;
+    -moz-box-shadow: $shadow;
+    box-shadow: $shadow;
+}
+
 @mixin flexing-row(){
     display: flex;
     flex-flow: wrap row;
     justify-content: space-around;
+}
+
+@mixin animation($value...) {
+    -webkit-box-animation: $value;
+    -moz-box-animation: $value;
+    animation: $value;
 }
 
 @keyframes flipSide {
@@ -30,31 +42,12 @@ $center: 0 auto;
   to {transform: scale(1.5, 1.5);}
 }
 
-@keyframes flying {
-	from {
-        transform: translate(20vw, -20vh);
-    }
-    to {
-        transform: translate(70vw, -20vh);
-    }
-    }
 
-@keyframes sizeFLy {
-    20% {
-        width: 30px;
-        height: 30px
-    }
-    40% {
-        width: 50px;
-        height: 50px
-    }
-    60% {
-        width: 30px;
-        height: 30px
-    }
-    100% {
-        width: 50px;
-        height: 50px
-    }
+@keyframes snowFall {
+	from {transform: translateY(5vh);}
+	to {transform: translatey(110vh);}
+}
 
+@keyframes rotateSnow {
+	100% {transform: rotate(180deg);}
 }
