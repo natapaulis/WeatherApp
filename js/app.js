@@ -105,7 +105,6 @@ $(document).ready(function(){
     function convertUnix(timestamp) {
         var date = new Date(timestamp * 1000);
         var hours = date.getHours();
-        // var minutes = "0" + date.getMinutes();
         var formattedTime = hours;
         return formattedTime;
     }
@@ -139,13 +138,11 @@ $(document).ready(function(){
             $body.addClass("day");
             $sunMoon.removeClass("moon");
             $sunMoon.addClass("sun");
-            $stars.fadeOut();
         } else {
             $body.removeClass("day");
             $body.addClass("night");
             $sunMoon.removeClass("sun");
             $sunMoon.addClass("moon");
-            $stars.fadeIn(1700);
         }
         console.log("sunrise: " + sunriseCity + ", sunset: " + sunsetCity);
     }
@@ -157,7 +154,9 @@ $(document).ready(function(){
         $weatherEffect.removeClass();
         $clouds.removeClass();
         $body.removeClass('sky_overcast');
+        $body.removeClass('sky_overcast_night');
         $mist.removeClass('misty');
+        $stars.fadeOut();
 
         if(weatherID >= 200 && weatherID <= 234) { //thunderstorm
             $weatherIcon.addClass("thunderIcon");
@@ -167,21 +166,23 @@ $(document).ready(function(){
                 $body.removeClass('day');
                 $body.addClass('sky_overcast');
             } else {
+                $body.removeClass('night');
                 $sunMoon.removeClass("moon");
+                $body.addClass('sky_overcast_night');
             }
         } else if(weatherID >= 300 && weatherID <= 321){ //drizzle
-            $stars.fadeOut();
-            $weatherEffect.addClass("drizzle");
             $weatherIcon.addClass("rainIcon");
+            $weatherEffect.addClass("drizzle");
             if($body.hasClass('day')) {
                 $body.removeClass('day');
                 $body.addClass('sky_overcast');
                 $sunMoon.removeClass("sun");
             } else {
+                $body.removeClass('night');
                 $sunMoon.removeClass("moon");
+                $body.addClass('sky_overcast_night');
             }
         } else if(weatherID >= 500 && weatherID <= 531){ //rain
-            $stars.fadeOut();
             $weatherIcon.addClass("rainIcon");
             $weatherEffect.addClass("rain");
             $clouds.addClass('clouds-overcast');
@@ -190,42 +191,66 @@ $(document).ready(function(){
                 $body.addClass('sky_overcast');
                 $sunMoon.removeClass("sun");
             } else {
+                $body.removeClass('night');
                 $sunMoon.removeClass("moon");
+                $body.addClass('sky_overcast_night');
             }
         } else if(weatherID >= 600 && weatherID <= 622){ //snow
-            $stars.fadeOut();
-            $weatherEffect.addClass("snow");
             $weatherIcon.addClass("snowIcon");
+            $weatherEffect.addClass("snow");
             if($body.hasClass('day')) {
                 $body.removeClass('day');
                 $body.addClass('sky_overcast');
                 $sunMoon.removeClass("sun");
+            } else {
+                $body.removeClass('night');
+                $sunMoon.removeClass("moon");
+                $body.addClass('sky_overcast_night');
             }
         } else if(weatherID >= 701 && weatherID <= 781){ //atmosphere - mist
             $weatherIcon.addClass("mistIcon");
             $mist.addClass('misty');
+            if($body.hasClass('night')) {
+                $stars.fadeIn(1700);
+            }
+        } else if(weatherID === 800) {
+            if($body.hasClass('night')) {
+                $stars.fadeIn(1700);
+            }
         } else if(weatherID >= 801 && weatherID <= 804){ // clouds
             switch (weatherID) {
                 case 801: //few clouds
-                    $clouds.addClass("clouds-few");
                     $weatherIcon.addClass("fewCloudsIcon");
+                    $clouds.addClass("clouds-few");
+                    if($body.hasClass('night')) {
+                        $stars.fadeIn(1700);
+                    }
                     break;
                 case 802: //scattered clouds
                     $weatherIcon.addClass("fewCloudsIcon");
                     $clouds.addClass("clouds-scattered");
+                    if($body.hasClass('night')) {
+                        $stars.fadeIn(1700);
+                    }
                     break;
                 case 803: //broken clouds
-                    $clouds.addClass("clouds-broken");
                     $weatherIcon.addClass("cloudyIcon");
+                    $clouds.addClass("clouds-broken");
+                    if($body.hasClass('night')) {
+                        $stars.fadeIn(1700);
+                    }
                     break;
                 case 804: //overcast
                     $weatherIcon.addClass("overcastIcon");
+                    $clouds.addClass('clouds-overcast');
                     if($body.hasClass('day')) {
                         $body.removeClass('day');
                         $sunMoon.removeClass("sun");
                         $body.addClass('sky_overcast');
                     } else {
+                        $body.removeClass('night');
                         $sunMoon.removeClass("moon");
+                        $body.addClass('sky_overcast_night');
                     }
                     break;
             }

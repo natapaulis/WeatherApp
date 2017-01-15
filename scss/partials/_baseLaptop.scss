@@ -18,7 +18,7 @@
     position: absolute;
     top: 3%;
     right: 3%;
-    animation: pulsing 2s cubic-bezier(.15,.68,.82,.21) 1.2s alternate both;
+    animation: pulsing 2s cubic-bezier(.15,.68,.82,.21) 1.2s 3 alternate both;
     z-index: 400;
 }
 
@@ -61,6 +61,7 @@ input[type=text] {
 }
 
 .city-name {
+    width: 90vw;
     top: 40%;
     font-size: 85px;
     line-height: 85px;
@@ -79,6 +80,7 @@ input[type=text] {
 }
 
 .weather-description {
+    width: 90vw;
     position: absolute;
     top: 60%;
     left: 50%;
@@ -89,6 +91,7 @@ input[type=text] {
     font-size: 55px;
     z-index: 200;
 }
+
 #weather-icon {
     position: absolute;
     top: 80%;
@@ -169,6 +172,17 @@ $j: 0;
     background: -ms-linear-gradient(top, rgba(74,80,84,1) 0%, rgba(212,228,239,1) 100%);
     background: linear-gradient(to bottom, rgba(74,80,84,1) 0%, rgba(212,228,239,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4a5054', endColorstr='#d4e4ef', GradientType=0 );
+}
+
+.sky_overcast_night {
+    background: rgba(47,51,56,1);
+    background: -moz-linear-gradient(top, rgba(47,51,56,1) 0%, rgba(47,51,56,1) 30%, rgba(10,58,97,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(47,51,56,1)), color-stop(30%, rgba(47,51,56,1)), color-stop(100%, rgba(10,58,97,1)));
+    background: -webkit-linear-gradient(top, rgba(47,51,56,1) 0%, rgba(47,51,56,1) 30%, rgba(10,58,97,1) 100%);
+    background: -o-linear-gradient(top, rgba(47,51,56,1) 0%, rgba(47,51,56,1) 30%, rgba(10,58,97,1) 100%);
+    background: -ms-linear-gradient(top, rgba(47,51,56,1) 0%, rgba(47,51,56,1) 30%, rgba(10,58,97,1) 100%);
+    background: linear-gradient(to bottom, rgba(47,51,56,1) 0%, rgba(47,51,56,1) 30%, rgba(10,58,97,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2f3338', endColorstr='#0a3a61', GradientType=0 );
 }
 
 .sun, .moon {
@@ -376,7 +390,7 @@ $j: 0;
     @for $i from 1 through 4 {
         div:nth-child(#{$i}) {
             top: random(70)* 1%;
-            @include animation(drift $i + 20s $i * 3s linear infinite backwards);
+            @include animation(drift $i + 40s $i * 3s linear infinite backwards);
             background:transparent url(../images/clouds_light.png) 0 0 no-repeat;
             width: 250px - ($i * 5);
             height: 150px - ($i * 10);
@@ -394,7 +408,7 @@ $j: 0;
     @for $i from 1 through 3 {
         div:nth-child(#{$i}) {
             top: random(70)* 1%;
-            @include animation(drift $i + 20s $i * 3s linear infinite backwards);
+            @include animation(drift $i + 25s $i * 3s linear infinite backwards);
             background:transparent url(../images/clouds_light.png) 0 0 no-repeat;
             width: 250px - ($i * 5);
             height: 150px - ($i * 10);
@@ -414,7 +428,7 @@ $j: 0;
     @for $i from 7 through 8 {
         div:nth-child(#{$i}) {
             top: random(70)* 1%;
-            @include animation(drift $i + 20s $i * 3s linear infinite reverse backwards);
+            @include animation(drift $i + 30s $i * 3s linear infinite reverse backwards);
             background:transparent url(../images/clouds_light.png) 0 0 no-repeat;
             width: 250px - ($i * 5);
             height: 150px - ($i * 5);
@@ -423,7 +437,7 @@ $j: 0;
 
     div:nth-child(9){
         top: random(70)* 1%;
-        @include animation(drift 20s 5s linear infinite reverse backwards);
+        @include animation(drift 35s 5s linear infinite reverse backwards);
         background: transparent url(../images/clouds_group.png) 0 0 no-repeat;
         width: 300px;
         height: 200px;
@@ -431,7 +445,7 @@ $j: 0;
 
     div:nth-child(10){
         top: random(70)* 1%;
-        @include animation(drift 20s 5s linear infinite backwards);
+        @include animation(drift 40s 5s linear infinite backwards);
         background:transparent url(../images/clouds_group.png) 0 0 no-repeat;
         width: 250px;
         height: 150px;
@@ -443,7 +457,7 @@ $j: 0;
     @for $i from 1 through 3 {
         div:nth-child(#{$i}) {
             top: random(70)* 1%;
-            @include animation(drift $i + 20s $i * 3s linear infinite backwards);
+            @include animation(drift $i + 30s $i * 3s linear infinite backwards);
             background:transparent url(../images/clouds_light.png) 0 0 no-repeat;
             width: 250px - ($i * 5);
             height: 150px - ($i * 10);
@@ -453,7 +467,7 @@ $j: 0;
     @for $i from 4 through 5 {
         div:nth-child(#{$i}) {
             top: random(70)* 1%;
-            @include animation(drift $i + 20s $i * 3s linear infinite reverse backwards);
+            @include animation(drift $i + 35s $i * 3s linear infinite reverse backwards);
             background:transparent url(../images/cloud_dark.png) 0 0 no-repeat;
             width: 250px + ($i * 5);
             height: 150px - ($i * 5);
@@ -461,7 +475,7 @@ $j: 0;
     }
     div:nth-child(6){
         top: random(70)* 1%;
-        @include animation(drift 20s 5s linear infinite reverse backwards);
+        @include animation(drift 35s 5s linear infinite reverse backwards);
         background:transparent url(../images/clouds_light.png) 0 0 no-repeat;
         width: 250px;
         height: 150px;
@@ -493,7 +507,6 @@ $j: 0;
 .misty {
     width: 95vw;
     height: 95vh;
-    margin: 2.5vh auto;
     background-color: rgba(190,192,194,.75);
     position: absolute;
     margin: 0;
@@ -541,7 +554,6 @@ $j: 0;
             @include animation(falling 5s $i * .2s linear infinite backwards);
         }
     }
-
     div:nth-child(2n + 1) {
         height: 35px;;
     }

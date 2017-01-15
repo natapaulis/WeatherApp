@@ -1,0 +1,33 @@
+@media #{$tablet} {
+    .main-name {
+        font-size: 60px;
+    }
+    .city-name {
+        top: 38%;
+        line-height: 60px;
+    }
+    .weather-info {
+        font-size: 60px;
+        top: 52%;
+    }
+    .weather-description {
+        font-size: 50px;
+        top: 55%;
+        line-height: 50px;
+    }
+    input[type=text] {
+        width: 270px;
+        font-size: 30px;
+    }
+    .sun, .moon {
+        width: 110px;
+        height: 110px;
+        @for $i from 1 through 6 {
+            div:nth-child(#{$i}) {
+                width: 130px - ($i * 20);
+                height: 130px - ($i * 20);
+            }
+        }
+    }
+
+}

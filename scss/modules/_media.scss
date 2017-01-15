@@ -1,17 +1,3 @@
-@mixin tablet {
-    @media(#{$tablet}) {
-        @content;
-    }
-}
-
-@mixin lg-tablet {
-    @media(#{$lg-tablet}) {
-        @content;
-    }
-}
-
-@mixin smartphone {
-    @media(#{$smartphone}) {
-        @content;
-    }
-}
+$smartphone: "(max-width: 360px)";
+$tablet: "(max-width: 600px)";
+$portrait: "(orientation: portrait)";

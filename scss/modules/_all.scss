@@ -1,13 +1,3 @@
-$vSmallScreen: "max-width: 360px";
-$smartphone: "max-width: 600px";
-$tablet: "max-width: 900px";
-$lg-tablet: "max-width: 1020px";
-$portrait: "(orientation: portrait)";
-
-$primary-color: #43C6D7;
-$base-color: #EBEBEB;
-$center: 0 auto;
-
 @mixin radius($size...){
     border-radius: $size;
     -moz-border-radius: $size;
@@ -18,12 +8,6 @@ $center: 0 auto;
     -webkit-box-shadow: $shadow;
     -moz-box-shadow: $shadow;
     box-shadow: $shadow;
-}
-
-@mixin flexing-row(){
-    display: flex;
-    flex-flow: wrap row;
-    justify-content: space-around;
 }
 
 @mixin animation($value...) {

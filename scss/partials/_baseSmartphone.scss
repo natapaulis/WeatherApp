@@ -1,0 +1,33 @@
+@media #{$smartphone} {
+    .main-name {
+        font-size: 40px;
+    }
+    .city-name {
+        line-height: 50px;
+        font-size: 50px;
+    }
+    .weather-info {
+        font-size: 50px;
+        top: 54%;
+    }
+    .weather-description {
+        font-size: 45px;
+        line-height: 45px;
+        top: 56%;
+    }
+    input[type=text] {
+        width: 200px;
+        font-size: 25px;
+        letter-spacing: 1px;
+    }
+    .sun, .moon {
+        width: 90px;
+        height: 90px;
+        @for $i from 1 through 6 {
+            div:nth-child(#{$i}) {
+                width: 110px - ($i * 20);
+                height: 110px - ($i * 20);
+            }
+        }
+    }
+}
