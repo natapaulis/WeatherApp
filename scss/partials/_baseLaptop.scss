@@ -516,3 +516,40 @@ $j: 0;
         height: 300px;
     }
 }
+
+.thunder {
+    div {
+        position: absolute;
+    }
+    div:nth-child(1) {
+        background: transparent url(../images/ligtning_bolt.png) 0 0 no-repeat;
+        background-size: contain;
+        width: 400px;
+        height: 400px;
+        transform: rotate(-40deg);
+        left: 0;
+    }
+}
+
+.thunder_rain {
+    div {
+        border-left: 2px solid white;
+    }
+    @for $i from 1 through 99 {
+        div:nth-child(#{$i}) {
+            left: random(100)* 1%;
+            @include animation(falling 5s $i * .2s linear infinite backwards);
+        }
+    }
+
+    div:nth-child(2n + 1) {
+        height: 35px;;
+    }
+    div:nth-child(3n) {
+        height: 25px;
+    }
+    div:nth-child(5n) {
+        height: 20px;
+        border-color: #b3d0eb;
+    }
+}

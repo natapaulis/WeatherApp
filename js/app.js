@@ -70,10 +70,10 @@ $(document).ready(function(){
                 var timeOfSunrise = convertUnix(sunrise);
                 sunsetSunrise(longitude, $timeInCity, timeOfSunrise, timeOfSunset);
 
-                //Checking weather conditions
+                //Checking weather conditions and illustrating the weather
                 var weather = response.weather[0].id;
-                console.log(weather);
                 ilustrateWeather(weather);
+
             }).fail(function(error){
                 console.log(error);
             });
@@ -110,7 +110,7 @@ $(document).ready(function(){
         return formattedTime;
     }
 
-    //Function to change background depending whether it is time before or after sunrise
+    //Function to change background depending whether it is day or night
     function sunsetSunrise(longitude, time, sunrise, sunset) {
         //Since time is in Unix, we need to check the time of sunrise/sunset in local time
         var hour = Math.floor(longitude / 15);
@@ -133,7 +133,7 @@ $(document).ready(function(){
             sunriseCity = 24 - rest;
         }
 
-        //Changing background by adding/removing class
+        //Changing background for day and night
         if(time >= sunriseCity && time <= sunsetCity) {
             $body.removeClass("night");
             $body.addClass("day");
@@ -150,7 +150,7 @@ $(document).ready(function(){
         console.log("sunrise: " + sunriseCity + ", sunset: " + sunsetCity);
     }
 
-    //Adjusting background animation depending on weather conditions
+    //Function to adjust background animation depending on weather conditions
 
     function ilustrateWeather(weatherID) {
         $weatherIcon.removeClass();
@@ -161,9 +161,13 @@ $(document).ready(function(){
 
         if(weatherID >= 200 && weatherID <= 234) { //thunderstorm
             $weatherIcon.addClass("thunderIcon");
+            $clouds.addClass('thunder');
+            $weatherEffect.addClass('thunder_rain')
             if($body.hasClass('day')) {
                 $body.removeClass('day');
                 $body.addClass('sky_overcast');
+            } else {
+                $sunMoon.removeClass("moon");
             }
         } else if(weatherID >= 300 && weatherID <= 321){ //drizzle
             $stars.fadeOut();
