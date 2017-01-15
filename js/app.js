@@ -18,6 +18,7 @@ $(document).ready(function(){
     var $weatherIcon = $('#weather-icon');
     var $clouds = $('#clouds');
     var $mist = $('#mist');
+    var $extreme = $('#extreme');
 
     function showSearch() {
         $searchBtn.on('click', function() {
@@ -153,6 +154,7 @@ $(document).ready(function(){
         $weatherIcon.removeClass();
         $weatherEffect.removeClass();
         $clouds.removeClass();
+        $extreme.removeClass();
         $body.removeClass('sky_overcast');
         $body.removeClass('sky_overcast_night');
         $mist.removeClass('misty');
@@ -160,7 +162,7 @@ $(document).ready(function(){
 
         if(weatherID >= 200 && weatherID <= 234) { //thunderstorm
             $weatherIcon.addClass("thunderIcon");
-            $clouds.addClass('thunder');
+            $extreme.addClass('thunder');
             $weatherEffect.addClass('thunder_rain')
             if($body.hasClass('day')) {
                 $body.removeClass('day');
@@ -254,9 +256,44 @@ $(document).ready(function(){
                     }
                     break;
             }
-        } else if(weatherID >= 900 && weatherID <= 962){ //extreme weather
+        } else if(weatherID >= 900 && weatherID <= 962) { //extreme weather
+            if (weatherID >= 952 && weatherID <= 957 || weatherID == 905) { //windy/breeze
+                $weatherIcon.addClass("windIcon");
+                $extreme.addClass('windy');
+                if($body.hasClass('night')) {
+                    $stars.fadeIn(1700);
+                }
+            } else if(weatherID == 906) { //hail
+                $weatherIcon.addClass("snowIcon");
+                $weatherEffect.addClass("hail");
+                $clouds.addClass('clouds-overcast');
+                if($body.hasClass('day')) {
+                    $body.removeClass('day');
+                    $body.addClass('sky_overcast');
+                    $sunMoon.removeClass("sun");
+                } else {
+                    $body.removeClass('night');
+                    $sunMoon.removeClass("moon");
+                    $body.addClass('sky_overcast_night');
+                }
+            } else if (weatherID >= 900 && weatherID <= 902 || weatherID >= 958) { //tornado/hurricane/gale
+                $weatherIcon.addClass("windIcon");
+                $clouds.addClass('clouds-overcast');
+                $weatherEffect.addClass("rain");
+                $extreme.addClass('tornado');
+                if($body.hasClass('day')) {
+                    $body.removeClass('day');
+                    $body.addClass('sky_overcast');
+                    $sunMoon.removeClass("sun");
+                } else {
+                    $body.removeClass('night');
+                    $sunMoon.removeClass("moon");
+                    $body.addClass('sky_overcast_night');
+                }
+            }
 
         }
+
     }
 
 });

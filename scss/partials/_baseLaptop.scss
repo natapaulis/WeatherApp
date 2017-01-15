@@ -125,6 +125,9 @@ input[type=text] {
 .mistIcon {
     background: url(../images/weather_mist.png) 0 0 no-repeat;
 }
+.windIcon {
+    background: url(../images/weather_wind.png) 0 0 no-repeat;
+}
 
 $j: 0;
 @for $i from 1 through 8 {
@@ -378,6 +381,56 @@ $j: 0;
     }
 }
 
+.thunder_rain {
+    div {
+        border-left: 2px solid white;
+    }
+    @for $i from 1 through 99 {
+        div:nth-child(#{$i}) {
+            left: random(100)* 1%;
+            @include animation(falling 5s $i * .2s linear infinite backwards);
+        }
+    }
+    div:nth-child(2n + 1) {
+        height: 35px;;
+    }
+    div:nth-child(3n) {
+        height: 25px;
+    }
+    div:nth-child(5n) {
+        height: 20px;
+        border-color: #b3d0eb;
+    }
+}
+
+.hail {
+    div {
+        width: 15px;
+        height: 15px;
+        @include radius(200px 200px 200px 200px);
+        background-color: #f7f7f7;
+        border: 3px solid #a4b4bf;
+    }
+    @for $i from 1 through 72 {
+        div:nth-child(#{$i}) {
+            left: random(100)* 1%;
+            @include animation(falling 5s $i * .6s linear infinite backwards);
+        }
+    }
+    div:nth-child(2n + 1) {
+        width: 10px;
+        height: 10px;
+    }
+    div:nth-child(3n) {
+        width: 8px;
+        height: 8px;
+    }
+    div:nth-child(5n) {
+        width: 5px;
+        height: 5px;
+    }
+}
+
 #clouds {
     div {
         position: absolute;
@@ -544,24 +597,33 @@ $j: 0;
     }
 }
 
-.thunder_rain {
+
+
+.windy {
     div {
-        border-left: 2px solid white;
+        position: absolute;
     }
-    @for $i from 1 through 99 {
-        div:nth-child(#{$i}) {
-            left: random(100)* 1%;
-            @include animation(falling 5s $i * .2s linear infinite backwards);
-        }
+    div:nth-child(1) {
+        background: transparent url(../images/wind.png) 0 0 no-repeat;
+        background-size: contain;
+        width: 400px;
+        height: 400px;
+        transform: rotate(-40deg);
+        left: 0;
+        top: 45%;
     }
-    div:nth-child(2n + 1) {
-        height: 35px;;
+}
+
+.tornado {
+    div {
+        position: absolute;
     }
-    div:nth-child(3n) {
-        height: 25px;
-    }
-    div:nth-child(5n) {
-        height: 20px;
-        border-color: #b3d0eb;
+    div:nth-child(1) {
+        background: transparent url(../images/tornado.png) 0 0 no-repeat;
+        background-size: contain;
+        width: 400px;
+        height: 400px;
+        transform: rotate(30deg);
+        left: 0;
     }
 }

@@ -143,6 +143,9 @@ input[type=text] {
 .mistIcon {
   background: url(../images/weather_mist.png) 0 0 no-repeat; }
 
+.windIcon {
+  background: url(../images/weather_wind.png) 0 0 no-repeat; }
+
 span:nth-child(1) {
   animation: flipSide 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 0 both; }
 
@@ -336,113 +339,113 @@ span:nth-child(8) {
     -moz-box-shadow: 0px 0px 2px 2px rgba(255, 204, 85, 0.75);
     box-shadow: 0px 0px 2px 2px rgba(255, 204, 85, 0.75); }
   .star div:nth-child(1) {
-    top: 33%;
-    left: 50%; }
-  .star div:nth-child(2) {
-    top: 1%;
-    left: 15%; }
-  .star div:nth-child(3) {
-    top: 94%;
-    left: 76%; }
-  .star div:nth-child(4) {
-    top: 24%;
+    top: 32%;
     left: 53%; }
-  .star div:nth-child(5) {
-    top: 27%;
-    left: 48%; }
-  .star div:nth-child(6) {
-    top: 10%;
-    left: 74%; }
-  .star div:nth-child(7) {
-    top: 99%;
-    left: 96%; }
-  .star div:nth-child(8) {
-    top: 58%;
-    left: 57%; }
-  .star div:nth-child(9) {
-    top: 69%;
-    left: 82%; }
-  .star div:nth-child(10) {
-    top: 79%;
-    left: 10%; }
-  .star div:nth-child(11) {
-    top: 2%;
-    left: 74%; }
-  .star div:nth-child(12) {
-    top: 17%;
-    left: 88%; }
-  .star div:nth-child(13) {
-    top: 76%;
-    left: 86%; }
-  .star div:nth-child(14) {
-    top: 57%;
-    left: 85%; }
-  .star div:nth-child(15) {
-    top: 97%;
-    left: 1%; }
-  .star div:nth-child(16) {
-    top: 2%;
-    left: 47%; }
-  .star div:nth-child(17) {
-    top: 48%;
-    left: 16%; }
-  .star div:nth-child(18) {
-    top: 39%;
-    left: 87%; }
-  .star div:nth-child(19) {
-    top: 85%;
-    left: 15%; }
-  .star div:nth-child(20) {
-    top: 77%;
-    left: 69%; }
-  .star div:nth-child(21) {
-    top: 83%;
-    left: 71%; }
-  .star div:nth-child(22) {
-    top: 29%;
-    left: 68%; }
-  .star div:nth-child(23) {
-    top: 73%;
-    left: 4%; }
-  .star div:nth-child(24) {
-    top: 73%;
-    left: 19%; }
-  .star div:nth-child(25) {
-    top: 76%;
-    left: 64%; }
-  .star div:nth-child(26) {
-    top: 23%;
-    left: 71%; }
-  .star div:nth-child(27) {
-    top: 59%;
-    left: 74%; }
-  .star div:nth-child(28) {
-    top: 3%;
-    left: 21%; }
-  .star div:nth-child(29) {
-    top: 49%;
-    left: 37%; }
-  .star div:nth-child(30) {
-    top: 65%;
+  .star div:nth-child(2) {
+    top: 4%;
+    left: 6%; }
+  .star div:nth-child(3) {
+    top: 78%;
+    left: 25%; }
+  .star div:nth-child(4) {
+    top: 53%;
     left: 13%; }
-  .star div:nth-child(31) {
-    top: 34%;
-    left: 22%; }
-  .star div:nth-child(32) {
-    top: 64%;
-    left: 75%; }
-  .star div:nth-child(33) {
+  .star div:nth-child(5) {
+    top: 43%;
+    left: 6%; }
+  .star div:nth-child(6) {
+    top: 18%;
+    left: 54%; }
+  .star div:nth-child(7) {
+    top: 76%;
+    left: 67%; }
+  .star div:nth-child(8) {
     top: 95%;
-    left: 77%; }
-  .star div:nth-child(34) {
-    top: 7%;
-    left: 97%; }
-  .star div:nth-child(35) {
-    top: 37%;
-    left: 45%; }
-  .star div:nth-child(36) {
-    top: 84%;
+    left: 71%; }
+  .star div:nth-child(9) {
+    top: 58%;
+    left: 85%; }
+  .star div:nth-child(10) {
+    top: 25%;
+    left: 53%; }
+  .star div:nth-child(11) {
+    top: 57%;
+    left: 89%; }
+  .star div:nth-child(12) {
+    top: 66%;
+    left: 94%; }
+  .star div:nth-child(13) {
+    top: 26%;
+    left: 81%; }
+  .star div:nth-child(14) {
+    top: 75%;
+    left: 17%; }
+  .star div:nth-child(15) {
+    top: 30%;
+    left: 38%; }
+  .star div:nth-child(16) {
+    top: 57%;
+    left: 78%; }
+  .star div:nth-child(17) {
+    top: 97%;
+    left: 9%; }
+  .star div:nth-child(18) {
+    top: 3%;
+    left: 50%; }
+  .star div:nth-child(19) {
+    top: 28%;
     left: 26%; }
+  .star div:nth-child(20) {
+    top: 67%;
+    left: 67%; }
+  .star div:nth-child(21) {
+    top: 70%;
+    left: 16%; }
+  .star div:nth-child(22) {
+    top: 69%;
+    left: 76%; }
+  .star div:nth-child(23) {
+    top: 56%;
+    left: 22%; }
+  .star div:nth-child(24) {
+    top: 48%;
+    left: 56%; }
+  .star div:nth-child(25) {
+    top: 29%;
+    left: 16%; }
+  .star div:nth-child(26) {
+    top: 88%;
+    left: 95%; }
+  .star div:nth-child(27) {
+    top: 17%;
+    left: 62%; }
+  .star div:nth-child(28) {
+    top: 100%;
+    left: 35%; }
+  .star div:nth-child(29) {
+    top: 16%;
+    left: 65%; }
+  .star div:nth-child(30) {
+    top: 42%;
+    left: 50%; }
+  .star div:nth-child(31) {
+    top: 58%;
+    left: 78%; }
+  .star div:nth-child(32) {
+    top: 25%;
+    left: 3%; }
+  .star div:nth-child(33) {
+    top: 65%;
+    left: 21%; }
+  .star div:nth-child(34) {
+    top: 40%;
+    left: 78%; }
+  .star div:nth-child(35) {
+    top: 20%;
+    left: 53%; }
+  .star div:nth-child(36) {
+    top: 66%;
+    left: 86%; }
 
 #weather div {
   position: absolute;
@@ -455,433 +458,433 @@ span:nth-child(8) {
   background-size: contain; }
 
 .snow div:nth-child(1) {
-  left: 97%;
+  left: 88%;
   -webkit-box-animation: falling 10s 0.5s linear infinite backwards;
   -moz-box-animation: falling 10s 0.5s linear infinite backwards;
   animation: falling 10s 0.5s linear infinite backwards; }
 
 .snow div:nth-child(2) {
-  left: 39%;
+  left: 25%;
   -webkit-box-animation: falling 10s 1s linear infinite backwards;
   -moz-box-animation: falling 10s 1s linear infinite backwards;
   animation: falling 10s 1s linear infinite backwards; }
 
 .snow div:nth-child(3) {
-  left: 16%;
+  left: 86%;
   -webkit-box-animation: falling 10s 1.5s linear infinite backwards;
   -moz-box-animation: falling 10s 1.5s linear infinite backwards;
   animation: falling 10s 1.5s linear infinite backwards; }
 
 .snow div:nth-child(4) {
-  left: 93%;
+  left: 32%;
   -webkit-box-animation: falling 10s 2s linear infinite backwards;
   -moz-box-animation: falling 10s 2s linear infinite backwards;
   animation: falling 10s 2s linear infinite backwards; }
 
 .snow div:nth-child(5) {
-  left: 48%;
+  left: 55%;
   -webkit-box-animation: falling 10s 2.5s linear infinite backwards;
   -moz-box-animation: falling 10s 2.5s linear infinite backwards;
   animation: falling 10s 2.5s linear infinite backwards; }
 
 .snow div:nth-child(6) {
-  left: 42%;
+  left: 85%;
   -webkit-box-animation: falling 10s 3s linear infinite backwards;
   -moz-box-animation: falling 10s 3s linear infinite backwards;
   animation: falling 10s 3s linear infinite backwards; }
 
 .snow div:nth-child(7) {
-  left: 86%;
+  left: 27%;
   -webkit-box-animation: falling 10s 3.5s linear infinite backwards;
   -moz-box-animation: falling 10s 3.5s linear infinite backwards;
   animation: falling 10s 3.5s linear infinite backwards; }
 
 .snow div:nth-child(8) {
-  left: 33%;
+  left: 83%;
   -webkit-box-animation: falling 10s 4s linear infinite backwards;
   -moz-box-animation: falling 10s 4s linear infinite backwards;
   animation: falling 10s 4s linear infinite backwards; }
 
 .snow div:nth-child(9) {
-  left: 11%;
+  left: 82%;
   -webkit-box-animation: falling 10s 4.5s linear infinite backwards;
   -moz-box-animation: falling 10s 4.5s linear infinite backwards;
   animation: falling 10s 4.5s linear infinite backwards; }
 
 .snow div:nth-child(10) {
-  left: 74%;
+  left: 85%;
   -webkit-box-animation: falling 10s 5s linear infinite backwards;
   -moz-box-animation: falling 10s 5s linear infinite backwards;
   animation: falling 10s 5s linear infinite backwards; }
 
 .snow div:nth-child(11) {
-  left: 49%;
+  left: 55%;
   -webkit-box-animation: falling 10s 5.5s linear infinite backwards;
   -moz-box-animation: falling 10s 5.5s linear infinite backwards;
   animation: falling 10s 5.5s linear infinite backwards; }
 
 .snow div:nth-child(12) {
-  left: 40%;
+  left: 98%;
   -webkit-box-animation: falling 10s 6s linear infinite backwards;
   -moz-box-animation: falling 10s 6s linear infinite backwards;
   animation: falling 10s 6s linear infinite backwards; }
 
 .snow div:nth-child(13) {
-  left: 95%;
+  left: 31%;
   -webkit-box-animation: falling 10s 6.5s linear infinite backwards;
   -moz-box-animation: falling 10s 6.5s linear infinite backwards;
   animation: falling 10s 6.5s linear infinite backwards; }
 
 .snow div:nth-child(14) {
-  left: 12%;
+  left: 83%;
   -webkit-box-animation: falling 10s 7s linear infinite backwards;
   -moz-box-animation: falling 10s 7s linear infinite backwards;
   animation: falling 10s 7s linear infinite backwards; }
 
 .snow div:nth-child(15) {
-  left: 98%;
+  left: 16%;
   -webkit-box-animation: falling 10s 7.5s linear infinite backwards;
   -moz-box-animation: falling 10s 7.5s linear infinite backwards;
   animation: falling 10s 7.5s linear infinite backwards; }
 
 .snow div:nth-child(16) {
-  left: 81%;
+  left: 69%;
   -webkit-box-animation: falling 10s 8s linear infinite backwards;
   -moz-box-animation: falling 10s 8s linear infinite backwards;
   animation: falling 10s 8s linear infinite backwards; }
 
 .snow div:nth-child(17) {
-  left: 63%;
+  left: 7%;
   -webkit-box-animation: falling 10s 8.5s linear infinite backwards;
   -moz-box-animation: falling 10s 8.5s linear infinite backwards;
   animation: falling 10s 8.5s linear infinite backwards; }
 
 .snow div:nth-child(18) {
-  left: 85%;
+  left: 1%;
   -webkit-box-animation: falling 10s 9s linear infinite backwards;
   -moz-box-animation: falling 10s 9s linear infinite backwards;
   animation: falling 10s 9s linear infinite backwards; }
 
 .snow div:nth-child(19) {
-  left: 75%;
+  left: 3%;
   -webkit-box-animation: falling 10s 9.5s linear infinite backwards;
   -moz-box-animation: falling 10s 9.5s linear infinite backwards;
   animation: falling 10s 9.5s linear infinite backwards; }
 
 .snow div:nth-child(20) {
-  left: 5%;
+  left: 57%;
   -webkit-box-animation: falling 10s 10s linear infinite backwards;
   -moz-box-animation: falling 10s 10s linear infinite backwards;
   animation: falling 10s 10s linear infinite backwards; }
 
 .snow div:nth-child(21) {
-  left: 31%;
+  left: 6%;
   -webkit-box-animation: falling 10s 10.5s linear infinite backwards;
   -moz-box-animation: falling 10s 10.5s linear infinite backwards;
   animation: falling 10s 10.5s linear infinite backwards; }
 
 .snow div:nth-child(22) {
-  left: 43%;
+  left: 4%;
   -webkit-box-animation: falling 10s 11s linear infinite backwards;
   -moz-box-animation: falling 10s 11s linear infinite backwards;
   animation: falling 10s 11s linear infinite backwards; }
 
 .snow div:nth-child(23) {
-  left: 97%;
+  left: 65%;
   -webkit-box-animation: falling 10s 11.5s linear infinite backwards;
   -moz-box-animation: falling 10s 11.5s linear infinite backwards;
   animation: falling 10s 11.5s linear infinite backwards; }
 
 .snow div:nth-child(24) {
-  left: 45%;
+  left: 30%;
   -webkit-box-animation: falling 10s 12s linear infinite backwards;
   -moz-box-animation: falling 10s 12s linear infinite backwards;
   animation: falling 10s 12s linear infinite backwards; }
 
 .snow div:nth-child(25) {
-  left: 1%;
+  left: 27%;
   -webkit-box-animation: falling 10s 12.5s linear infinite backwards;
   -moz-box-animation: falling 10s 12.5s linear infinite backwards;
   animation: falling 10s 12.5s linear infinite backwards; }
 
 .snow div:nth-child(26) {
-  left: 28%;
+  left: 38%;
   -webkit-box-animation: falling 10s 13s linear infinite backwards;
   -moz-box-animation: falling 10s 13s linear infinite backwards;
   animation: falling 10s 13s linear infinite backwards; }
 
 .snow div:nth-child(27) {
-  left: 21%;
+  left: 69%;
   -webkit-box-animation: falling 10s 13.5s linear infinite backwards;
   -moz-box-animation: falling 10s 13.5s linear infinite backwards;
   animation: falling 10s 13.5s linear infinite backwards; }
 
 .snow div:nth-child(28) {
-  left: 19%;
+  left: 25%;
   -webkit-box-animation: falling 10s 14s linear infinite backwards;
   -moz-box-animation: falling 10s 14s linear infinite backwards;
   animation: falling 10s 14s linear infinite backwards; }
 
 .snow div:nth-child(29) {
-  left: 3%;
+  left: 8%;
   -webkit-box-animation: falling 10s 14.5s linear infinite backwards;
   -moz-box-animation: falling 10s 14.5s linear infinite backwards;
   animation: falling 10s 14.5s linear infinite backwards; }
 
 .snow div:nth-child(30) {
-  left: 54%;
+  left: 18%;
   -webkit-box-animation: falling 10s 15s linear infinite backwards;
   -moz-box-animation: falling 10s 15s linear infinite backwards;
   animation: falling 10s 15s linear infinite backwards; }
 
 .snow div:nth-child(31) {
-  left: 61%;
+  left: 10%;
   -webkit-box-animation: falling 10s 15.5s linear infinite backwards;
   -moz-box-animation: falling 10s 15.5s linear infinite backwards;
   animation: falling 10s 15.5s linear infinite backwards; }
 
 .snow div:nth-child(32) {
-  left: 50%;
+  left: 30%;
   -webkit-box-animation: falling 10s 16s linear infinite backwards;
   -moz-box-animation: falling 10s 16s linear infinite backwards;
   animation: falling 10s 16s linear infinite backwards; }
 
 .snow div:nth-child(33) {
-  left: 60%;
+  left: 52%;
   -webkit-box-animation: falling 10s 16.5s linear infinite backwards;
   -moz-box-animation: falling 10s 16.5s linear infinite backwards;
   animation: falling 10s 16.5s linear infinite backwards; }
 
 .snow div:nth-child(34) {
-  left: 30%;
+  left: 31%;
   -webkit-box-animation: falling 10s 17s linear infinite backwards;
   -moz-box-animation: falling 10s 17s linear infinite backwards;
   animation: falling 10s 17s linear infinite backwards; }
 
 .snow div:nth-child(35) {
-  left: 75%;
+  left: 93%;
   -webkit-box-animation: falling 10s 17.5s linear infinite backwards;
   -moz-box-animation: falling 10s 17.5s linear infinite backwards;
   animation: falling 10s 17.5s linear infinite backwards; }
 
 .snow div:nth-child(36) {
-  left: 61%;
+  left: 18%;
   -webkit-box-animation: falling 10s 18s linear infinite backwards;
   -moz-box-animation: falling 10s 18s linear infinite backwards;
   animation: falling 10s 18s linear infinite backwards; }
 
 .snow div:nth-child(37) {
-  left: 59%;
+  left: 13%;
   -webkit-box-animation: falling 10s 18.5s linear infinite backwards;
   -moz-box-animation: falling 10s 18.5s linear infinite backwards;
   animation: falling 10s 18.5s linear infinite backwards; }
 
 .snow div:nth-child(38) {
-  left: 25%;
+  left: 21%;
   -webkit-box-animation: falling 10s 19s linear infinite backwards;
   -moz-box-animation: falling 10s 19s linear infinite backwards;
   animation: falling 10s 19s linear infinite backwards; }
 
 .snow div:nth-child(39) {
-  left: 52%;
+  left: 48%;
   -webkit-box-animation: falling 10s 19.5s linear infinite backwards;
   -moz-box-animation: falling 10s 19.5s linear infinite backwards;
   animation: falling 10s 19.5s linear infinite backwards; }
 
 .snow div:nth-child(40) {
-  left: 79%;
+  left: 2%;
   -webkit-box-animation: falling 10s 20s linear infinite backwards;
   -moz-box-animation: falling 10s 20s linear infinite backwards;
   animation: falling 10s 20s linear infinite backwards; }
 
 .snow div:nth-child(41) {
-  left: 94%;
+  left: 73%;
   -webkit-box-animation: falling 10s 20.5s linear infinite backwards;
   -moz-box-animation: falling 10s 20.5s linear infinite backwards;
   animation: falling 10s 20.5s linear infinite backwards; }
 
 .snow div:nth-child(42) {
-  left: 60%;
+  left: 43%;
   -webkit-box-animation: falling 10s 21s linear infinite backwards;
   -moz-box-animation: falling 10s 21s linear infinite backwards;
   animation: falling 10s 21s linear infinite backwards; }
 
 .snow div:nth-child(43) {
-  left: 71%;
+  left: 11%;
   -webkit-box-animation: falling 10s 21.5s linear infinite backwards;
   -moz-box-animation: falling 10s 21.5s linear infinite backwards;
   animation: falling 10s 21.5s linear infinite backwards; }
 
 .snow div:nth-child(44) {
-  left: 97%;
+  left: 89%;
   -webkit-box-animation: falling 10s 22s linear infinite backwards;
   -moz-box-animation: falling 10s 22s linear infinite backwards;
   animation: falling 10s 22s linear infinite backwards; }
 
 .snow div:nth-child(45) {
-  left: 15%;
+  left: 49%;
   -webkit-box-animation: falling 10s 22.5s linear infinite backwards;
   -moz-box-animation: falling 10s 22.5s linear infinite backwards;
   animation: falling 10s 22.5s linear infinite backwards; }
 
 .snow div:nth-child(46) {
-  left: 90%;
+  left: 69%;
   -webkit-box-animation: falling 10s 23s linear infinite backwards;
   -moz-box-animation: falling 10s 23s linear infinite backwards;
   animation: falling 10s 23s linear infinite backwards; }
 
 .snow div:nth-child(47) {
-  left: 2%;
+  left: 88%;
   -webkit-box-animation: falling 10s 23.5s linear infinite backwards;
   -moz-box-animation: falling 10s 23.5s linear infinite backwards;
   animation: falling 10s 23.5s linear infinite backwards; }
 
 .snow div:nth-child(48) {
-  left: 93%;
+  left: 55%;
   -webkit-box-animation: falling 10s 24s linear infinite backwards;
   -moz-box-animation: falling 10s 24s linear infinite backwards;
   animation: falling 10s 24s linear infinite backwards; }
 
 .snow div:nth-child(49) {
-  left: 15%;
+  left: 7%;
   -webkit-box-animation: falling 10s 24.5s linear infinite backwards;
   -moz-box-animation: falling 10s 24.5s linear infinite backwards;
   animation: falling 10s 24.5s linear infinite backwards; }
 
 .snow div:nth-child(50) {
-  left: 22%;
+  left: 23%;
   -webkit-box-animation: falling 10s 25s linear infinite backwards;
   -moz-box-animation: falling 10s 25s linear infinite backwards;
   animation: falling 10s 25s linear infinite backwards; }
 
 .snow div:nth-child(51) {
-  left: 100%;
+  left: 47%;
   -webkit-box-animation: falling 10s 25.5s linear infinite backwards;
   -moz-box-animation: falling 10s 25.5s linear infinite backwards;
   animation: falling 10s 25.5s linear infinite backwards; }
 
 .snow div:nth-child(52) {
-  left: 86%;
+  left: 6%;
   -webkit-box-animation: falling 10s 26s linear infinite backwards;
   -moz-box-animation: falling 10s 26s linear infinite backwards;
   animation: falling 10s 26s linear infinite backwards; }
 
 .snow div:nth-child(53) {
-  left: 28%;
+  left: 31%;
   -webkit-box-animation: falling 10s 26.5s linear infinite backwards;
   -moz-box-animation: falling 10s 26.5s linear infinite backwards;
   animation: falling 10s 26.5s linear infinite backwards; }
 
 .snow div:nth-child(54) {
-  left: 35%;
+  left: 19%;
   -webkit-box-animation: falling 10s 27s linear infinite backwards;
   -moz-box-animation: falling 10s 27s linear infinite backwards;
   animation: falling 10s 27s linear infinite backwards; }
 
 .snow div:nth-child(55) {
-  left: 18%;
+  left: 88%;
   -webkit-box-animation: falling 10s 27.5s linear infinite backwards;
   -moz-box-animation: falling 10s 27.5s linear infinite backwards;
   animation: falling 10s 27.5s linear infinite backwards; }
 
 .snow div:nth-child(56) {
-  left: 77%;
+  left: 80%;
   -webkit-box-animation: falling 10s 28s linear infinite backwards;
   -moz-box-animation: falling 10s 28s linear infinite backwards;
   animation: falling 10s 28s linear infinite backwards; }
 
 .snow div:nth-child(57) {
-  left: 91%;
+  left: 33%;
   -webkit-box-animation: falling 10s 28.5s linear infinite backwards;
   -moz-box-animation: falling 10s 28.5s linear infinite backwards;
   animation: falling 10s 28.5s linear infinite backwards; }
 
 .snow div:nth-child(58) {
-  left: 35%;
+  left: 69%;
   -webkit-box-animation: falling 10s 29s linear infinite backwards;
   -moz-box-animation: falling 10s 29s linear infinite backwards;
   animation: falling 10s 29s linear infinite backwards; }
 
 .snow div:nth-child(59) {
-  left: 20%;
+  left: 98%;
   -webkit-box-animation: falling 10s 29.5s linear infinite backwards;
   -moz-box-animation: falling 10s 29.5s linear infinite backwards;
   animation: falling 10s 29.5s linear infinite backwards; }
 
 .snow div:nth-child(60) {
-  left: 54%;
+  left: 73%;
   -webkit-box-animation: falling 10s 30s linear infinite backwards;
   -moz-box-animation: falling 10s 30s linear infinite backwards;
   animation: falling 10s 30s linear infinite backwards; }
 
 .snow div:nth-child(61) {
-  left: 37%;
+  left: 4%;
   -webkit-box-animation: falling 10s 30.5s linear infinite backwards;
   -moz-box-animation: falling 10s 30.5s linear infinite backwards;
   animation: falling 10s 30.5s linear infinite backwards; }
 
 .snow div:nth-child(62) {
-  left: 48%;
+  left: 96%;
   -webkit-box-animation: falling 10s 31s linear infinite backwards;
   -moz-box-animation: falling 10s 31s linear infinite backwards;
   animation: falling 10s 31s linear infinite backwards; }
 
 .snow div:nth-child(63) {
-  left: 76%;
+  left: 40%;
   -webkit-box-animation: falling 10s 31.5s linear infinite backwards;
   -moz-box-animation: falling 10s 31.5s linear infinite backwards;
   animation: falling 10s 31.5s linear infinite backwards; }
 
 .snow div:nth-child(64) {
-  left: 38%;
+  left: 40%;
   -webkit-box-animation: falling 10s 32s linear infinite backwards;
   -moz-box-animation: falling 10s 32s linear infinite backwards;
   animation: falling 10s 32s linear infinite backwards; }
 
 .snow div:nth-child(65) {
-  left: 39%;
+  left: 55%;
   -webkit-box-animation: falling 10s 32.5s linear infinite backwards;
   -moz-box-animation: falling 10s 32.5s linear infinite backwards;
   animation: falling 10s 32.5s linear infinite backwards; }
 
 .snow div:nth-child(66) {
-  left: 20%;
+  left: 81%;
   -webkit-box-animation: falling 10s 33s linear infinite backwards;
   -moz-box-animation: falling 10s 33s linear infinite backwards;
   animation: falling 10s 33s linear infinite backwards; }
 
 .snow div:nth-child(67) {
-  left: 2%;
+  left: 44%;
   -webkit-box-animation: falling 10s 33.5s linear infinite backwards;
   -moz-box-animation: falling 10s 33.5s linear infinite backwards;
   animation: falling 10s 33.5s linear infinite backwards; }
 
 .snow div:nth-child(68) {
-  left: 77%;
+  left: 63%;
   -webkit-box-animation: falling 10s 34s linear infinite backwards;
   -moz-box-animation: falling 10s 34s linear infinite backwards;
   animation: falling 10s 34s linear infinite backwards; }
 
 .snow div:nth-child(69) {
-  left: 22%;
+  left: 33%;
   -webkit-box-animation: falling 10s 34.5s linear infinite backwards;
   -moz-box-animation: falling 10s 34.5s linear infinite backwards;
   animation: falling 10s 34.5s linear infinite backwards; }
 
 .snow div:nth-child(70) {
-  left: 69%;
+  left: 36%;
   -webkit-box-animation: falling 10s 35s linear infinite backwards;
   -moz-box-animation: falling 10s 35s linear infinite backwards;
   animation: falling 10s 35s linear infinite backwards; }
 
 .snow div:nth-child(71) {
-  left: 55%;
+  left: 77%;
   -webkit-box-animation: falling 10s 35.5s linear infinite backwards;
   -moz-box-animation: falling 10s 35.5s linear infinite backwards;
   animation: falling 10s 35.5s linear infinite backwards; }
 
 .snow div:nth-child(72) {
-  left: 28%;
+  left: 95%;
   -webkit-box-animation: falling 10s 36s linear infinite backwards;
   -moz-box-animation: falling 10s 36s linear infinite backwards;
   animation: falling 10s 36s linear infinite backwards; }
@@ -905,43 +908,43 @@ span:nth-child(8) {
   background-size: contain; }
 
 .rain div:nth-child(1) {
-  left: 28%;
+  left: 97%;
   -webkit-box-animation: falling 5s 0.2s linear infinite backwards;
   -moz-box-animation: falling 5s 0.2s linear infinite backwards;
   animation: falling 5s 0.2s linear infinite backwards; }
 
 .rain div:nth-child(2) {
-  left: 28%;
+  left: 46%;
   -webkit-box-animation: falling 5s 0.4s linear infinite backwards;
   -moz-box-animation: falling 5s 0.4s linear infinite backwards;
   animation: falling 5s 0.4s linear infinite backwards; }
 
 .rain div:nth-child(3) {
-  left: 53%;
+  left: 21%;
   -webkit-box-animation: falling 5s 0.6s linear infinite backwards;
   -moz-box-animation: falling 5s 0.6s linear infinite backwards;
   animation: falling 5s 0.6s linear infinite backwards; }
 
 .rain div:nth-child(4) {
-  left: 15%;
+  left: 95%;
   -webkit-box-animation: falling 5s 0.8s linear infinite backwards;
   -moz-box-animation: falling 5s 0.8s linear infinite backwards;
   animation: falling 5s 0.8s linear infinite backwards; }
 
 .rain div:nth-child(5) {
-  left: 47%;
+  left: 16%;
   -webkit-box-animation: falling 5s 1s linear infinite backwards;
   -moz-box-animation: falling 5s 1s linear infinite backwards;
   animation: falling 5s 1s linear infinite backwards; }
 
 .rain div:nth-child(6) {
-  left: 16%;
+  left: 61%;
   -webkit-box-animation: falling 5s 1.2s linear infinite backwards;
   -moz-box-animation: falling 5s 1.2s linear infinite backwards;
   animation: falling 5s 1.2s linear infinite backwards; }
 
 .rain div:nth-child(7) {
-  left: 58%;
+  left: 27%;
   -webkit-box-animation: falling 5s 1.4s linear infinite backwards;
   -moz-box-animation: falling 5s 1.4s linear infinite backwards;
   animation: falling 5s 1.4s linear infinite backwards; }
@@ -953,343 +956,343 @@ span:nth-child(8) {
   animation: falling 5s 1.6s linear infinite backwards; }
 
 .rain div:nth-child(9) {
-  left: 54%;
+  left: 95%;
   -webkit-box-animation: falling 5s 1.8s linear infinite backwards;
   -moz-box-animation: falling 5s 1.8s linear infinite backwards;
   animation: falling 5s 1.8s linear infinite backwards; }
 
 .rain div:nth-child(10) {
-  left: 85%;
+  left: 78%;
   -webkit-box-animation: falling 5s 2s linear infinite backwards;
   -moz-box-animation: falling 5s 2s linear infinite backwards;
   animation: falling 5s 2s linear infinite backwards; }
 
 .rain div:nth-child(11) {
-  left: 95%;
+  left: 98%;
   -webkit-box-animation: falling 5s 2.2s linear infinite backwards;
   -moz-box-animation: falling 5s 2.2s linear infinite backwards;
   animation: falling 5s 2.2s linear infinite backwards; }
 
 .rain div:nth-child(12) {
-  left: 48%;
+  left: 1%;
   -webkit-box-animation: falling 5s 2.4s linear infinite backwards;
   -moz-box-animation: falling 5s 2.4s linear infinite backwards;
   animation: falling 5s 2.4s linear infinite backwards; }
 
 .rain div:nth-child(13) {
-  left: 61%;
+  left: 79%;
   -webkit-box-animation: falling 5s 2.6s linear infinite backwards;
   -moz-box-animation: falling 5s 2.6s linear infinite backwards;
   animation: falling 5s 2.6s linear infinite backwards; }
 
 .rain div:nth-child(14) {
-  left: 25%;
+  left: 51%;
   -webkit-box-animation: falling 5s 2.8s linear infinite backwards;
   -moz-box-animation: falling 5s 2.8s linear infinite backwards;
   animation: falling 5s 2.8s linear infinite backwards; }
 
 .rain div:nth-child(15) {
-  left: 21%;
+  left: 73%;
   -webkit-box-animation: falling 5s 3s linear infinite backwards;
   -moz-box-animation: falling 5s 3s linear infinite backwards;
   animation: falling 5s 3s linear infinite backwards; }
 
 .rain div:nth-child(16) {
-  left: 87%;
+  left: 82%;
   -webkit-box-animation: falling 5s 3.2s linear infinite backwards;
   -moz-box-animation: falling 5s 3.2s linear infinite backwards;
   animation: falling 5s 3.2s linear infinite backwards; }
 
 .rain div:nth-child(17) {
-  left: 86%;
+  left: 2%;
   -webkit-box-animation: falling 5s 3.4s linear infinite backwards;
   -moz-box-animation: falling 5s 3.4s linear infinite backwards;
   animation: falling 5s 3.4s linear infinite backwards; }
 
 .rain div:nth-child(18) {
-  left: 31%;
+  left: 34%;
   -webkit-box-animation: falling 5s 3.6s linear infinite backwards;
   -moz-box-animation: falling 5s 3.6s linear infinite backwards;
   animation: falling 5s 3.6s linear infinite backwards; }
 
 .rain div:nth-child(19) {
-  left: 74%;
+  left: 70%;
   -webkit-box-animation: falling 5s 3.8s linear infinite backwards;
   -moz-box-animation: falling 5s 3.8s linear infinite backwards;
   animation: falling 5s 3.8s linear infinite backwards; }
 
 .rain div:nth-child(20) {
-  left: 59%;
+  left: 20%;
   -webkit-box-animation: falling 5s 4s linear infinite backwards;
   -moz-box-animation: falling 5s 4s linear infinite backwards;
   animation: falling 5s 4s linear infinite backwards; }
 
 .rain div:nth-child(21) {
-  left: 66%;
+  left: 92%;
   -webkit-box-animation: falling 5s 4.2s linear infinite backwards;
   -moz-box-animation: falling 5s 4.2s linear infinite backwards;
   animation: falling 5s 4.2s linear infinite backwards; }
 
 .rain div:nth-child(22) {
-  left: 13%;
+  left: 7%;
   -webkit-box-animation: falling 5s 4.4s linear infinite backwards;
   -moz-box-animation: falling 5s 4.4s linear infinite backwards;
   animation: falling 5s 4.4s linear infinite backwards; }
 
 .rain div:nth-child(23) {
-  left: 66%;
+  left: 57%;
   -webkit-box-animation: falling 5s 4.6s linear infinite backwards;
   -moz-box-animation: falling 5s 4.6s linear infinite backwards;
   animation: falling 5s 4.6s linear infinite backwards; }
 
 .rain div:nth-child(24) {
-  left: 48%;
+  left: 74%;
   -webkit-box-animation: falling 5s 4.8s linear infinite backwards;
   -moz-box-animation: falling 5s 4.8s linear infinite backwards;
   animation: falling 5s 4.8s linear infinite backwards; }
 
 .rain div:nth-child(25) {
-  left: 27%;
+  left: 90%;
   -webkit-box-animation: falling 5s 5s linear infinite backwards;
   -moz-box-animation: falling 5s 5s linear infinite backwards;
   animation: falling 5s 5s linear infinite backwards; }
 
 .rain div:nth-child(26) {
-  left: 53%;
+  left: 28%;
   -webkit-box-animation: falling 5s 5.2s linear infinite backwards;
   -moz-box-animation: falling 5s 5.2s linear infinite backwards;
   animation: falling 5s 5.2s linear infinite backwards; }
 
 .rain div:nth-child(27) {
-  left: 57%;
+  left: 13%;
   -webkit-box-animation: falling 5s 5.4s linear infinite backwards;
   -moz-box-animation: falling 5s 5.4s linear infinite backwards;
   animation: falling 5s 5.4s linear infinite backwards; }
 
 .rain div:nth-child(28) {
-  left: 36%;
+  left: 35%;
   -webkit-box-animation: falling 5s 5.6s linear infinite backwards;
   -moz-box-animation: falling 5s 5.6s linear infinite backwards;
   animation: falling 5s 5.6s linear infinite backwards; }
 
 .rain div:nth-child(29) {
-  left: 7%;
+  left: 37%;
   -webkit-box-animation: falling 5s 5.8s linear infinite backwards;
   -moz-box-animation: falling 5s 5.8s linear infinite backwards;
   animation: falling 5s 5.8s linear infinite backwards; }
 
 .rain div:nth-child(30) {
-  left: 14%;
+  left: 3%;
   -webkit-box-animation: falling 5s 6s linear infinite backwards;
   -moz-box-animation: falling 5s 6s linear infinite backwards;
   animation: falling 5s 6s linear infinite backwards; }
 
 .rain div:nth-child(31) {
-  left: 93%;
+  left: 70%;
   -webkit-box-animation: falling 5s 6.2s linear infinite backwards;
   -moz-box-animation: falling 5s 6.2s linear infinite backwards;
   animation: falling 5s 6.2s linear infinite backwards; }
 
 .rain div:nth-child(32) {
-  left: 51%;
+  left: 4%;
   -webkit-box-animation: falling 5s 6.4s linear infinite backwards;
   -moz-box-animation: falling 5s 6.4s linear infinite backwards;
   animation: falling 5s 6.4s linear infinite backwards; }
 
 .rain div:nth-child(33) {
-  left: 32%;
+  left: 76%;
   -webkit-box-animation: falling 5s 6.6s linear infinite backwards;
   -moz-box-animation: falling 5s 6.6s linear infinite backwards;
   animation: falling 5s 6.6s linear infinite backwards; }
 
 .rain div:nth-child(34) {
-  left: 10%;
+  left: 23%;
   -webkit-box-animation: falling 5s 6.8s linear infinite backwards;
   -moz-box-animation: falling 5s 6.8s linear infinite backwards;
   animation: falling 5s 6.8s linear infinite backwards; }
 
 .rain div:nth-child(35) {
-  left: 72%;
+  left: 1%;
   -webkit-box-animation: falling 5s 7s linear infinite backwards;
   -moz-box-animation: falling 5s 7s linear infinite backwards;
   animation: falling 5s 7s linear infinite backwards; }
 
 .rain div:nth-child(36) {
-  left: 45%;
+  left: 75%;
   -webkit-box-animation: falling 5s 7.2s linear infinite backwards;
   -moz-box-animation: falling 5s 7.2s linear infinite backwards;
   animation: falling 5s 7.2s linear infinite backwards; }
 
 .rain div:nth-child(37) {
-  left: 78%;
+  left: 35%;
   -webkit-box-animation: falling 5s 7.4s linear infinite backwards;
   -moz-box-animation: falling 5s 7.4s linear infinite backwards;
   animation: falling 5s 7.4s linear infinite backwards; }
 
 .rain div:nth-child(38) {
-  left: 10%;
+  left: 57%;
   -webkit-box-animation: falling 5s 7.6s linear infinite backwards;
   -moz-box-animation: falling 5s 7.6s linear infinite backwards;
   animation: falling 5s 7.6s linear infinite backwards; }
 
 .rain div:nth-child(39) {
-  left: 91%;
+  left: 64%;
   -webkit-box-animation: falling 5s 7.8s linear infinite backwards;
   -moz-box-animation: falling 5s 7.8s linear infinite backwards;
   animation: falling 5s 7.8s linear infinite backwards; }
 
 .rain div:nth-child(40) {
-  left: 57%;
+  left: 72%;
   -webkit-box-animation: falling 5s 8s linear infinite backwards;
   -moz-box-animation: falling 5s 8s linear infinite backwards;
   animation: falling 5s 8s linear infinite backwards; }
 
 .rain div:nth-child(41) {
-  left: 48%;
+  left: 68%;
   -webkit-box-animation: falling 5s 8.2s linear infinite backwards;
   -moz-box-animation: falling 5s 8.2s linear infinite backwards;
   animation: falling 5s 8.2s linear infinite backwards; }
 
 .rain div:nth-child(42) {
-  left: 61%;
+  left: 70%;
   -webkit-box-animation: falling 5s 8.4s linear infinite backwards;
   -moz-box-animation: falling 5s 8.4s linear infinite backwards;
   animation: falling 5s 8.4s linear infinite backwards; }
 
 .rain div:nth-child(43) {
-  left: 66%;
+  left: 99%;
   -webkit-box-animation: falling 5s 8.6s linear infinite backwards;
   -moz-box-animation: falling 5s 8.6s linear infinite backwards;
   animation: falling 5s 8.6s linear infinite backwards; }
 
 .rain div:nth-child(44) {
-  left: 61%;
+  left: 59%;
   -webkit-box-animation: falling 5s 8.8s linear infinite backwards;
   -moz-box-animation: falling 5s 8.8s linear infinite backwards;
   animation: falling 5s 8.8s linear infinite backwards; }
 
 .rain div:nth-child(45) {
-  left: 71%;
+  left: 47%;
   -webkit-box-animation: falling 5s 9s linear infinite backwards;
   -moz-box-animation: falling 5s 9s linear infinite backwards;
   animation: falling 5s 9s linear infinite backwards; }
 
 .rain div:nth-child(46) {
-  left: 76%;
+  left: 60%;
   -webkit-box-animation: falling 5s 9.2s linear infinite backwards;
   -moz-box-animation: falling 5s 9.2s linear infinite backwards;
   animation: falling 5s 9.2s linear infinite backwards; }
 
 .rain div:nth-child(47) {
-  left: 85%;
+  left: 48%;
   -webkit-box-animation: falling 5s 9.4s linear infinite backwards;
   -moz-box-animation: falling 5s 9.4s linear infinite backwards;
   animation: falling 5s 9.4s linear infinite backwards; }
 
 .rain div:nth-child(48) {
-  left: 29%;
+  left: 42%;
   -webkit-box-animation: falling 5s 9.6s linear infinite backwards;
   -moz-box-animation: falling 5s 9.6s linear infinite backwards;
   animation: falling 5s 9.6s linear infinite backwards; }
 
 .rain div:nth-child(49) {
-  left: 73%;
+  left: 83%;
   -webkit-box-animation: falling 5s 9.8s linear infinite backwards;
   -moz-box-animation: falling 5s 9.8s linear infinite backwards;
   animation: falling 5s 9.8s linear infinite backwards; }
 
 .rain div:nth-child(50) {
-  left: 2%;
+  left: 41%;
   -webkit-box-animation: falling 5s 10s linear infinite backwards;
   -moz-box-animation: falling 5s 10s linear infinite backwards;
   animation: falling 5s 10s linear infinite backwards; }
 
 .rain div:nth-child(51) {
-  left: 63%;
+  left: 76%;
   -webkit-box-animation: falling 5s 10.2s linear infinite backwards;
   -moz-box-animation: falling 5s 10.2s linear infinite backwards;
   animation: falling 5s 10.2s linear infinite backwards; }
 
 .rain div:nth-child(52) {
-  left: 82%;
+  left: 91%;
   -webkit-box-animation: falling 5s 10.4s linear infinite backwards;
   -moz-box-animation: falling 5s 10.4s linear infinite backwards;
   animation: falling 5s 10.4s linear infinite backwards; }
 
 .rain div:nth-child(53) {
-  left: 42%;
+  left: 71%;
   -webkit-box-animation: falling 5s 10.6s linear infinite backwards;
   -moz-box-animation: falling 5s 10.6s linear infinite backwards;
   animation: falling 5s 10.6s linear infinite backwards; }
 
 .rain div:nth-child(54) {
-  left: 32%;
+  left: 86%;
   -webkit-box-animation: falling 5s 10.8s linear infinite backwards;
   -moz-box-animation: falling 5s 10.8s linear infinite backwards;
   animation: falling 5s 10.8s linear infinite backwards; }
 
 .rain div:nth-child(55) {
-  left: 53%;
+  left: 47%;
   -webkit-box-animation: falling 5s 11s linear infinite backwards;
   -moz-box-animation: falling 5s 11s linear infinite backwards;
   animation: falling 5s 11s linear infinite backwards; }
 
 .rain div:nth-child(56) {
-  left: 25%;
+  left: 96%;
   -webkit-box-animation: falling 5s 11.2s linear infinite backwards;
   -moz-box-animation: falling 5s 11.2s linear infinite backwards;
   animation: falling 5s 11.2s linear infinite backwards; }
 
 .rain div:nth-child(57) {
-  left: 87%;
+  left: 82%;
   -webkit-box-animation: falling 5s 11.4s linear infinite backwards;
   -moz-box-animation: falling 5s 11.4s linear infinite backwards;
   animation: falling 5s 11.4s linear infinite backwards; }
 
 .rain div:nth-child(58) {
-  left: 11%;
+  left: 100%;
   -webkit-box-animation: falling 5s 11.6s linear infinite backwards;
   -moz-box-animation: falling 5s 11.6s linear infinite backwards;
   animation: falling 5s 11.6s linear infinite backwards; }
 
 .rain div:nth-child(59) {
-  left: 12%;
+  left: 66%;
   -webkit-box-animation: falling 5s 11.8s linear infinite backwards;
   -moz-box-animation: falling 5s 11.8s linear infinite backwards;
   animation: falling 5s 11.8s linear infinite backwards; }
 
 .rain div:nth-child(60) {
-  left: 31%;
+  left: 98%;
   -webkit-box-animation: falling 5s 12s linear infinite backwards;
   -moz-box-animation: falling 5s 12s linear infinite backwards;
   animation: falling 5s 12s linear infinite backwards; }
 
 .rain div:nth-child(61) {
-  left: 18%;
+  left: 13%;
   -webkit-box-animation: falling 5s 12.2s linear infinite backwards;
   -moz-box-animation: falling 5s 12.2s linear infinite backwards;
   animation: falling 5s 12.2s linear infinite backwards; }
 
 .rain div:nth-child(62) {
-  left: 11%;
+  left: 6%;
   -webkit-box-animation: falling 5s 12.4s linear infinite backwards;
   -moz-box-animation: falling 5s 12.4s linear infinite backwards;
   animation: falling 5s 12.4s linear infinite backwards; }
 
 .rain div:nth-child(63) {
-  left: 68%;
+  left: 34%;
   -webkit-box-animation: falling 5s 12.6s linear infinite backwards;
   -moz-box-animation: falling 5s 12.6s linear infinite backwards;
   animation: falling 5s 12.6s linear infinite backwards; }
 
 .rain div:nth-child(64) {
-  left: 11%;
+  left: 94%;
   -webkit-box-animation: falling 5s 12.8s linear infinite backwards;
   -moz-box-animation: falling 5s 12.8s linear infinite backwards;
   animation: falling 5s 12.8s linear infinite backwards; }
 
 .rain div:nth-child(65) {
-  left: 32%;
+  left: 53%;
   -webkit-box-animation: falling 5s 13s linear infinite backwards;
   -moz-box-animation: falling 5s 13s linear infinite backwards;
   animation: falling 5s 13s linear infinite backwards; }
@@ -1301,37 +1304,37 @@ span:nth-child(8) {
   animation: falling 5s 13.2s linear infinite backwards; }
 
 .rain div:nth-child(67) {
-  left: 79%;
+  left: 58%;
   -webkit-box-animation: falling 5s 13.4s linear infinite backwards;
   -moz-box-animation: falling 5s 13.4s linear infinite backwards;
   animation: falling 5s 13.4s linear infinite backwards; }
 
 .rain div:nth-child(68) {
-  left: 60%;
+  left: 10%;
   -webkit-box-animation: falling 5s 13.6s linear infinite backwards;
   -moz-box-animation: falling 5s 13.6s linear infinite backwards;
   animation: falling 5s 13.6s linear infinite backwards; }
 
 .rain div:nth-child(69) {
-  left: 51%;
+  left: 9%;
   -webkit-box-animation: falling 5s 13.8s linear infinite backwards;
   -moz-box-animation: falling 5s 13.8s linear infinite backwards;
   animation: falling 5s 13.8s linear infinite backwards; }
 
 .rain div:nth-child(70) {
-  left: 65%;
+  left: 83%;
   -webkit-box-animation: falling 5s 14s linear infinite backwards;
   -moz-box-animation: falling 5s 14s linear infinite backwards;
   animation: falling 5s 14s linear infinite backwards; }
 
 .rain div:nth-child(71) {
-  left: 11%;
+  left: 74%;
   -webkit-box-animation: falling 5s 14.2s linear infinite backwards;
   -moz-box-animation: falling 5s 14.2s linear infinite backwards;
   animation: falling 5s 14.2s linear infinite backwards; }
 
 .rain div:nth-child(72) {
-  left: 18%;
+  left: 33%;
   -webkit-box-animation: falling 5s 14.4s linear infinite backwards;
   -moz-box-animation: falling 5s 14.4s linear infinite backwards;
   animation: falling 5s 14.4s linear infinite backwards; }
@@ -1353,391 +1356,391 @@ span:nth-child(8) {
   border-left: 2px solid white; }
 
 .drizzle div:nth-child(1) {
-  left: 29%;
+  left: 16%;
   -webkit-box-animation: falling 5s 0.2s linear infinite backwards;
   -moz-box-animation: falling 5s 0.2s linear infinite backwards;
   animation: falling 5s 0.2s linear infinite backwards; }
 
 .drizzle div:nth-child(2) {
-  left: 31%;
+  left: 68%;
   -webkit-box-animation: falling 5s 0.4s linear infinite backwards;
   -moz-box-animation: falling 5s 0.4s linear infinite backwards;
   animation: falling 5s 0.4s linear infinite backwards; }
 
 .drizzle div:nth-child(3) {
-  left: 57%;
+  left: 87%;
   -webkit-box-animation: falling 5s 0.6s linear infinite backwards;
   -moz-box-animation: falling 5s 0.6s linear infinite backwards;
   animation: falling 5s 0.6s linear infinite backwards; }
 
 .drizzle div:nth-child(4) {
-  left: 96%;
+  left: 9%;
   -webkit-box-animation: falling 5s 0.8s linear infinite backwards;
   -moz-box-animation: falling 5s 0.8s linear infinite backwards;
   animation: falling 5s 0.8s linear infinite backwards; }
 
 .drizzle div:nth-child(5) {
-  left: 36%;
+  left: 12%;
   -webkit-box-animation: falling 5s 1s linear infinite backwards;
   -moz-box-animation: falling 5s 1s linear infinite backwards;
   animation: falling 5s 1s linear infinite backwards; }
 
 .drizzle div:nth-child(6) {
-  left: 36%;
+  left: 74%;
   -webkit-box-animation: falling 5s 1.2s linear infinite backwards;
   -moz-box-animation: falling 5s 1.2s linear infinite backwards;
   animation: falling 5s 1.2s linear infinite backwards; }
 
 .drizzle div:nth-child(7) {
-  left: 56%;
+  left: 89%;
   -webkit-box-animation: falling 5s 1.4s linear infinite backwards;
   -moz-box-animation: falling 5s 1.4s linear infinite backwards;
   animation: falling 5s 1.4s linear infinite backwards; }
 
 .drizzle div:nth-child(8) {
-  left: 74%;
+  left: 96%;
   -webkit-box-animation: falling 5s 1.6s linear infinite backwards;
   -moz-box-animation: falling 5s 1.6s linear infinite backwards;
   animation: falling 5s 1.6s linear infinite backwards; }
 
 .drizzle div:nth-child(9) {
-  left: 50%;
+  left: 29%;
   -webkit-box-animation: falling 5s 1.8s linear infinite backwards;
   -moz-box-animation: falling 5s 1.8s linear infinite backwards;
   animation: falling 5s 1.8s linear infinite backwards; }
 
 .drizzle div:nth-child(10) {
-  left: 28%;
+  left: 58%;
   -webkit-box-animation: falling 5s 2s linear infinite backwards;
   -moz-box-animation: falling 5s 2s linear infinite backwards;
   animation: falling 5s 2s linear infinite backwards; }
 
 .drizzle div:nth-child(11) {
-  left: 14%;
+  left: 17%;
   -webkit-box-animation: falling 5s 2.2s linear infinite backwards;
   -moz-box-animation: falling 5s 2.2s linear infinite backwards;
   animation: falling 5s 2.2s linear infinite backwards; }
 
 .drizzle div:nth-child(12) {
-  left: 25%;
+  left: 44%;
   -webkit-box-animation: falling 5s 2.4s linear infinite backwards;
   -moz-box-animation: falling 5s 2.4s linear infinite backwards;
   animation: falling 5s 2.4s linear infinite backwards; }
 
 .drizzle div:nth-child(13) {
-  left: 38%;
+  left: 35%;
   -webkit-box-animation: falling 5s 2.6s linear infinite backwards;
   -moz-box-animation: falling 5s 2.6s linear infinite backwards;
   animation: falling 5s 2.6s linear infinite backwards; }
 
 .drizzle div:nth-child(14) {
-  left: 68%;
+  left: 18%;
   -webkit-box-animation: falling 5s 2.8s linear infinite backwards;
   -moz-box-animation: falling 5s 2.8s linear infinite backwards;
   animation: falling 5s 2.8s linear infinite backwards; }
 
 .drizzle div:nth-child(15) {
-  left: 25%;
+  left: 67%;
   -webkit-box-animation: falling 5s 3s linear infinite backwards;
   -moz-box-animation: falling 5s 3s linear infinite backwards;
   animation: falling 5s 3s linear infinite backwards; }
 
 .drizzle div:nth-child(16) {
-  left: 10%;
+  left: 17%;
   -webkit-box-animation: falling 5s 3.2s linear infinite backwards;
   -moz-box-animation: falling 5s 3.2s linear infinite backwards;
   animation: falling 5s 3.2s linear infinite backwards; }
 
 .drizzle div:nth-child(17) {
-  left: 30%;
+  left: 4%;
   -webkit-box-animation: falling 5s 3.4s linear infinite backwards;
   -moz-box-animation: falling 5s 3.4s linear infinite backwards;
   animation: falling 5s 3.4s linear infinite backwards; }
 
 .drizzle div:nth-child(18) {
-  left: 36%;
+  left: 1%;
   -webkit-box-animation: falling 5s 3.6s linear infinite backwards;
   -moz-box-animation: falling 5s 3.6s linear infinite backwards;
   animation: falling 5s 3.6s linear infinite backwards; }
 
 .drizzle div:nth-child(19) {
-  left: 57%;
+  left: 92%;
   -webkit-box-animation: falling 5s 3.8s linear infinite backwards;
   -moz-box-animation: falling 5s 3.8s linear infinite backwards;
   animation: falling 5s 3.8s linear infinite backwards; }
 
 .drizzle div:nth-child(20) {
-  left: 94%;
+  left: 40%;
   -webkit-box-animation: falling 5s 4s linear infinite backwards;
   -moz-box-animation: falling 5s 4s linear infinite backwards;
   animation: falling 5s 4s linear infinite backwards; }
 
 .drizzle div:nth-child(21) {
-  left: 95%;
+  left: 69%;
   -webkit-box-animation: falling 5s 4.2s linear infinite backwards;
   -moz-box-animation: falling 5s 4.2s linear infinite backwards;
   animation: falling 5s 4.2s linear infinite backwards; }
 
 .drizzle div:nth-child(22) {
-  left: 35%;
+  left: 29%;
   -webkit-box-animation: falling 5s 4.4s linear infinite backwards;
   -moz-box-animation: falling 5s 4.4s linear infinite backwards;
   animation: falling 5s 4.4s linear infinite backwards; }
 
 .drizzle div:nth-child(23) {
-  left: 80%;
+  left: 46%;
   -webkit-box-animation: falling 5s 4.6s linear infinite backwards;
   -moz-box-animation: falling 5s 4.6s linear infinite backwards;
   animation: falling 5s 4.6s linear infinite backwards; }
 
 .drizzle div:nth-child(24) {
-  left: 6%;
+  left: 7%;
   -webkit-box-animation: falling 5s 4.8s linear infinite backwards;
   -moz-box-animation: falling 5s 4.8s linear infinite backwards;
   animation: falling 5s 4.8s linear infinite backwards; }
 
 .drizzle div:nth-child(25) {
-  left: 93%;
+  left: 82%;
   -webkit-box-animation: falling 5s 5s linear infinite backwards;
   -moz-box-animation: falling 5s 5s linear infinite backwards;
   animation: falling 5s 5s linear infinite backwards; }
 
 .drizzle div:nth-child(26) {
-  left: 46%;
+  left: 61%;
   -webkit-box-animation: falling 5s 5.2s linear infinite backwards;
   -moz-box-animation: falling 5s 5.2s linear infinite backwards;
   animation: falling 5s 5.2s linear infinite backwards; }
 
 .drizzle div:nth-child(27) {
-  left: 71%;
+  left: 87%;
   -webkit-box-animation: falling 5s 5.4s linear infinite backwards;
   -moz-box-animation: falling 5s 5.4s linear infinite backwards;
   animation: falling 5s 5.4s linear infinite backwards; }
 
 .drizzle div:nth-child(28) {
-  left: 7%;
+  left: 78%;
   -webkit-box-animation: falling 5s 5.6s linear infinite backwards;
   -moz-box-animation: falling 5s 5.6s linear infinite backwards;
   animation: falling 5s 5.6s linear infinite backwards; }
 
 .drizzle div:nth-child(29) {
-  left: 69%;
+  left: 42%;
   -webkit-box-animation: falling 5s 5.8s linear infinite backwards;
   -moz-box-animation: falling 5s 5.8s linear infinite backwards;
   animation: falling 5s 5.8s linear infinite backwards; }
 
 .drizzle div:nth-child(30) {
-  left: 6%;
+  left: 34%;
   -webkit-box-animation: falling 5s 6s linear infinite backwards;
   -moz-box-animation: falling 5s 6s linear infinite backwards;
   animation: falling 5s 6s linear infinite backwards; }
 
 .drizzle div:nth-child(31) {
-  left: 19%;
+  left: 57%;
   -webkit-box-animation: falling 5s 6.2s linear infinite backwards;
   -moz-box-animation: falling 5s 6.2s linear infinite backwards;
   animation: falling 5s 6.2s linear infinite backwards; }
 
 .drizzle div:nth-child(32) {
-  left: 54%;
+  left: 89%;
   -webkit-box-animation: falling 5s 6.4s linear infinite backwards;
   -moz-box-animation: falling 5s 6.4s linear infinite backwards;
   animation: falling 5s 6.4s linear infinite backwards; }
 
 .drizzle div:nth-child(33) {
-  left: 68%;
+  left: 96%;
   -webkit-box-animation: falling 5s 6.6s linear infinite backwards;
   -moz-box-animation: falling 5s 6.6s linear infinite backwards;
   animation: falling 5s 6.6s linear infinite backwards; }
 
 .drizzle div:nth-child(34) {
-  left: 74%;
+  left: 91%;
   -webkit-box-animation: falling 5s 6.8s linear infinite backwards;
   -moz-box-animation: falling 5s 6.8s linear infinite backwards;
   animation: falling 5s 6.8s linear infinite backwards; }
 
 .drizzle div:nth-child(35) {
-  left: 15%;
+  left: 50%;
   -webkit-box-animation: falling 5s 7s linear infinite backwards;
   -moz-box-animation: falling 5s 7s linear infinite backwards;
   animation: falling 5s 7s linear infinite backwards; }
 
 .drizzle div:nth-child(36) {
-  left: 96%;
+  left: 56%;
   -webkit-box-animation: falling 5s 7.2s linear infinite backwards;
   -moz-box-animation: falling 5s 7.2s linear infinite backwards;
   animation: falling 5s 7.2s linear infinite backwards; }
 
 .drizzle div:nth-child(37) {
-  left: 49%;
+  left: 36%;
   -webkit-box-animation: falling 5s 7.4s linear infinite backwards;
   -moz-box-animation: falling 5s 7.4s linear infinite backwards;
   animation: falling 5s 7.4s linear infinite backwards; }
 
 .drizzle div:nth-child(38) {
-  left: 10%;
+  left: 53%;
   -webkit-box-animation: falling 5s 7.6s linear infinite backwards;
   -moz-box-animation: falling 5s 7.6s linear infinite backwards;
   animation: falling 5s 7.6s linear infinite backwards; }
 
 .drizzle div:nth-child(39) {
-  left: 24%;
+  left: 31%;
   -webkit-box-animation: falling 5s 7.8s linear infinite backwards;
   -moz-box-animation: falling 5s 7.8s linear infinite backwards;
   animation: falling 5s 7.8s linear infinite backwards; }
 
 .drizzle div:nth-child(40) {
-  left: 97%;
+  left: 92%;
   -webkit-box-animation: falling 5s 8s linear infinite backwards;
   -moz-box-animation: falling 5s 8s linear infinite backwards;
   animation: falling 5s 8s linear infinite backwards; }
 
 .drizzle div:nth-child(41) {
-  left: 37%;
+  left: 41%;
   -webkit-box-animation: falling 5s 8.2s linear infinite backwards;
   -moz-box-animation: falling 5s 8.2s linear infinite backwards;
   animation: falling 5s 8.2s linear infinite backwards; }
 
 .drizzle div:nth-child(42) {
-  left: 72%;
+  left: 26%;
   -webkit-box-animation: falling 5s 8.4s linear infinite backwards;
   -moz-box-animation: falling 5s 8.4s linear infinite backwards;
   animation: falling 5s 8.4s linear infinite backwards; }
 
 .drizzle div:nth-child(43) {
-  left: 68%;
+  left: 99%;
   -webkit-box-animation: falling 5s 8.6s linear infinite backwards;
   -moz-box-animation: falling 5s 8.6s linear infinite backwards;
   animation: falling 5s 8.6s linear infinite backwards; }
 
 .drizzle div:nth-child(44) {
-  left: 61%;
+  left: 90%;
   -webkit-box-animation: falling 5s 8.8s linear infinite backwards;
   -moz-box-animation: falling 5s 8.8s linear infinite backwards;
   animation: falling 5s 8.8s linear infinite backwards; }
 
 .drizzle div:nth-child(45) {
-  left: 22%;
+  left: 91%;
   -webkit-box-animation: falling 5s 9s linear infinite backwards;
   -moz-box-animation: falling 5s 9s linear infinite backwards;
   animation: falling 5s 9s linear infinite backwards; }
 
 .drizzle div:nth-child(46) {
-  left: 99%;
+  left: 88%;
   -webkit-box-animation: falling 5s 9.2s linear infinite backwards;
   -moz-box-animation: falling 5s 9.2s linear infinite backwards;
   animation: falling 5s 9.2s linear infinite backwards; }
 
 .drizzle div:nth-child(47) {
-  left: 83%;
+  left: 13%;
   -webkit-box-animation: falling 5s 9.4s linear infinite backwards;
   -moz-box-animation: falling 5s 9.4s linear infinite backwards;
   animation: falling 5s 9.4s linear infinite backwards; }
 
 .drizzle div:nth-child(48) {
-  left: 98%;
+  left: 8%;
   -webkit-box-animation: falling 5s 9.6s linear infinite backwards;
   -moz-box-animation: falling 5s 9.6s linear infinite backwards;
   animation: falling 5s 9.6s linear infinite backwards; }
 
 .drizzle div:nth-child(49) {
-  left: 95%;
+  left: 28%;
   -webkit-box-animation: falling 5s 9.8s linear infinite backwards;
   -moz-box-animation: falling 5s 9.8s linear infinite backwards;
   animation: falling 5s 9.8s linear infinite backwards; }
 
 .drizzle div:nth-child(50) {
-  left: 46%;
+  left: 6%;
   -webkit-box-animation: falling 5s 10s linear infinite backwards;
   -moz-box-animation: falling 5s 10s linear infinite backwards;
   animation: falling 5s 10s linear infinite backwards; }
 
 .drizzle div:nth-child(51) {
-  left: 82%;
+  left: 18%;
   -webkit-box-animation: falling 5s 10.2s linear infinite backwards;
   -moz-box-animation: falling 5s 10.2s linear infinite backwards;
   animation: falling 5s 10.2s linear infinite backwards; }
 
 .drizzle div:nth-child(52) {
-  left: 78%;
+  left: 83%;
   -webkit-box-animation: falling 5s 10.4s linear infinite backwards;
   -moz-box-animation: falling 5s 10.4s linear infinite backwards;
   animation: falling 5s 10.4s linear infinite backwards; }
 
 .drizzle div:nth-child(53) {
-  left: 27%;
+  left: 33%;
   -webkit-box-animation: falling 5s 10.6s linear infinite backwards;
   -moz-box-animation: falling 5s 10.6s linear infinite backwards;
   animation: falling 5s 10.6s linear infinite backwards; }
 
 .drizzle div:nth-child(54) {
-  left: 83%;
+  left: 10%;
   -webkit-box-animation: falling 5s 10.8s linear infinite backwards;
   -moz-box-animation: falling 5s 10.8s linear infinite backwards;
   animation: falling 5s 10.8s linear infinite backwards; }
 
 .drizzle div:nth-child(55) {
-  left: 34%;
+  left: 61%;
   -webkit-box-animation: falling 5s 11s linear infinite backwards;
   -moz-box-animation: falling 5s 11s linear infinite backwards;
   animation: falling 5s 11s linear infinite backwards; }
 
 .drizzle div:nth-child(56) {
-  left: 16%;
+  left: 12%;
   -webkit-box-animation: falling 5s 11.2s linear infinite backwards;
   -moz-box-animation: falling 5s 11.2s linear infinite backwards;
   animation: falling 5s 11.2s linear infinite backwards; }
 
 .drizzle div:nth-child(57) {
-  left: 29%;
+  left: 43%;
   -webkit-box-animation: falling 5s 11.4s linear infinite backwards;
   -moz-box-animation: falling 5s 11.4s linear infinite backwards;
   animation: falling 5s 11.4s linear infinite backwards; }
 
 .drizzle div:nth-child(58) {
-  left: 10%;
+  left: 46%;
   -webkit-box-animation: falling 5s 11.6s linear infinite backwards;
   -moz-box-animation: falling 5s 11.6s linear infinite backwards;
   animation: falling 5s 11.6s linear infinite backwards; }
 
 .drizzle div:nth-child(59) {
-  left: 57%;
+  left: 12%;
   -webkit-box-animation: falling 5s 11.8s linear infinite backwards;
   -moz-box-animation: falling 5s 11.8s linear infinite backwards;
   animation: falling 5s 11.8s linear infinite backwards; }
 
 .drizzle div:nth-child(60) {
-  left: 6%;
+  left: 33%;
   -webkit-box-animation: falling 5s 12s linear infinite backwards;
   -moz-box-animation: falling 5s 12s linear infinite backwards;
   animation: falling 5s 12s linear infinite backwards; }
 
 .drizzle div:nth-child(61) {
-  left: 11%;
+  left: 37%;
   -webkit-box-animation: falling 5s 12.2s linear infinite backwards;
   -moz-box-animation: falling 5s 12.2s linear infinite backwards;
   animation: falling 5s 12.2s linear infinite backwards; }
 
 .drizzle div:nth-child(62) {
-  left: 5%;
+  left: 66%;
   -webkit-box-animation: falling 5s 12.4s linear infinite backwards;
   -moz-box-animation: falling 5s 12.4s linear infinite backwards;
   animation: falling 5s 12.4s linear infinite backwards; }
 
 .drizzle div:nth-child(63) {
-  left: 32%;
+  left: 30%;
   -webkit-box-animation: falling 5s 12.6s linear infinite backwards;
   -moz-box-animation: falling 5s 12.6s linear infinite backwards;
   animation: falling 5s 12.6s linear infinite backwards; }
 
 .drizzle div:nth-child(64) {
-  left: 1%;
+  left: 32%;
   -webkit-box-animation: falling 5s 12.8s linear infinite backwards;
   -moz-box-animation: falling 5s 12.8s linear infinite backwards;
   animation: falling 5s 12.8s linear infinite backwards; }
 
 .drizzle div:nth-child(65) {
-  left: 67%;
+  left: 46%;
   -webkit-box-animation: falling 5s 13s linear infinite backwards;
   -moz-box-animation: falling 5s 13s linear infinite backwards;
   animation: falling 5s 13s linear infinite backwards; }
@@ -1749,37 +1752,37 @@ span:nth-child(8) {
   animation: falling 5s 13.2s linear infinite backwards; }
 
 .drizzle div:nth-child(67) {
-  left: 11%;
+  left: 46%;
   -webkit-box-animation: falling 5s 13.4s linear infinite backwards;
   -moz-box-animation: falling 5s 13.4s linear infinite backwards;
   animation: falling 5s 13.4s linear infinite backwards; }
 
 .drizzle div:nth-child(68) {
-  left: 93%;
+  left: 46%;
   -webkit-box-animation: falling 5s 13.6s linear infinite backwards;
   -moz-box-animation: falling 5s 13.6s linear infinite backwards;
   animation: falling 5s 13.6s linear infinite backwards; }
 
 .drizzle div:nth-child(69) {
-  left: 19%;
+  left: 29%;
   -webkit-box-animation: falling 5s 13.8s linear infinite backwards;
   -moz-box-animation: falling 5s 13.8s linear infinite backwards;
   animation: falling 5s 13.8s linear infinite backwards; }
 
 .drizzle div:nth-child(70) {
-  left: 41%;
+  left: 28%;
   -webkit-box-animation: falling 5s 14s linear infinite backwards;
   -moz-box-animation: falling 5s 14s linear infinite backwards;
   animation: falling 5s 14s linear infinite backwards; }
 
 .drizzle div:nth-child(71) {
-  left: 49%;
+  left: 15%;
   -webkit-box-animation: falling 5s 14.2s linear infinite backwards;
   -moz-box-animation: falling 5s 14.2s linear infinite backwards;
   animation: falling 5s 14.2s linear infinite backwards; }
 
 .drizzle div:nth-child(72) {
-  left: 93%;
+  left: 15%;
   -webkit-box-animation: falling 5s 14.4s linear infinite backwards;
   -moz-box-animation: falling 5s 14.4s linear infinite backwards;
   animation: falling 5s 14.4s linear infinite backwards; }
@@ -1793,13 +1796,1073 @@ span:nth-child(8) {
 .drizzle div:nth-child(5n) {
   height: 15px; }
 
+.thunder_rain div {
+  border-left: 2px solid white; }
+
+.thunder_rain div:nth-child(1) {
+  left: 92%;
+  -webkit-box-animation: falling 5s 0.2s linear infinite backwards;
+  -moz-box-animation: falling 5s 0.2s linear infinite backwards;
+  animation: falling 5s 0.2s linear infinite backwards; }
+
+.thunder_rain div:nth-child(2) {
+  left: 12%;
+  -webkit-box-animation: falling 5s 0.4s linear infinite backwards;
+  -moz-box-animation: falling 5s 0.4s linear infinite backwards;
+  animation: falling 5s 0.4s linear infinite backwards; }
+
+.thunder_rain div:nth-child(3) {
+  left: 68%;
+  -webkit-box-animation: falling 5s 0.6s linear infinite backwards;
+  -moz-box-animation: falling 5s 0.6s linear infinite backwards;
+  animation: falling 5s 0.6s linear infinite backwards; }
+
+.thunder_rain div:nth-child(4) {
+  left: 100%;
+  -webkit-box-animation: falling 5s 0.8s linear infinite backwards;
+  -moz-box-animation: falling 5s 0.8s linear infinite backwards;
+  animation: falling 5s 0.8s linear infinite backwards; }
+
+.thunder_rain div:nth-child(5) {
+  left: 92%;
+  -webkit-box-animation: falling 5s 1s linear infinite backwards;
+  -moz-box-animation: falling 5s 1s linear infinite backwards;
+  animation: falling 5s 1s linear infinite backwards; }
+
+.thunder_rain div:nth-child(6) {
+  left: 61%;
+  -webkit-box-animation: falling 5s 1.2s linear infinite backwards;
+  -moz-box-animation: falling 5s 1.2s linear infinite backwards;
+  animation: falling 5s 1.2s linear infinite backwards; }
+
+.thunder_rain div:nth-child(7) {
+  left: 61%;
+  -webkit-box-animation: falling 5s 1.4s linear infinite backwards;
+  -moz-box-animation: falling 5s 1.4s linear infinite backwards;
+  animation: falling 5s 1.4s linear infinite backwards; }
+
+.thunder_rain div:nth-child(8) {
+  left: 89%;
+  -webkit-box-animation: falling 5s 1.6s linear infinite backwards;
+  -moz-box-animation: falling 5s 1.6s linear infinite backwards;
+  animation: falling 5s 1.6s linear infinite backwards; }
+
+.thunder_rain div:nth-child(9) {
+  left: 21%;
+  -webkit-box-animation: falling 5s 1.8s linear infinite backwards;
+  -moz-box-animation: falling 5s 1.8s linear infinite backwards;
+  animation: falling 5s 1.8s linear infinite backwards; }
+
+.thunder_rain div:nth-child(10) {
+  left: 27%;
+  -webkit-box-animation: falling 5s 2s linear infinite backwards;
+  -moz-box-animation: falling 5s 2s linear infinite backwards;
+  animation: falling 5s 2s linear infinite backwards; }
+
+.thunder_rain div:nth-child(11) {
+  left: 70%;
+  -webkit-box-animation: falling 5s 2.2s linear infinite backwards;
+  -moz-box-animation: falling 5s 2.2s linear infinite backwards;
+  animation: falling 5s 2.2s linear infinite backwards; }
+
+.thunder_rain div:nth-child(12) {
+  left: 30%;
+  -webkit-box-animation: falling 5s 2.4s linear infinite backwards;
+  -moz-box-animation: falling 5s 2.4s linear infinite backwards;
+  animation: falling 5s 2.4s linear infinite backwards; }
+
+.thunder_rain div:nth-child(13) {
+  left: 65%;
+  -webkit-box-animation: falling 5s 2.6s linear infinite backwards;
+  -moz-box-animation: falling 5s 2.6s linear infinite backwards;
+  animation: falling 5s 2.6s linear infinite backwards; }
+
+.thunder_rain div:nth-child(14) {
+  left: 79%;
+  -webkit-box-animation: falling 5s 2.8s linear infinite backwards;
+  -moz-box-animation: falling 5s 2.8s linear infinite backwards;
+  animation: falling 5s 2.8s linear infinite backwards; }
+
+.thunder_rain div:nth-child(15) {
+  left: 79%;
+  -webkit-box-animation: falling 5s 3s linear infinite backwards;
+  -moz-box-animation: falling 5s 3s linear infinite backwards;
+  animation: falling 5s 3s linear infinite backwards; }
+
+.thunder_rain div:nth-child(16) {
+  left: 93%;
+  -webkit-box-animation: falling 5s 3.2s linear infinite backwards;
+  -moz-box-animation: falling 5s 3.2s linear infinite backwards;
+  animation: falling 5s 3.2s linear infinite backwards; }
+
+.thunder_rain div:nth-child(17) {
+  left: 73%;
+  -webkit-box-animation: falling 5s 3.4s linear infinite backwards;
+  -moz-box-animation: falling 5s 3.4s linear infinite backwards;
+  animation: falling 5s 3.4s linear infinite backwards; }
+
+.thunder_rain div:nth-child(18) {
+  left: 20%;
+  -webkit-box-animation: falling 5s 3.6s linear infinite backwards;
+  -moz-box-animation: falling 5s 3.6s linear infinite backwards;
+  animation: falling 5s 3.6s linear infinite backwards; }
+
+.thunder_rain div:nth-child(19) {
+  left: 74%;
+  -webkit-box-animation: falling 5s 3.8s linear infinite backwards;
+  -moz-box-animation: falling 5s 3.8s linear infinite backwards;
+  animation: falling 5s 3.8s linear infinite backwards; }
+
+.thunder_rain div:nth-child(20) {
+  left: 93%;
+  -webkit-box-animation: falling 5s 4s linear infinite backwards;
+  -moz-box-animation: falling 5s 4s linear infinite backwards;
+  animation: falling 5s 4s linear infinite backwards; }
+
+.thunder_rain div:nth-child(21) {
+  left: 43%;
+  -webkit-box-animation: falling 5s 4.2s linear infinite backwards;
+  -moz-box-animation: falling 5s 4.2s linear infinite backwards;
+  animation: falling 5s 4.2s linear infinite backwards; }
+
+.thunder_rain div:nth-child(22) {
+  left: 43%;
+  -webkit-box-animation: falling 5s 4.4s linear infinite backwards;
+  -moz-box-animation: falling 5s 4.4s linear infinite backwards;
+  animation: falling 5s 4.4s linear infinite backwards; }
+
+.thunder_rain div:nth-child(23) {
+  left: 71%;
+  -webkit-box-animation: falling 5s 4.6s linear infinite backwards;
+  -moz-box-animation: falling 5s 4.6s linear infinite backwards;
+  animation: falling 5s 4.6s linear infinite backwards; }
+
+.thunder_rain div:nth-child(24) {
+  left: 57%;
+  -webkit-box-animation: falling 5s 4.8s linear infinite backwards;
+  -moz-box-animation: falling 5s 4.8s linear infinite backwards;
+  animation: falling 5s 4.8s linear infinite backwards; }
+
+.thunder_rain div:nth-child(25) {
+  left: 69%;
+  -webkit-box-animation: falling 5s 5s linear infinite backwards;
+  -moz-box-animation: falling 5s 5s linear infinite backwards;
+  animation: falling 5s 5s linear infinite backwards; }
+
+.thunder_rain div:nth-child(26) {
+  left: 54%;
+  -webkit-box-animation: falling 5s 5.2s linear infinite backwards;
+  -moz-box-animation: falling 5s 5.2s linear infinite backwards;
+  animation: falling 5s 5.2s linear infinite backwards; }
+
+.thunder_rain div:nth-child(27) {
+  left: 98%;
+  -webkit-box-animation: falling 5s 5.4s linear infinite backwards;
+  -moz-box-animation: falling 5s 5.4s linear infinite backwards;
+  animation: falling 5s 5.4s linear infinite backwards; }
+
+.thunder_rain div:nth-child(28) {
+  left: 70%;
+  -webkit-box-animation: falling 5s 5.6s linear infinite backwards;
+  -moz-box-animation: falling 5s 5.6s linear infinite backwards;
+  animation: falling 5s 5.6s linear infinite backwards; }
+
+.thunder_rain div:nth-child(29) {
+  left: 5%;
+  -webkit-box-animation: falling 5s 5.8s linear infinite backwards;
+  -moz-box-animation: falling 5s 5.8s linear infinite backwards;
+  animation: falling 5s 5.8s linear infinite backwards; }
+
+.thunder_rain div:nth-child(30) {
+  left: 45%;
+  -webkit-box-animation: falling 5s 6s linear infinite backwards;
+  -moz-box-animation: falling 5s 6s linear infinite backwards;
+  animation: falling 5s 6s linear infinite backwards; }
+
+.thunder_rain div:nth-child(31) {
+  left: 73%;
+  -webkit-box-animation: falling 5s 6.2s linear infinite backwards;
+  -moz-box-animation: falling 5s 6.2s linear infinite backwards;
+  animation: falling 5s 6.2s linear infinite backwards; }
+
+.thunder_rain div:nth-child(32) {
+  left: 11%;
+  -webkit-box-animation: falling 5s 6.4s linear infinite backwards;
+  -moz-box-animation: falling 5s 6.4s linear infinite backwards;
+  animation: falling 5s 6.4s linear infinite backwards; }
+
+.thunder_rain div:nth-child(33) {
+  left: 75%;
+  -webkit-box-animation: falling 5s 6.6s linear infinite backwards;
+  -moz-box-animation: falling 5s 6.6s linear infinite backwards;
+  animation: falling 5s 6.6s linear infinite backwards; }
+
+.thunder_rain div:nth-child(34) {
+  left: 5%;
+  -webkit-box-animation: falling 5s 6.8s linear infinite backwards;
+  -moz-box-animation: falling 5s 6.8s linear infinite backwards;
+  animation: falling 5s 6.8s linear infinite backwards; }
+
+.thunder_rain div:nth-child(35) {
+  left: 69%;
+  -webkit-box-animation: falling 5s 7s linear infinite backwards;
+  -moz-box-animation: falling 5s 7s linear infinite backwards;
+  animation: falling 5s 7s linear infinite backwards; }
+
+.thunder_rain div:nth-child(36) {
+  left: 11%;
+  -webkit-box-animation: falling 5s 7.2s linear infinite backwards;
+  -moz-box-animation: falling 5s 7.2s linear infinite backwards;
+  animation: falling 5s 7.2s linear infinite backwards; }
+
+.thunder_rain div:nth-child(37) {
+  left: 96%;
+  -webkit-box-animation: falling 5s 7.4s linear infinite backwards;
+  -moz-box-animation: falling 5s 7.4s linear infinite backwards;
+  animation: falling 5s 7.4s linear infinite backwards; }
+
+.thunder_rain div:nth-child(38) {
+  left: 35%;
+  -webkit-box-animation: falling 5s 7.6s linear infinite backwards;
+  -moz-box-animation: falling 5s 7.6s linear infinite backwards;
+  animation: falling 5s 7.6s linear infinite backwards; }
+
+.thunder_rain div:nth-child(39) {
+  left: 31%;
+  -webkit-box-animation: falling 5s 7.8s linear infinite backwards;
+  -moz-box-animation: falling 5s 7.8s linear infinite backwards;
+  animation: falling 5s 7.8s linear infinite backwards; }
+
+.thunder_rain div:nth-child(40) {
+  left: 63%;
+  -webkit-box-animation: falling 5s 8s linear infinite backwards;
+  -moz-box-animation: falling 5s 8s linear infinite backwards;
+  animation: falling 5s 8s linear infinite backwards; }
+
+.thunder_rain div:nth-child(41) {
+  left: 75%;
+  -webkit-box-animation: falling 5s 8.2s linear infinite backwards;
+  -moz-box-animation: falling 5s 8.2s linear infinite backwards;
+  animation: falling 5s 8.2s linear infinite backwards; }
+
+.thunder_rain div:nth-child(42) {
+  left: 74%;
+  -webkit-box-animation: falling 5s 8.4s linear infinite backwards;
+  -moz-box-animation: falling 5s 8.4s linear infinite backwards;
+  animation: falling 5s 8.4s linear infinite backwards; }
+
+.thunder_rain div:nth-child(43) {
+  left: 68%;
+  -webkit-box-animation: falling 5s 8.6s linear infinite backwards;
+  -moz-box-animation: falling 5s 8.6s linear infinite backwards;
+  animation: falling 5s 8.6s linear infinite backwards; }
+
+.thunder_rain div:nth-child(44) {
+  left: 2%;
+  -webkit-box-animation: falling 5s 8.8s linear infinite backwards;
+  -moz-box-animation: falling 5s 8.8s linear infinite backwards;
+  animation: falling 5s 8.8s linear infinite backwards; }
+
+.thunder_rain div:nth-child(45) {
+  left: 30%;
+  -webkit-box-animation: falling 5s 9s linear infinite backwards;
+  -moz-box-animation: falling 5s 9s linear infinite backwards;
+  animation: falling 5s 9s linear infinite backwards; }
+
+.thunder_rain div:nth-child(46) {
+  left: 98%;
+  -webkit-box-animation: falling 5s 9.2s linear infinite backwards;
+  -moz-box-animation: falling 5s 9.2s linear infinite backwards;
+  animation: falling 5s 9.2s linear infinite backwards; }
+
+.thunder_rain div:nth-child(47) {
+  left: 14%;
+  -webkit-box-animation: falling 5s 9.4s linear infinite backwards;
+  -moz-box-animation: falling 5s 9.4s linear infinite backwards;
+  animation: falling 5s 9.4s linear infinite backwards; }
+
+.thunder_rain div:nth-child(48) {
+  left: 13%;
+  -webkit-box-animation: falling 5s 9.6s linear infinite backwards;
+  -moz-box-animation: falling 5s 9.6s linear infinite backwards;
+  animation: falling 5s 9.6s linear infinite backwards; }
+
+.thunder_rain div:nth-child(49) {
+  left: 90%;
+  -webkit-box-animation: falling 5s 9.8s linear infinite backwards;
+  -moz-box-animation: falling 5s 9.8s linear infinite backwards;
+  animation: falling 5s 9.8s linear infinite backwards; }
+
+.thunder_rain div:nth-child(50) {
+  left: 93%;
+  -webkit-box-animation: falling 5s 10s linear infinite backwards;
+  -moz-box-animation: falling 5s 10s linear infinite backwards;
+  animation: falling 5s 10s linear infinite backwards; }
+
+.thunder_rain div:nth-child(51) {
+  left: 51%;
+  -webkit-box-animation: falling 5s 10.2s linear infinite backwards;
+  -moz-box-animation: falling 5s 10.2s linear infinite backwards;
+  animation: falling 5s 10.2s linear infinite backwards; }
+
+.thunder_rain div:nth-child(52) {
+  left: 86%;
+  -webkit-box-animation: falling 5s 10.4s linear infinite backwards;
+  -moz-box-animation: falling 5s 10.4s linear infinite backwards;
+  animation: falling 5s 10.4s linear infinite backwards; }
+
+.thunder_rain div:nth-child(53) {
+  left: 76%;
+  -webkit-box-animation: falling 5s 10.6s linear infinite backwards;
+  -moz-box-animation: falling 5s 10.6s linear infinite backwards;
+  animation: falling 5s 10.6s linear infinite backwards; }
+
+.thunder_rain div:nth-child(54) {
+  left: 55%;
+  -webkit-box-animation: falling 5s 10.8s linear infinite backwards;
+  -moz-box-animation: falling 5s 10.8s linear infinite backwards;
+  animation: falling 5s 10.8s linear infinite backwards; }
+
+.thunder_rain div:nth-child(55) {
+  left: 94%;
+  -webkit-box-animation: falling 5s 11s linear infinite backwards;
+  -moz-box-animation: falling 5s 11s linear infinite backwards;
+  animation: falling 5s 11s linear infinite backwards; }
+
+.thunder_rain div:nth-child(56) {
+  left: 30%;
+  -webkit-box-animation: falling 5s 11.2s linear infinite backwards;
+  -moz-box-animation: falling 5s 11.2s linear infinite backwards;
+  animation: falling 5s 11.2s linear infinite backwards; }
+
+.thunder_rain div:nth-child(57) {
+  left: 97%;
+  -webkit-box-animation: falling 5s 11.4s linear infinite backwards;
+  -moz-box-animation: falling 5s 11.4s linear infinite backwards;
+  animation: falling 5s 11.4s linear infinite backwards; }
+
+.thunder_rain div:nth-child(58) {
+  left: 14%;
+  -webkit-box-animation: falling 5s 11.6s linear infinite backwards;
+  -moz-box-animation: falling 5s 11.6s linear infinite backwards;
+  animation: falling 5s 11.6s linear infinite backwards; }
+
+.thunder_rain div:nth-child(59) {
+  left: 88%;
+  -webkit-box-animation: falling 5s 11.8s linear infinite backwards;
+  -moz-box-animation: falling 5s 11.8s linear infinite backwards;
+  animation: falling 5s 11.8s linear infinite backwards; }
+
+.thunder_rain div:nth-child(60) {
+  left: 13%;
+  -webkit-box-animation: falling 5s 12s linear infinite backwards;
+  -moz-box-animation: falling 5s 12s linear infinite backwards;
+  animation: falling 5s 12s linear infinite backwards; }
+
+.thunder_rain div:nth-child(61) {
+  left: 60%;
+  -webkit-box-animation: falling 5s 12.2s linear infinite backwards;
+  -moz-box-animation: falling 5s 12.2s linear infinite backwards;
+  animation: falling 5s 12.2s linear infinite backwards; }
+
+.thunder_rain div:nth-child(62) {
+  left: 85%;
+  -webkit-box-animation: falling 5s 12.4s linear infinite backwards;
+  -moz-box-animation: falling 5s 12.4s linear infinite backwards;
+  animation: falling 5s 12.4s linear infinite backwards; }
+
+.thunder_rain div:nth-child(63) {
+  left: 47%;
+  -webkit-box-animation: falling 5s 12.6s linear infinite backwards;
+  -moz-box-animation: falling 5s 12.6s linear infinite backwards;
+  animation: falling 5s 12.6s linear infinite backwards; }
+
+.thunder_rain div:nth-child(64) {
+  left: 96%;
+  -webkit-box-animation: falling 5s 12.8s linear infinite backwards;
+  -moz-box-animation: falling 5s 12.8s linear infinite backwards;
+  animation: falling 5s 12.8s linear infinite backwards; }
+
+.thunder_rain div:nth-child(65) {
+  left: 28%;
+  -webkit-box-animation: falling 5s 13s linear infinite backwards;
+  -moz-box-animation: falling 5s 13s linear infinite backwards;
+  animation: falling 5s 13s linear infinite backwards; }
+
+.thunder_rain div:nth-child(66) {
+  left: 99%;
+  -webkit-box-animation: falling 5s 13.2s linear infinite backwards;
+  -moz-box-animation: falling 5s 13.2s linear infinite backwards;
+  animation: falling 5s 13.2s linear infinite backwards; }
+
+.thunder_rain div:nth-child(67) {
+  left: 22%;
+  -webkit-box-animation: falling 5s 13.4s linear infinite backwards;
+  -moz-box-animation: falling 5s 13.4s linear infinite backwards;
+  animation: falling 5s 13.4s linear infinite backwards; }
+
+.thunder_rain div:nth-child(68) {
+  left: 56%;
+  -webkit-box-animation: falling 5s 13.6s linear infinite backwards;
+  -moz-box-animation: falling 5s 13.6s linear infinite backwards;
+  animation: falling 5s 13.6s linear infinite backwards; }
+
+.thunder_rain div:nth-child(69) {
+  left: 13%;
+  -webkit-box-animation: falling 5s 13.8s linear infinite backwards;
+  -moz-box-animation: falling 5s 13.8s linear infinite backwards;
+  animation: falling 5s 13.8s linear infinite backwards; }
+
+.thunder_rain div:nth-child(70) {
+  left: 91%;
+  -webkit-box-animation: falling 5s 14s linear infinite backwards;
+  -moz-box-animation: falling 5s 14s linear infinite backwards;
+  animation: falling 5s 14s linear infinite backwards; }
+
+.thunder_rain div:nth-child(71) {
+  left: 31%;
+  -webkit-box-animation: falling 5s 14.2s linear infinite backwards;
+  -moz-box-animation: falling 5s 14.2s linear infinite backwards;
+  animation: falling 5s 14.2s linear infinite backwards; }
+
+.thunder_rain div:nth-child(72) {
+  left: 32%;
+  -webkit-box-animation: falling 5s 14.4s linear infinite backwards;
+  -moz-box-animation: falling 5s 14.4s linear infinite backwards;
+  animation: falling 5s 14.4s linear infinite backwards; }
+
+.thunder_rain div:nth-child(73) {
+  left: 86%;
+  -webkit-box-animation: falling 5s 14.6s linear infinite backwards;
+  -moz-box-animation: falling 5s 14.6s linear infinite backwards;
+  animation: falling 5s 14.6s linear infinite backwards; }
+
+.thunder_rain div:nth-child(74) {
+  left: 70%;
+  -webkit-box-animation: falling 5s 14.8s linear infinite backwards;
+  -moz-box-animation: falling 5s 14.8s linear infinite backwards;
+  animation: falling 5s 14.8s linear infinite backwards; }
+
+.thunder_rain div:nth-child(75) {
+  left: 87%;
+  -webkit-box-animation: falling 5s 15s linear infinite backwards;
+  -moz-box-animation: falling 5s 15s linear infinite backwards;
+  animation: falling 5s 15s linear infinite backwards; }
+
+.thunder_rain div:nth-child(76) {
+  left: 26%;
+  -webkit-box-animation: falling 5s 15.2s linear infinite backwards;
+  -moz-box-animation: falling 5s 15.2s linear infinite backwards;
+  animation: falling 5s 15.2s linear infinite backwards; }
+
+.thunder_rain div:nth-child(77) {
+  left: 28%;
+  -webkit-box-animation: falling 5s 15.4s linear infinite backwards;
+  -moz-box-animation: falling 5s 15.4s linear infinite backwards;
+  animation: falling 5s 15.4s linear infinite backwards; }
+
+.thunder_rain div:nth-child(78) {
+  left: 35%;
+  -webkit-box-animation: falling 5s 15.6s linear infinite backwards;
+  -moz-box-animation: falling 5s 15.6s linear infinite backwards;
+  animation: falling 5s 15.6s linear infinite backwards; }
+
+.thunder_rain div:nth-child(79) {
+  left: 99%;
+  -webkit-box-animation: falling 5s 15.8s linear infinite backwards;
+  -moz-box-animation: falling 5s 15.8s linear infinite backwards;
+  animation: falling 5s 15.8s linear infinite backwards; }
+
+.thunder_rain div:nth-child(80) {
+  left: 53%;
+  -webkit-box-animation: falling 5s 16s linear infinite backwards;
+  -moz-box-animation: falling 5s 16s linear infinite backwards;
+  animation: falling 5s 16s linear infinite backwards; }
+
+.thunder_rain div:nth-child(81) {
+  left: 38%;
+  -webkit-box-animation: falling 5s 16.2s linear infinite backwards;
+  -moz-box-animation: falling 5s 16.2s linear infinite backwards;
+  animation: falling 5s 16.2s linear infinite backwards; }
+
+.thunder_rain div:nth-child(82) {
+  left: 26%;
+  -webkit-box-animation: falling 5s 16.4s linear infinite backwards;
+  -moz-box-animation: falling 5s 16.4s linear infinite backwards;
+  animation: falling 5s 16.4s linear infinite backwards; }
+
+.thunder_rain div:nth-child(83) {
+  left: 12%;
+  -webkit-box-animation: falling 5s 16.6s linear infinite backwards;
+  -moz-box-animation: falling 5s 16.6s linear infinite backwards;
+  animation: falling 5s 16.6s linear infinite backwards; }
+
+.thunder_rain div:nth-child(84) {
+  left: 85%;
+  -webkit-box-animation: falling 5s 16.8s linear infinite backwards;
+  -moz-box-animation: falling 5s 16.8s linear infinite backwards;
+  animation: falling 5s 16.8s linear infinite backwards; }
+
+.thunder_rain div:nth-child(85) {
+  left: 95%;
+  -webkit-box-animation: falling 5s 17s linear infinite backwards;
+  -moz-box-animation: falling 5s 17s linear infinite backwards;
+  animation: falling 5s 17s linear infinite backwards; }
+
+.thunder_rain div:nth-child(86) {
+  left: 5%;
+  -webkit-box-animation: falling 5s 17.2s linear infinite backwards;
+  -moz-box-animation: falling 5s 17.2s linear infinite backwards;
+  animation: falling 5s 17.2s linear infinite backwards; }
+
+.thunder_rain div:nth-child(87) {
+  left: 92%;
+  -webkit-box-animation: falling 5s 17.4s linear infinite backwards;
+  -moz-box-animation: falling 5s 17.4s linear infinite backwards;
+  animation: falling 5s 17.4s linear infinite backwards; }
+
+.thunder_rain div:nth-child(88) {
+  left: 74%;
+  -webkit-box-animation: falling 5s 17.6s linear infinite backwards;
+  -moz-box-animation: falling 5s 17.6s linear infinite backwards;
+  animation: falling 5s 17.6s linear infinite backwards; }
+
+.thunder_rain div:nth-child(89) {
+  left: 87%;
+  -webkit-box-animation: falling 5s 17.8s linear infinite backwards;
+  -moz-box-animation: falling 5s 17.8s linear infinite backwards;
+  animation: falling 5s 17.8s linear infinite backwards; }
+
+.thunder_rain div:nth-child(90) {
+  left: 3%;
+  -webkit-box-animation: falling 5s 18s linear infinite backwards;
+  -moz-box-animation: falling 5s 18s linear infinite backwards;
+  animation: falling 5s 18s linear infinite backwards; }
+
+.thunder_rain div:nth-child(91) {
+  left: 66%;
+  -webkit-box-animation: falling 5s 18.2s linear infinite backwards;
+  -moz-box-animation: falling 5s 18.2s linear infinite backwards;
+  animation: falling 5s 18.2s linear infinite backwards; }
+
+.thunder_rain div:nth-child(92) {
+  left: 45%;
+  -webkit-box-animation: falling 5s 18.4s linear infinite backwards;
+  -moz-box-animation: falling 5s 18.4s linear infinite backwards;
+  animation: falling 5s 18.4s linear infinite backwards; }
+
+.thunder_rain div:nth-child(93) {
+  left: 98%;
+  -webkit-box-animation: falling 5s 18.6s linear infinite backwards;
+  -moz-box-animation: falling 5s 18.6s linear infinite backwards;
+  animation: falling 5s 18.6s linear infinite backwards; }
+
+.thunder_rain div:nth-child(94) {
+  left: 58%;
+  -webkit-box-animation: falling 5s 18.8s linear infinite backwards;
+  -moz-box-animation: falling 5s 18.8s linear infinite backwards;
+  animation: falling 5s 18.8s linear infinite backwards; }
+
+.thunder_rain div:nth-child(95) {
+  left: 18%;
+  -webkit-box-animation: falling 5s 19s linear infinite backwards;
+  -moz-box-animation: falling 5s 19s linear infinite backwards;
+  animation: falling 5s 19s linear infinite backwards; }
+
+.thunder_rain div:nth-child(96) {
+  left: 58%;
+  -webkit-box-animation: falling 5s 19.2s linear infinite backwards;
+  -moz-box-animation: falling 5s 19.2s linear infinite backwards;
+  animation: falling 5s 19.2s linear infinite backwards; }
+
+.thunder_rain div:nth-child(97) {
+  left: 75%;
+  -webkit-box-animation: falling 5s 19.4s linear infinite backwards;
+  -moz-box-animation: falling 5s 19.4s linear infinite backwards;
+  animation: falling 5s 19.4s linear infinite backwards; }
+
+.thunder_rain div:nth-child(98) {
+  left: 55%;
+  -webkit-box-animation: falling 5s 19.6s linear infinite backwards;
+  -moz-box-animation: falling 5s 19.6s linear infinite backwards;
+  animation: falling 5s 19.6s linear infinite backwards; }
+
+.thunder_rain div:nth-child(99) {
+  left: 3%;
+  -webkit-box-animation: falling 5s 19.8s linear infinite backwards;
+  -moz-box-animation: falling 5s 19.8s linear infinite backwards;
+  animation: falling 5s 19.8s linear infinite backwards; }
+
+.thunder_rain div:nth-child(2n + 1) {
+  height: 35px; }
+
+.thunder_rain div:nth-child(3n) {
+  height: 25px; }
+
+.thunder_rain div:nth-child(5n) {
+  height: 20px;
+  border-color: #b3d0eb; }
+
+.hail div {
+  width: 15px;
+  height: 15px;
+  border-radius: 200px 200px 200px 200px;
+  -moz-border-radius: 200px 200px 200px 200px;
+  -webkit-border-radius: 200px 200px 200px 200px;
+  background-color: #f7f7f7;
+  border: 3px solid #a4b4bf; }
+
+.hail div:nth-child(1) {
+  left: 87%;
+  -webkit-box-animation: falling 5s 0.6s linear infinite backwards;
+  -moz-box-animation: falling 5s 0.6s linear infinite backwards;
+  animation: falling 5s 0.6s linear infinite backwards; }
+
+.hail div:nth-child(2) {
+  left: 10%;
+  -webkit-box-animation: falling 5s 1.2s linear infinite backwards;
+  -moz-box-animation: falling 5s 1.2s linear infinite backwards;
+  animation: falling 5s 1.2s linear infinite backwards; }
+
+.hail div:nth-child(3) {
+  left: 81%;
+  -webkit-box-animation: falling 5s 1.8s linear infinite backwards;
+  -moz-box-animation: falling 5s 1.8s linear infinite backwards;
+  animation: falling 5s 1.8s linear infinite backwards; }
+
+.hail div:nth-child(4) {
+  left: 70%;
+  -webkit-box-animation: falling 5s 2.4s linear infinite backwards;
+  -moz-box-animation: falling 5s 2.4s linear infinite backwards;
+  animation: falling 5s 2.4s linear infinite backwards; }
+
+.hail div:nth-child(5) {
+  left: 99%;
+  -webkit-box-animation: falling 5s 3s linear infinite backwards;
+  -moz-box-animation: falling 5s 3s linear infinite backwards;
+  animation: falling 5s 3s linear infinite backwards; }
+
+.hail div:nth-child(6) {
+  left: 99%;
+  -webkit-box-animation: falling 5s 3.6s linear infinite backwards;
+  -moz-box-animation: falling 5s 3.6s linear infinite backwards;
+  animation: falling 5s 3.6s linear infinite backwards; }
+
+.hail div:nth-child(7) {
+  left: 84%;
+  -webkit-box-animation: falling 5s 4.2s linear infinite backwards;
+  -moz-box-animation: falling 5s 4.2s linear infinite backwards;
+  animation: falling 5s 4.2s linear infinite backwards; }
+
+.hail div:nth-child(8) {
+  left: 52%;
+  -webkit-box-animation: falling 5s 4.8s linear infinite backwards;
+  -moz-box-animation: falling 5s 4.8s linear infinite backwards;
+  animation: falling 5s 4.8s linear infinite backwards; }
+
+.hail div:nth-child(9) {
+  left: 44%;
+  -webkit-box-animation: falling 5s 5.4s linear infinite backwards;
+  -moz-box-animation: falling 5s 5.4s linear infinite backwards;
+  animation: falling 5s 5.4s linear infinite backwards; }
+
+.hail div:nth-child(10) {
+  left: 37%;
+  -webkit-box-animation: falling 5s 6s linear infinite backwards;
+  -moz-box-animation: falling 5s 6s linear infinite backwards;
+  animation: falling 5s 6s linear infinite backwards; }
+
+.hail div:nth-child(11) {
+  left: 91%;
+  -webkit-box-animation: falling 5s 6.6s linear infinite backwards;
+  -moz-box-animation: falling 5s 6.6s linear infinite backwards;
+  animation: falling 5s 6.6s linear infinite backwards; }
+
+.hail div:nth-child(12) {
+  left: 56%;
+  -webkit-box-animation: falling 5s 7.2s linear infinite backwards;
+  -moz-box-animation: falling 5s 7.2s linear infinite backwards;
+  animation: falling 5s 7.2s linear infinite backwards; }
+
+.hail div:nth-child(13) {
+  left: 58%;
+  -webkit-box-animation: falling 5s 7.8s linear infinite backwards;
+  -moz-box-animation: falling 5s 7.8s linear infinite backwards;
+  animation: falling 5s 7.8s linear infinite backwards; }
+
+.hail div:nth-child(14) {
+  left: 90%;
+  -webkit-box-animation: falling 5s 8.4s linear infinite backwards;
+  -moz-box-animation: falling 5s 8.4s linear infinite backwards;
+  animation: falling 5s 8.4s linear infinite backwards; }
+
+.hail div:nth-child(15) {
+  left: 75%;
+  -webkit-box-animation: falling 5s 9s linear infinite backwards;
+  -moz-box-animation: falling 5s 9s linear infinite backwards;
+  animation: falling 5s 9s linear infinite backwards; }
+
+.hail div:nth-child(16) {
+  left: 72%;
+  -webkit-box-animation: falling 5s 9.6s linear infinite backwards;
+  -moz-box-animation: falling 5s 9.6s linear infinite backwards;
+  animation: falling 5s 9.6s linear infinite backwards; }
+
+.hail div:nth-child(17) {
+  left: 28%;
+  -webkit-box-animation: falling 5s 10.2s linear infinite backwards;
+  -moz-box-animation: falling 5s 10.2s linear infinite backwards;
+  animation: falling 5s 10.2s linear infinite backwards; }
+
+.hail div:nth-child(18) {
+  left: 12%;
+  -webkit-box-animation: falling 5s 10.8s linear infinite backwards;
+  -moz-box-animation: falling 5s 10.8s linear infinite backwards;
+  animation: falling 5s 10.8s linear infinite backwards; }
+
+.hail div:nth-child(19) {
+  left: 44%;
+  -webkit-box-animation: falling 5s 11.4s linear infinite backwards;
+  -moz-box-animation: falling 5s 11.4s linear infinite backwards;
+  animation: falling 5s 11.4s linear infinite backwards; }
+
+.hail div:nth-child(20) {
+  left: 94%;
+  -webkit-box-animation: falling 5s 12s linear infinite backwards;
+  -moz-box-animation: falling 5s 12s linear infinite backwards;
+  animation: falling 5s 12s linear infinite backwards; }
+
+.hail div:nth-child(21) {
+  left: 58%;
+  -webkit-box-animation: falling 5s 12.6s linear infinite backwards;
+  -moz-box-animation: falling 5s 12.6s linear infinite backwards;
+  animation: falling 5s 12.6s linear infinite backwards; }
+
+.hail div:nth-child(22) {
+  left: 73%;
+  -webkit-box-animation: falling 5s 13.2s linear infinite backwards;
+  -moz-box-animation: falling 5s 13.2s linear infinite backwards;
+  animation: falling 5s 13.2s linear infinite backwards; }
+
+.hail div:nth-child(23) {
+  left: 59%;
+  -webkit-box-animation: falling 5s 13.8s linear infinite backwards;
+  -moz-box-animation: falling 5s 13.8s linear infinite backwards;
+  animation: falling 5s 13.8s linear infinite backwards; }
+
+.hail div:nth-child(24) {
+  left: 16%;
+  -webkit-box-animation: falling 5s 14.4s linear infinite backwards;
+  -moz-box-animation: falling 5s 14.4s linear infinite backwards;
+  animation: falling 5s 14.4s linear infinite backwards; }
+
+.hail div:nth-child(25) {
+  left: 10%;
+  -webkit-box-animation: falling 5s 15s linear infinite backwards;
+  -moz-box-animation: falling 5s 15s linear infinite backwards;
+  animation: falling 5s 15s linear infinite backwards; }
+
+.hail div:nth-child(26) {
+  left: 18%;
+  -webkit-box-animation: falling 5s 15.6s linear infinite backwards;
+  -moz-box-animation: falling 5s 15.6s linear infinite backwards;
+  animation: falling 5s 15.6s linear infinite backwards; }
+
+.hail div:nth-child(27) {
+  left: 32%;
+  -webkit-box-animation: falling 5s 16.2s linear infinite backwards;
+  -moz-box-animation: falling 5s 16.2s linear infinite backwards;
+  animation: falling 5s 16.2s linear infinite backwards; }
+
+.hail div:nth-child(28) {
+  left: 32%;
+  -webkit-box-animation: falling 5s 16.8s linear infinite backwards;
+  -moz-box-animation: falling 5s 16.8s linear infinite backwards;
+  animation: falling 5s 16.8s linear infinite backwards; }
+
+.hail div:nth-child(29) {
+  left: 26%;
+  -webkit-box-animation: falling 5s 17.4s linear infinite backwards;
+  -moz-box-animation: falling 5s 17.4s linear infinite backwards;
+  animation: falling 5s 17.4s linear infinite backwards; }
+
+.hail div:nth-child(30) {
+  left: 87%;
+  -webkit-box-animation: falling 5s 18s linear infinite backwards;
+  -moz-box-animation: falling 5s 18s linear infinite backwards;
+  animation: falling 5s 18s linear infinite backwards; }
+
+.hail div:nth-child(31) {
+  left: 43%;
+  -webkit-box-animation: falling 5s 18.6s linear infinite backwards;
+  -moz-box-animation: falling 5s 18.6s linear infinite backwards;
+  animation: falling 5s 18.6s linear infinite backwards; }
+
+.hail div:nth-child(32) {
+  left: 16%;
+  -webkit-box-animation: falling 5s 19.2s linear infinite backwards;
+  -moz-box-animation: falling 5s 19.2s linear infinite backwards;
+  animation: falling 5s 19.2s linear infinite backwards; }
+
+.hail div:nth-child(33) {
+  left: 45%;
+  -webkit-box-animation: falling 5s 19.8s linear infinite backwards;
+  -moz-box-animation: falling 5s 19.8s linear infinite backwards;
+  animation: falling 5s 19.8s linear infinite backwards; }
+
+.hail div:nth-child(34) {
+  left: 70%;
+  -webkit-box-animation: falling 5s 20.4s linear infinite backwards;
+  -moz-box-animation: falling 5s 20.4s linear infinite backwards;
+  animation: falling 5s 20.4s linear infinite backwards; }
+
+.hail div:nth-child(35) {
+  left: 67%;
+  -webkit-box-animation: falling 5s 21s linear infinite backwards;
+  -moz-box-animation: falling 5s 21s linear infinite backwards;
+  animation: falling 5s 21s linear infinite backwards; }
+
+.hail div:nth-child(36) {
+  left: 53%;
+  -webkit-box-animation: falling 5s 21.6s linear infinite backwards;
+  -moz-box-animation: falling 5s 21.6s linear infinite backwards;
+  animation: falling 5s 21.6s linear infinite backwards; }
+
+.hail div:nth-child(37) {
+  left: 21%;
+  -webkit-box-animation: falling 5s 22.2s linear infinite backwards;
+  -moz-box-animation: falling 5s 22.2s linear infinite backwards;
+  animation: falling 5s 22.2s linear infinite backwards; }
+
+.hail div:nth-child(38) {
+  left: 57%;
+  -webkit-box-animation: falling 5s 22.8s linear infinite backwards;
+  -moz-box-animation: falling 5s 22.8s linear infinite backwards;
+  animation: falling 5s 22.8s linear infinite backwards; }
+
+.hail div:nth-child(39) {
+  left: 24%;
+  -webkit-box-animation: falling 5s 23.4s linear infinite backwards;
+  -moz-box-animation: falling 5s 23.4s linear infinite backwards;
+  animation: falling 5s 23.4s linear infinite backwards; }
+
+.hail div:nth-child(40) {
+  left: 27%;
+  -webkit-box-animation: falling 5s 24s linear infinite backwards;
+  -moz-box-animation: falling 5s 24s linear infinite backwards;
+  animation: falling 5s 24s linear infinite backwards; }
+
+.hail div:nth-child(41) {
+  left: 23%;
+  -webkit-box-animation: falling 5s 24.6s linear infinite backwards;
+  -moz-box-animation: falling 5s 24.6s linear infinite backwards;
+  animation: falling 5s 24.6s linear infinite backwards; }
+
+.hail div:nth-child(42) {
+  left: 34%;
+  -webkit-box-animation: falling 5s 25.2s linear infinite backwards;
+  -moz-box-animation: falling 5s 25.2s linear infinite backwards;
+  animation: falling 5s 25.2s linear infinite backwards; }
+
+.hail div:nth-child(43) {
+  left: 8%;
+  -webkit-box-animation: falling 5s 25.8s linear infinite backwards;
+  -moz-box-animation: falling 5s 25.8s linear infinite backwards;
+  animation: falling 5s 25.8s linear infinite backwards; }
+
+.hail div:nth-child(44) {
+  left: 90%;
+  -webkit-box-animation: falling 5s 26.4s linear infinite backwards;
+  -moz-box-animation: falling 5s 26.4s linear infinite backwards;
+  animation: falling 5s 26.4s linear infinite backwards; }
+
+.hail div:nth-child(45) {
+  left: 95%;
+  -webkit-box-animation: falling 5s 27s linear infinite backwards;
+  -moz-box-animation: falling 5s 27s linear infinite backwards;
+  animation: falling 5s 27s linear infinite backwards; }
+
+.hail div:nth-child(46) {
+  left: 81%;
+  -webkit-box-animation: falling 5s 27.6s linear infinite backwards;
+  -moz-box-animation: falling 5s 27.6s linear infinite backwards;
+  animation: falling 5s 27.6s linear infinite backwards; }
+
+.hail div:nth-child(47) {
+  left: 41%;
+  -webkit-box-animation: falling 5s 28.2s linear infinite backwards;
+  -moz-box-animation: falling 5s 28.2s linear infinite backwards;
+  animation: falling 5s 28.2s linear infinite backwards; }
+
+.hail div:nth-child(48) {
+  left: 48%;
+  -webkit-box-animation: falling 5s 28.8s linear infinite backwards;
+  -moz-box-animation: falling 5s 28.8s linear infinite backwards;
+  animation: falling 5s 28.8s linear infinite backwards; }
+
+.hail div:nth-child(49) {
+  left: 66%;
+  -webkit-box-animation: falling 5s 29.4s linear infinite backwards;
+  -moz-box-animation: falling 5s 29.4s linear infinite backwards;
+  animation: falling 5s 29.4s linear infinite backwards; }
+
+.hail div:nth-child(50) {
+  left: 64%;
+  -webkit-box-animation: falling 5s 30s linear infinite backwards;
+  -moz-box-animation: falling 5s 30s linear infinite backwards;
+  animation: falling 5s 30s linear infinite backwards; }
+
+.hail div:nth-child(51) {
+  left: 80%;
+  -webkit-box-animation: falling 5s 30.6s linear infinite backwards;
+  -moz-box-animation: falling 5s 30.6s linear infinite backwards;
+  animation: falling 5s 30.6s linear infinite backwards; }
+
+.hail div:nth-child(52) {
+  left: 64%;
+  -webkit-box-animation: falling 5s 31.2s linear infinite backwards;
+  -moz-box-animation: falling 5s 31.2s linear infinite backwards;
+  animation: falling 5s 31.2s linear infinite backwards; }
+
+.hail div:nth-child(53) {
+  left: 33%;
+  -webkit-box-animation: falling 5s 31.8s linear infinite backwards;
+  -moz-box-animation: falling 5s 31.8s linear infinite backwards;
+  animation: falling 5s 31.8s linear infinite backwards; }
+
+.hail div:nth-child(54) {
+  left: 57%;
+  -webkit-box-animation: falling 5s 32.4s linear infinite backwards;
+  -moz-box-animation: falling 5s 32.4s linear infinite backwards;
+  animation: falling 5s 32.4s linear infinite backwards; }
+
+.hail div:nth-child(55) {
+  left: 8%;
+  -webkit-box-animation: falling 5s 33s linear infinite backwards;
+  -moz-box-animation: falling 5s 33s linear infinite backwards;
+  animation: falling 5s 33s linear infinite backwards; }
+
+.hail div:nth-child(56) {
+  left: 61%;
+  -webkit-box-animation: falling 5s 33.6s linear infinite backwards;
+  -moz-box-animation: falling 5s 33.6s linear infinite backwards;
+  animation: falling 5s 33.6s linear infinite backwards; }
+
+.hail div:nth-child(57) {
+  left: 70%;
+  -webkit-box-animation: falling 5s 34.2s linear infinite backwards;
+  -moz-box-animation: falling 5s 34.2s linear infinite backwards;
+  animation: falling 5s 34.2s linear infinite backwards; }
+
+.hail div:nth-child(58) {
+  left: 15%;
+  -webkit-box-animation: falling 5s 34.8s linear infinite backwards;
+  -moz-box-animation: falling 5s 34.8s linear infinite backwards;
+  animation: falling 5s 34.8s linear infinite backwards; }
+
+.hail div:nth-child(59) {
+  left: 43%;
+  -webkit-box-animation: falling 5s 35.4s linear infinite backwards;
+  -moz-box-animation: falling 5s 35.4s linear infinite backwards;
+  animation: falling 5s 35.4s linear infinite backwards; }
+
+.hail div:nth-child(60) {
+  left: 73%;
+  -webkit-box-animation: falling 5s 36s linear infinite backwards;
+  -moz-box-animation: falling 5s 36s linear infinite backwards;
+  animation: falling 5s 36s linear infinite backwards; }
+
+.hail div:nth-child(61) {
+  left: 57%;
+  -webkit-box-animation: falling 5s 36.6s linear infinite backwards;
+  -moz-box-animation: falling 5s 36.6s linear infinite backwards;
+  animation: falling 5s 36.6s linear infinite backwards; }
+
+.hail div:nth-child(62) {
+  left: 15%;
+  -webkit-box-animation: falling 5s 37.2s linear infinite backwards;
+  -moz-box-animation: falling 5s 37.2s linear infinite backwards;
+  animation: falling 5s 37.2s linear infinite backwards; }
+
+.hail div:nth-child(63) {
+  left: 15%;
+  -webkit-box-animation: falling 5s 37.8s linear infinite backwards;
+  -moz-box-animation: falling 5s 37.8s linear infinite backwards;
+  animation: falling 5s 37.8s linear infinite backwards; }
+
+.hail div:nth-child(64) {
+  left: 12%;
+  -webkit-box-animation: falling 5s 38.4s linear infinite backwards;
+  -moz-box-animation: falling 5s 38.4s linear infinite backwards;
+  animation: falling 5s 38.4s linear infinite backwards; }
+
+.hail div:nth-child(65) {
+  left: 91%;
+  -webkit-box-animation: falling 5s 39s linear infinite backwards;
+  -moz-box-animation: falling 5s 39s linear infinite backwards;
+  animation: falling 5s 39s linear infinite backwards; }
+
+.hail div:nth-child(66) {
+  left: 71%;
+  -webkit-box-animation: falling 5s 39.6s linear infinite backwards;
+  -moz-box-animation: falling 5s 39.6s linear infinite backwards;
+  animation: falling 5s 39.6s linear infinite backwards; }
+
+.hail div:nth-child(67) {
+  left: 49%;
+  -webkit-box-animation: falling 5s 40.2s linear infinite backwards;
+  -moz-box-animation: falling 5s 40.2s linear infinite backwards;
+  animation: falling 5s 40.2s linear infinite backwards; }
+
+.hail div:nth-child(68) {
+  left: 2%;
+  -webkit-box-animation: falling 5s 40.8s linear infinite backwards;
+  -moz-box-animation: falling 5s 40.8s linear infinite backwards;
+  animation: falling 5s 40.8s linear infinite backwards; }
+
+.hail div:nth-child(69) {
+  left: 92%;
+  -webkit-box-animation: falling 5s 41.4s linear infinite backwards;
+  -moz-box-animation: falling 5s 41.4s linear infinite backwards;
+  animation: falling 5s 41.4s linear infinite backwards; }
+
+.hail div:nth-child(70) {
+  left: 31%;
+  -webkit-box-animation: falling 5s 42s linear infinite backwards;
+  -moz-box-animation: falling 5s 42s linear infinite backwards;
+  animation: falling 5s 42s linear infinite backwards; }
+
+.hail div:nth-child(71) {
+  left: 50%;
+  -webkit-box-animation: falling 5s 42.6s linear infinite backwards;
+  -moz-box-animation: falling 5s 42.6s linear infinite backwards;
+  animation: falling 5s 42.6s linear infinite backwards; }
+
+.hail div:nth-child(72) {
+  left: 32%;
+  -webkit-box-animation: falling 5s 43.2s linear infinite backwards;
+  -moz-box-animation: falling 5s 43.2s linear infinite backwards;
+  animation: falling 5s 43.2s linear infinite backwards; }
+
+.hail div:nth-child(2n + 1) {
+  width: 10px;
+  height: 10px; }
+
+.hail div:nth-child(3n) {
+  width: 8px;
+  height: 8px; }
+
+.hail div:nth-child(5n) {
+  width: 5px;
+  height: 5px; }
+
 #clouds div {
   position: absolute;
   background-size: contain;
   z-index: 200; }
 
 .clouds-few div:nth-child(1) {
-  top: 9%;
+  top: 26%;
   -webkit-box-animation: drift 41s 3s linear infinite backwards;
   -moz-box-animation: drift 41s 3s linear infinite backwards;
   animation: drift 41s 3s linear infinite backwards;
@@ -1808,7 +2871,7 @@ span:nth-child(8) {
   height: 140px; }
 
 .clouds-few div:nth-child(2) {
-  top: 3%;
+  top: 51%;
   -webkit-box-animation: drift 42s 6s linear infinite backwards;
   -moz-box-animation: drift 42s 6s linear infinite backwards;
   animation: drift 42s 6s linear infinite backwards;
@@ -1817,7 +2880,7 @@ span:nth-child(8) {
   height: 130px; }
 
 .clouds-few div:nth-child(3) {
-  top: 22%;
+  top: 14%;
   -webkit-box-animation: drift 43s 9s linear infinite backwards;
   -moz-box-animation: drift 43s 9s linear infinite backwards;
   animation: drift 43s 9s linear infinite backwards;
@@ -1826,7 +2889,7 @@ span:nth-child(8) {
   height: 120px; }
 
 .clouds-few div:nth-child(4) {
-  top: 58%;
+  top: 27%;
   -webkit-box-animation: drift 44s 12s linear infinite backwards;
   -moz-box-animation: drift 44s 12s linear infinite backwards;
   animation: drift 44s 12s linear infinite backwards;
@@ -1843,7 +2906,7 @@ span:nth-child(8) {
   background: transparent url(../images/clouds_light.png) 0 0 no-repeat; }
 
 .clouds-broken div:nth-child(1) {
-  top: 10%;
+  top: 44%;
   -webkit-box-animation: drift 26s 3s linear infinite backwards;
   -moz-box-animation: drift 26s 3s linear infinite backwards;
   animation: drift 26s 3s linear infinite backwards;
@@ -1852,7 +2915,7 @@ span:nth-child(8) {
   height: 140px; }
 
 .clouds-broken div:nth-child(2) {
-  top: 12%;
+  top: 62%;
   -webkit-box-animation: drift 27s 6s linear infinite backwards;
   -moz-box-animation: drift 27s 6s linear infinite backwards;
   animation: drift 27s 6s linear infinite backwards;
@@ -1861,7 +2924,7 @@ span:nth-child(8) {
   height: 130px; }
 
 .clouds-broken div:nth-child(3) {
-  top: 56%;
+  top: 66%;
   -webkit-box-animation: drift 28s 9s linear infinite backwards;
   -moz-box-animation: drift 28s 9s linear infinite backwards;
   animation: drift 28s 9s linear infinite backwards;
@@ -1870,7 +2933,7 @@ span:nth-child(8) {
   height: 120px; }
 
 .clouds-broken div:nth-child(4) {
-  top: 42%;
+  top: 41%;
   -webkit-box-animation: drift 24s 12s linear infinite reverse backwards;
   -moz-box-animation: drift 24s 12s linear infinite reverse backwards;
   animation: drift 24s 12s linear infinite reverse backwards;
@@ -1879,7 +2942,7 @@ span:nth-child(8) {
   height: 130px; }
 
 .clouds-broken div:nth-child(5) {
-  top: 53%;
+  top: 43%;
   -webkit-box-animation: drift 25s 15s linear infinite reverse backwards;
   -moz-box-animation: drift 25s 15s linear infinite reverse backwards;
   animation: drift 25s 15s linear infinite reverse backwards;
@@ -1897,7 +2960,7 @@ span:nth-child(8) {
   height: 120px; }
 
 .clouds-broken div:nth-child(7) {
-  top: 27%;
+  top: 23%;
   -webkit-box-animation: drift 37s 21s linear infinite reverse backwards;
   -moz-box-animation: drift 37s 21s linear infinite reverse backwards;
   animation: drift 37s 21s linear infinite reverse backwards;
@@ -1906,7 +2969,7 @@ span:nth-child(8) {
   height: 115px; }
 
 .clouds-broken div:nth-child(8) {
-  top: 40%;
+  top: 24%;
   -webkit-box-animation: drift 38s 24s linear infinite reverse backwards;
   -moz-box-animation: drift 38s 24s linear infinite reverse backwards;
   animation: drift 38s 24s linear infinite reverse backwards;
@@ -1915,7 +2978,7 @@ span:nth-child(8) {
   height: 110px; }
 
 .clouds-broken div:nth-child(9) {
-  top: 9%;
+  top: 32%;
   -webkit-box-animation: drift 35s 5s linear infinite reverse backwards;
   -moz-box-animation: drift 35s 5s linear infinite reverse backwards;
   animation: drift 35s 5s linear infinite reverse backwards;
@@ -1924,7 +2987,7 @@ span:nth-child(8) {
   height: 200px; }
 
 .clouds-broken div:nth-child(10) {
-  top: 30%;
+  top: 23%;
   -webkit-box-animation: drift 40s 5s linear infinite backwards;
   -moz-box-animation: drift 40s 5s linear infinite backwards;
   animation: drift 40s 5s linear infinite backwards;
@@ -1933,7 +2996,7 @@ span:nth-child(8) {
   height: 150px; }
 
 .clouds-scattered div:nth-child(1) {
-  top: 51%;
+  top: 60%;
   -webkit-box-animation: drift 31s 3s linear infinite backwards;
   -moz-box-animation: drift 31s 3s linear infinite backwards;
   animation: drift 31s 3s linear infinite backwards;
@@ -1942,7 +3005,7 @@ span:nth-child(8) {
   height: 140px; }
 
 .clouds-scattered div:nth-child(2) {
-  top: 29%;
+  top: 40%;
   -webkit-box-animation: drift 32s 6s linear infinite backwards;
   -moz-box-animation: drift 32s 6s linear infinite backwards;
   animation: drift 32s 6s linear infinite backwards;
@@ -1951,7 +3014,7 @@ span:nth-child(8) {
   height: 130px; }
 
 .clouds-scattered div:nth-child(3) {
-  top: 9%;
+  top: 61%;
   -webkit-box-animation: drift 33s 9s linear infinite backwards;
   -moz-box-animation: drift 33s 9s linear infinite backwards;
   animation: drift 33s 9s linear infinite backwards;
@@ -1960,7 +3023,7 @@ span:nth-child(8) {
   height: 120px; }
 
 .clouds-scattered div:nth-child(4) {
-  top: 54%;
+  top: 45%;
   -webkit-box-animation: drift 39s 12s linear infinite reverse backwards;
   -moz-box-animation: drift 39s 12s linear infinite reverse backwards;
   animation: drift 39s 12s linear infinite reverse backwards;
@@ -1969,7 +3032,7 @@ span:nth-child(8) {
   height: 130px; }
 
 .clouds-scattered div:nth-child(5) {
-  top: 59%;
+  top: 47%;
   -webkit-box-animation: drift 40s 15s linear infinite reverse backwards;
   -moz-box-animation: drift 40s 15s linear infinite reverse backwards;
   animation: drift 40s 15s linear infinite reverse backwards;
@@ -1978,7 +3041,7 @@ span:nth-child(8) {
   height: 125px; }
 
 .clouds-scattered div:nth-child(6) {
-  top: 21%;
+  top: 9%;
   -webkit-box-animation: drift 35s 5s linear infinite reverse backwards;
   -moz-box-animation: drift 35s 5s linear infinite reverse backwards;
   animation: drift 35s 5s linear infinite reverse backwards;
@@ -1987,7 +3050,7 @@ span:nth-child(8) {
   height: 150px; }
 
 .clouds-overcast div:nth-child(1) {
-  top: 69%;
+  top: 49%;
   -webkit-box-animation: drift 41s 3s linear infinite backwards;
   -moz-box-animation: drift 41s 3s linear infinite backwards;
   animation: drift 41s 3s linear infinite backwards;
@@ -1996,7 +3059,7 @@ span:nth-child(8) {
   height: 140px; }
 
 .clouds-overcast div:nth-child(2) {
-  top: 16%;
+  top: 50%;
   -webkit-box-animation: drift 42s 6s linear infinite backwards;
   -moz-box-animation: drift 42s 6s linear infinite backwards;
   animation: drift 42s 6s linear infinite backwards;
@@ -2005,7 +3068,7 @@ span:nth-child(8) {
   height: 130px; }
 
 .clouds-overcast div:nth-child(3) {
-  top: 35%;
+  top: 39%;
   -webkit-box-animation: drift 43s 9s linear infinite backwards;
   -moz-box-animation: drift 43s 9s linear infinite backwards;
   animation: drift 43s 9s linear infinite backwards;
@@ -2014,7 +3077,7 @@ span:nth-child(8) {
   height: 120px; }
 
 .clouds-overcast div:nth-child(4) {
-  top: 15%;
+  top: 61%;
   -webkit-box-animation: drift 44s 12s linear infinite backwards;
   -moz-box-animation: drift 44s 12s linear infinite backwards;
   animation: drift 44s 12s linear infinite backwards;
@@ -2023,7 +3086,7 @@ span:nth-child(8) {
   height: 110px; }
 
 .clouds-overcast div:nth-child(5) {
-  top: 31%;
+  top: 34%;
   -webkit-box-animation: drift 45s 15s linear reverse infinite backwards;
   -moz-box-animation: drift 45s 15s linear reverse infinite backwards;
   animation: drift 45s 15s linear reverse infinite backwards;
@@ -2032,7 +3095,7 @@ span:nth-child(8) {
   height: 200px; }
 
 .clouds-overcast div:nth-child(6) {
-  top: 68%;
+  top: 11%;
   -webkit-box-animation: drift 46s 18s linear reverse infinite backwards;
   -moz-box-animation: drift 46s 18s linear reverse infinite backwards;
   animation: drift 46s 18s linear reverse infinite backwards;
@@ -2041,7 +3104,7 @@ span:nth-child(8) {
   height: 190px; }
 
 .clouds-overcast div:nth-child(7) {
-  top: 57%;
+  top: 19%;
   -webkit-box-animation: drift 47s 21s linear reverse infinite backwards;
   -moz-box-animation: drift 47s 21s linear reverse infinite backwards;
   animation: drift 47s 21s linear reverse infinite backwards;
@@ -2058,7 +3121,7 @@ span:nth-child(8) {
   top: 0;
   left: 0; }
   .misty div:nth-child(1) {
-    top: 55%;
+    top: 28%;
     -webkit-box-animation: drift 40s 2s linear infinite backwards;
     -moz-box-animation: drift 40s 2s linear infinite backwards;
     animation: drift 40s 2s linear infinite backwards;
@@ -2067,7 +3130,7 @@ span:nth-child(8) {
     width: 400px;
     height: 300px; }
   .misty div:nth-child(2) {
-    top: 26%;
+    top: 5%;
     -webkit-box-animation: drift 50s 1s linear infinite reverse backwards;
     -moz-box-animation: drift 50s 1s linear infinite reverse backwards;
     animation: drift 50s 1s linear infinite reverse backwards;
@@ -2087,612 +3150,28 @@ span:nth-child(8) {
   transform: rotate(-40deg);
   left: 0; }
 
-.thunder_rain div {
-  border-left: 2px solid white; }
-
-.thunder_rain div:nth-child(1) {
-  left: 18%;
-  -webkit-box-animation: falling 5s 0.2s linear infinite backwards;
-  -moz-box-animation: falling 5s 0.2s linear infinite backwards;
-  animation: falling 5s 0.2s linear infinite backwards; }
-
-.thunder_rain div:nth-child(2) {
-  left: 22%;
-  -webkit-box-animation: falling 5s 0.4s linear infinite backwards;
-  -moz-box-animation: falling 5s 0.4s linear infinite backwards;
-  animation: falling 5s 0.4s linear infinite backwards; }
-
-.thunder_rain div:nth-child(3) {
-  left: 51%;
-  -webkit-box-animation: falling 5s 0.6s linear infinite backwards;
-  -moz-box-animation: falling 5s 0.6s linear infinite backwards;
-  animation: falling 5s 0.6s linear infinite backwards; }
-
-.thunder_rain div:nth-child(4) {
-  left: 11%;
-  -webkit-box-animation: falling 5s 0.8s linear infinite backwards;
-  -moz-box-animation: falling 5s 0.8s linear infinite backwards;
-  animation: falling 5s 0.8s linear infinite backwards; }
-
-.thunder_rain div:nth-child(5) {
-  left: 23%;
-  -webkit-box-animation: falling 5s 1s linear infinite backwards;
-  -moz-box-animation: falling 5s 1s linear infinite backwards;
-  animation: falling 5s 1s linear infinite backwards; }
-
-.thunder_rain div:nth-child(6) {
-  left: 33%;
-  -webkit-box-animation: falling 5s 1.2s linear infinite backwards;
-  -moz-box-animation: falling 5s 1.2s linear infinite backwards;
-  animation: falling 5s 1.2s linear infinite backwards; }
-
-.thunder_rain div:nth-child(7) {
-  left: 33%;
-  -webkit-box-animation: falling 5s 1.4s linear infinite backwards;
-  -moz-box-animation: falling 5s 1.4s linear infinite backwards;
-  animation: falling 5s 1.4s linear infinite backwards; }
-
-.thunder_rain div:nth-child(8) {
-  left: 35%;
-  -webkit-box-animation: falling 5s 1.6s linear infinite backwards;
-  -moz-box-animation: falling 5s 1.6s linear infinite backwards;
-  animation: falling 5s 1.6s linear infinite backwards; }
-
-.thunder_rain div:nth-child(9) {
-  left: 19%;
-  -webkit-box-animation: falling 5s 1.8s linear infinite backwards;
-  -moz-box-animation: falling 5s 1.8s linear infinite backwards;
-  animation: falling 5s 1.8s linear infinite backwards; }
-
-.thunder_rain div:nth-child(10) {
-  left: 80%;
-  -webkit-box-animation: falling 5s 2s linear infinite backwards;
-  -moz-box-animation: falling 5s 2s linear infinite backwards;
-  animation: falling 5s 2s linear infinite backwards; }
-
-.thunder_rain div:nth-child(11) {
-  left: 67%;
-  -webkit-box-animation: falling 5s 2.2s linear infinite backwards;
-  -moz-box-animation: falling 5s 2.2s linear infinite backwards;
-  animation: falling 5s 2.2s linear infinite backwards; }
-
-.thunder_rain div:nth-child(12) {
-  left: 73%;
-  -webkit-box-animation: falling 5s 2.4s linear infinite backwards;
-  -moz-box-animation: falling 5s 2.4s linear infinite backwards;
-  animation: falling 5s 2.4s linear infinite backwards; }
-
-.thunder_rain div:nth-child(13) {
-  left: 7%;
-  -webkit-box-animation: falling 5s 2.6s linear infinite backwards;
-  -moz-box-animation: falling 5s 2.6s linear infinite backwards;
-  animation: falling 5s 2.6s linear infinite backwards; }
-
-.thunder_rain div:nth-child(14) {
-  left: 19%;
-  -webkit-box-animation: falling 5s 2.8s linear infinite backwards;
-  -moz-box-animation: falling 5s 2.8s linear infinite backwards;
-  animation: falling 5s 2.8s linear infinite backwards; }
-
-.thunder_rain div:nth-child(15) {
-  left: 63%;
-  -webkit-box-animation: falling 5s 3s linear infinite backwards;
-  -moz-box-animation: falling 5s 3s linear infinite backwards;
-  animation: falling 5s 3s linear infinite backwards; }
-
-.thunder_rain div:nth-child(16) {
-  left: 37%;
-  -webkit-box-animation: falling 5s 3.2s linear infinite backwards;
-  -moz-box-animation: falling 5s 3.2s linear infinite backwards;
-  animation: falling 5s 3.2s linear infinite backwards; }
-
-.thunder_rain div:nth-child(17) {
-  left: 91%;
-  -webkit-box-animation: falling 5s 3.4s linear infinite backwards;
-  -moz-box-animation: falling 5s 3.4s linear infinite backwards;
-  animation: falling 5s 3.4s linear infinite backwards; }
-
-.thunder_rain div:nth-child(18) {
-  left: 22%;
-  -webkit-box-animation: falling 5s 3.6s linear infinite backwards;
-  -moz-box-animation: falling 5s 3.6s linear infinite backwards;
-  animation: falling 5s 3.6s linear infinite backwards; }
-
-.thunder_rain div:nth-child(19) {
-  left: 29%;
-  -webkit-box-animation: falling 5s 3.8s linear infinite backwards;
-  -moz-box-animation: falling 5s 3.8s linear infinite backwards;
-  animation: falling 5s 3.8s linear infinite backwards; }
-
-.thunder_rain div:nth-child(20) {
-  left: 6%;
-  -webkit-box-animation: falling 5s 4s linear infinite backwards;
-  -moz-box-animation: falling 5s 4s linear infinite backwards;
-  animation: falling 5s 4s linear infinite backwards; }
-
-.thunder_rain div:nth-child(21) {
-  left: 39%;
-  -webkit-box-animation: falling 5s 4.2s linear infinite backwards;
-  -moz-box-animation: falling 5s 4.2s linear infinite backwards;
-  animation: falling 5s 4.2s linear infinite backwards; }
-
-.thunder_rain div:nth-child(22) {
-  left: 100%;
-  -webkit-box-animation: falling 5s 4.4s linear infinite backwards;
-  -moz-box-animation: falling 5s 4.4s linear infinite backwards;
-  animation: falling 5s 4.4s linear infinite backwards; }
-
-.thunder_rain div:nth-child(23) {
-  left: 57%;
-  -webkit-box-animation: falling 5s 4.6s linear infinite backwards;
-  -moz-box-animation: falling 5s 4.6s linear infinite backwards;
-  animation: falling 5s 4.6s linear infinite backwards; }
-
-.thunder_rain div:nth-child(24) {
-  left: 59%;
-  -webkit-box-animation: falling 5s 4.8s linear infinite backwards;
-  -moz-box-animation: falling 5s 4.8s linear infinite backwards;
-  animation: falling 5s 4.8s linear infinite backwards; }
-
-.thunder_rain div:nth-child(25) {
-  left: 46%;
-  -webkit-box-animation: falling 5s 5s linear infinite backwards;
-  -moz-box-animation: falling 5s 5s linear infinite backwards;
-  animation: falling 5s 5s linear infinite backwards; }
-
-.thunder_rain div:nth-child(26) {
-  left: 48%;
-  -webkit-box-animation: falling 5s 5.2s linear infinite backwards;
-  -moz-box-animation: falling 5s 5.2s linear infinite backwards;
-  animation: falling 5s 5.2s linear infinite backwards; }
-
-.thunder_rain div:nth-child(27) {
-  left: 9%;
-  -webkit-box-animation: falling 5s 5.4s linear infinite backwards;
-  -moz-box-animation: falling 5s 5.4s linear infinite backwards;
-  animation: falling 5s 5.4s linear infinite backwards; }
-
-.thunder_rain div:nth-child(28) {
-  left: 91%;
-  -webkit-box-animation: falling 5s 5.6s linear infinite backwards;
-  -moz-box-animation: falling 5s 5.6s linear infinite backwards;
-  animation: falling 5s 5.6s linear infinite backwards; }
-
-.thunder_rain div:nth-child(29) {
-  left: 67%;
-  -webkit-box-animation: falling 5s 5.8s linear infinite backwards;
-  -moz-box-animation: falling 5s 5.8s linear infinite backwards;
-  animation: falling 5s 5.8s linear infinite backwards; }
-
-.thunder_rain div:nth-child(30) {
-  left: 77%;
-  -webkit-box-animation: falling 5s 6s linear infinite backwards;
-  -moz-box-animation: falling 5s 6s linear infinite backwards;
-  animation: falling 5s 6s linear infinite backwards; }
-
-.thunder_rain div:nth-child(31) {
-  left: 84%;
-  -webkit-box-animation: falling 5s 6.2s linear infinite backwards;
-  -moz-box-animation: falling 5s 6.2s linear infinite backwards;
-  animation: falling 5s 6.2s linear infinite backwards; }
-
-.thunder_rain div:nth-child(32) {
-  left: 74%;
-  -webkit-box-animation: falling 5s 6.4s linear infinite backwards;
-  -moz-box-animation: falling 5s 6.4s linear infinite backwards;
-  animation: falling 5s 6.4s linear infinite backwards; }
-
-.thunder_rain div:nth-child(33) {
-  left: 32%;
-  -webkit-box-animation: falling 5s 6.6s linear infinite backwards;
-  -moz-box-animation: falling 5s 6.6s linear infinite backwards;
-  animation: falling 5s 6.6s linear infinite backwards; }
-
-.thunder_rain div:nth-child(34) {
-  left: 56%;
-  -webkit-box-animation: falling 5s 6.8s linear infinite backwards;
-  -moz-box-animation: falling 5s 6.8s linear infinite backwards;
-  animation: falling 5s 6.8s linear infinite backwards; }
-
-.thunder_rain div:nth-child(35) {
-  left: 13%;
-  -webkit-box-animation: falling 5s 7s linear infinite backwards;
-  -moz-box-animation: falling 5s 7s linear infinite backwards;
-  animation: falling 5s 7s linear infinite backwards; }
-
-.thunder_rain div:nth-child(36) {
-  left: 100%;
-  -webkit-box-animation: falling 5s 7.2s linear infinite backwards;
-  -moz-box-animation: falling 5s 7.2s linear infinite backwards;
-  animation: falling 5s 7.2s linear infinite backwards; }
-
-.thunder_rain div:nth-child(37) {
-  left: 66%;
-  -webkit-box-animation: falling 5s 7.4s linear infinite backwards;
-  -moz-box-animation: falling 5s 7.4s linear infinite backwards;
-  animation: falling 5s 7.4s linear infinite backwards; }
-
-.thunder_rain div:nth-child(38) {
-  left: 2%;
-  -webkit-box-animation: falling 5s 7.6s linear infinite backwards;
-  -moz-box-animation: falling 5s 7.6s linear infinite backwards;
-  animation: falling 5s 7.6s linear infinite backwards; }
-
-.thunder_rain div:nth-child(39) {
-  left: 50%;
-  -webkit-box-animation: falling 5s 7.8s linear infinite backwards;
-  -moz-box-animation: falling 5s 7.8s linear infinite backwards;
-  animation: falling 5s 7.8s linear infinite backwards; }
-
-.thunder_rain div:nth-child(40) {
-  left: 46%;
-  -webkit-box-animation: falling 5s 8s linear infinite backwards;
-  -moz-box-animation: falling 5s 8s linear infinite backwards;
-  animation: falling 5s 8s linear infinite backwards; }
-
-.thunder_rain div:nth-child(41) {
-  left: 7%;
-  -webkit-box-animation: falling 5s 8.2s linear infinite backwards;
-  -moz-box-animation: falling 5s 8.2s linear infinite backwards;
-  animation: falling 5s 8.2s linear infinite backwards; }
-
-.thunder_rain div:nth-child(42) {
-  left: 35%;
-  -webkit-box-animation: falling 5s 8.4s linear infinite backwards;
-  -moz-box-animation: falling 5s 8.4s linear infinite backwards;
-  animation: falling 5s 8.4s linear infinite backwards; }
-
-.thunder_rain div:nth-child(43) {
-  left: 57%;
-  -webkit-box-animation: falling 5s 8.6s linear infinite backwards;
-  -moz-box-animation: falling 5s 8.6s linear infinite backwards;
-  animation: falling 5s 8.6s linear infinite backwards; }
-
-.thunder_rain div:nth-child(44) {
-  left: 40%;
-  -webkit-box-animation: falling 5s 8.8s linear infinite backwards;
-  -moz-box-animation: falling 5s 8.8s linear infinite backwards;
-  animation: falling 5s 8.8s linear infinite backwards; }
-
-.thunder_rain div:nth-child(45) {
-  left: 98%;
-  -webkit-box-animation: falling 5s 9s linear infinite backwards;
-  -moz-box-animation: falling 5s 9s linear infinite backwards;
-  animation: falling 5s 9s linear infinite backwards; }
-
-.thunder_rain div:nth-child(46) {
-  left: 36%;
-  -webkit-box-animation: falling 5s 9.2s linear infinite backwards;
-  -moz-box-animation: falling 5s 9.2s linear infinite backwards;
-  animation: falling 5s 9.2s linear infinite backwards; }
-
-.thunder_rain div:nth-child(47) {
-  left: 3%;
-  -webkit-box-animation: falling 5s 9.4s linear infinite backwards;
-  -moz-box-animation: falling 5s 9.4s linear infinite backwards;
-  animation: falling 5s 9.4s linear infinite backwards; }
-
-.thunder_rain div:nth-child(48) {
-  left: 57%;
-  -webkit-box-animation: falling 5s 9.6s linear infinite backwards;
-  -moz-box-animation: falling 5s 9.6s linear infinite backwards;
-  animation: falling 5s 9.6s linear infinite backwards; }
-
-.thunder_rain div:nth-child(49) {
-  left: 39%;
-  -webkit-box-animation: falling 5s 9.8s linear infinite backwards;
-  -moz-box-animation: falling 5s 9.8s linear infinite backwards;
-  animation: falling 5s 9.8s linear infinite backwards; }
-
-.thunder_rain div:nth-child(50) {
-  left: 78%;
-  -webkit-box-animation: falling 5s 10s linear infinite backwards;
-  -moz-box-animation: falling 5s 10s linear infinite backwards;
-  animation: falling 5s 10s linear infinite backwards; }
-
-.thunder_rain div:nth-child(51) {
-  left: 14%;
-  -webkit-box-animation: falling 5s 10.2s linear infinite backwards;
-  -moz-box-animation: falling 5s 10.2s linear infinite backwards;
-  animation: falling 5s 10.2s linear infinite backwards; }
-
-.thunder_rain div:nth-child(52) {
-  left: 97%;
-  -webkit-box-animation: falling 5s 10.4s linear infinite backwards;
-  -moz-box-animation: falling 5s 10.4s linear infinite backwards;
-  animation: falling 5s 10.4s linear infinite backwards; }
-
-.thunder_rain div:nth-child(53) {
-  left: 74%;
-  -webkit-box-animation: falling 5s 10.6s linear infinite backwards;
-  -moz-box-animation: falling 5s 10.6s linear infinite backwards;
-  animation: falling 5s 10.6s linear infinite backwards; }
-
-.thunder_rain div:nth-child(54) {
-  left: 47%;
-  -webkit-box-animation: falling 5s 10.8s linear infinite backwards;
-  -moz-box-animation: falling 5s 10.8s linear infinite backwards;
-  animation: falling 5s 10.8s linear infinite backwards; }
-
-.thunder_rain div:nth-child(55) {
-  left: 15%;
-  -webkit-box-animation: falling 5s 11s linear infinite backwards;
-  -moz-box-animation: falling 5s 11s linear infinite backwards;
-  animation: falling 5s 11s linear infinite backwards; }
-
-.thunder_rain div:nth-child(56) {
-  left: 11%;
-  -webkit-box-animation: falling 5s 11.2s linear infinite backwards;
-  -moz-box-animation: falling 5s 11.2s linear infinite backwards;
-  animation: falling 5s 11.2s linear infinite backwards; }
-
-.thunder_rain div:nth-child(57) {
-  left: 30%;
-  -webkit-box-animation: falling 5s 11.4s linear infinite backwards;
-  -moz-box-animation: falling 5s 11.4s linear infinite backwards;
-  animation: falling 5s 11.4s linear infinite backwards; }
-
-.thunder_rain div:nth-child(58) {
-  left: 49%;
-  -webkit-box-animation: falling 5s 11.6s linear infinite backwards;
-  -moz-box-animation: falling 5s 11.6s linear infinite backwards;
-  animation: falling 5s 11.6s linear infinite backwards; }
-
-.thunder_rain div:nth-child(59) {
-  left: 39%;
-  -webkit-box-animation: falling 5s 11.8s linear infinite backwards;
-  -moz-box-animation: falling 5s 11.8s linear infinite backwards;
-  animation: falling 5s 11.8s linear infinite backwards; }
-
-.thunder_rain div:nth-child(60) {
-  left: 1%;
-  -webkit-box-animation: falling 5s 12s linear infinite backwards;
-  -moz-box-animation: falling 5s 12s linear infinite backwards;
-  animation: falling 5s 12s linear infinite backwards; }
-
-.thunder_rain div:nth-child(61) {
-  left: 81%;
-  -webkit-box-animation: falling 5s 12.2s linear infinite backwards;
-  -moz-box-animation: falling 5s 12.2s linear infinite backwards;
-  animation: falling 5s 12.2s linear infinite backwards; }
-
-.thunder_rain div:nth-child(62) {
-  left: 38%;
-  -webkit-box-animation: falling 5s 12.4s linear infinite backwards;
-  -moz-box-animation: falling 5s 12.4s linear infinite backwards;
-  animation: falling 5s 12.4s linear infinite backwards; }
-
-.thunder_rain div:nth-child(63) {
-  left: 75%;
-  -webkit-box-animation: falling 5s 12.6s linear infinite backwards;
-  -moz-box-animation: falling 5s 12.6s linear infinite backwards;
-  animation: falling 5s 12.6s linear infinite backwards; }
-
-.thunder_rain div:nth-child(64) {
-  left: 20%;
-  -webkit-box-animation: falling 5s 12.8s linear infinite backwards;
-  -moz-box-animation: falling 5s 12.8s linear infinite backwards;
-  animation: falling 5s 12.8s linear infinite backwards; }
-
-.thunder_rain div:nth-child(65) {
-  left: 29%;
-  -webkit-box-animation: falling 5s 13s linear infinite backwards;
-  -moz-box-animation: falling 5s 13s linear infinite backwards;
-  animation: falling 5s 13s linear infinite backwards; }
-
-.thunder_rain div:nth-child(66) {
-  left: 76%;
-  -webkit-box-animation: falling 5s 13.2s linear infinite backwards;
-  -moz-box-animation: falling 5s 13.2s linear infinite backwards;
-  animation: falling 5s 13.2s linear infinite backwards; }
-
-.thunder_rain div:nth-child(67) {
-  left: 71%;
-  -webkit-box-animation: falling 5s 13.4s linear infinite backwards;
-  -moz-box-animation: falling 5s 13.4s linear infinite backwards;
-  animation: falling 5s 13.4s linear infinite backwards; }
-
-.thunder_rain div:nth-child(68) {
-  left: 43%;
-  -webkit-box-animation: falling 5s 13.6s linear infinite backwards;
-  -moz-box-animation: falling 5s 13.6s linear infinite backwards;
-  animation: falling 5s 13.6s linear infinite backwards; }
-
-.thunder_rain div:nth-child(69) {
-  left: 77%;
-  -webkit-box-animation: falling 5s 13.8s linear infinite backwards;
-  -moz-box-animation: falling 5s 13.8s linear infinite backwards;
-  animation: falling 5s 13.8s linear infinite backwards; }
-
-.thunder_rain div:nth-child(70) {
-  left: 6%;
-  -webkit-box-animation: falling 5s 14s linear infinite backwards;
-  -moz-box-animation: falling 5s 14s linear infinite backwards;
-  animation: falling 5s 14s linear infinite backwards; }
-
-.thunder_rain div:nth-child(71) {
-  left: 89%;
-  -webkit-box-animation: falling 5s 14.2s linear infinite backwards;
-  -moz-box-animation: falling 5s 14.2s linear infinite backwards;
-  animation: falling 5s 14.2s linear infinite backwards; }
-
-.thunder_rain div:nth-child(72) {
-  left: 64%;
-  -webkit-box-animation: falling 5s 14.4s linear infinite backwards;
-  -moz-box-animation: falling 5s 14.4s linear infinite backwards;
-  animation: falling 5s 14.4s linear infinite backwards; }
-
-.thunder_rain div:nth-child(73) {
-  left: 82%;
-  -webkit-box-animation: falling 5s 14.6s linear infinite backwards;
-  -moz-box-animation: falling 5s 14.6s linear infinite backwards;
-  animation: falling 5s 14.6s linear infinite backwards; }
-
-.thunder_rain div:nth-child(74) {
-  left: 51%;
-  -webkit-box-animation: falling 5s 14.8s linear infinite backwards;
-  -moz-box-animation: falling 5s 14.8s linear infinite backwards;
-  animation: falling 5s 14.8s linear infinite backwards; }
-
-.thunder_rain div:nth-child(75) {
-  left: 75%;
-  -webkit-box-animation: falling 5s 15s linear infinite backwards;
-  -moz-box-animation: falling 5s 15s linear infinite backwards;
-  animation: falling 5s 15s linear infinite backwards; }
-
-.thunder_rain div:nth-child(76) {
-  left: 31%;
-  -webkit-box-animation: falling 5s 15.2s linear infinite backwards;
-  -moz-box-animation: falling 5s 15.2s linear infinite backwards;
-  animation: falling 5s 15.2s linear infinite backwards; }
-
-.thunder_rain div:nth-child(77) {
-  left: 85%;
-  -webkit-box-animation: falling 5s 15.4s linear infinite backwards;
-  -moz-box-animation: falling 5s 15.4s linear infinite backwards;
-  animation: falling 5s 15.4s linear infinite backwards; }
-
-.thunder_rain div:nth-child(78) {
-  left: 35%;
-  -webkit-box-animation: falling 5s 15.6s linear infinite backwards;
-  -moz-box-animation: falling 5s 15.6s linear infinite backwards;
-  animation: falling 5s 15.6s linear infinite backwards; }
-
-.thunder_rain div:nth-child(79) {
-  left: 69%;
-  -webkit-box-animation: falling 5s 15.8s linear infinite backwards;
-  -moz-box-animation: falling 5s 15.8s linear infinite backwards;
-  animation: falling 5s 15.8s linear infinite backwards; }
-
-.thunder_rain div:nth-child(80) {
-  left: 66%;
-  -webkit-box-animation: falling 5s 16s linear infinite backwards;
-  -moz-box-animation: falling 5s 16s linear infinite backwards;
-  animation: falling 5s 16s linear infinite backwards; }
-
-.thunder_rain div:nth-child(81) {
-  left: 20%;
-  -webkit-box-animation: falling 5s 16.2s linear infinite backwards;
-  -moz-box-animation: falling 5s 16.2s linear infinite backwards;
-  animation: falling 5s 16.2s linear infinite backwards; }
-
-.thunder_rain div:nth-child(82) {
-  left: 83%;
-  -webkit-box-animation: falling 5s 16.4s linear infinite backwards;
-  -moz-box-animation: falling 5s 16.4s linear infinite backwards;
-  animation: falling 5s 16.4s linear infinite backwards; }
-
-.thunder_rain div:nth-child(83) {
-  left: 78%;
-  -webkit-box-animation: falling 5s 16.6s linear infinite backwards;
-  -moz-box-animation: falling 5s 16.6s linear infinite backwards;
-  animation: falling 5s 16.6s linear infinite backwards; }
-
-.thunder_rain div:nth-child(84) {
-  left: 13%;
-  -webkit-box-animation: falling 5s 16.8s linear infinite backwards;
-  -moz-box-animation: falling 5s 16.8s linear infinite backwards;
-  animation: falling 5s 16.8s linear infinite backwards; }
-
-.thunder_rain div:nth-child(85) {
-  left: 44%;
-  -webkit-box-animation: falling 5s 17s linear infinite backwards;
-  -moz-box-animation: falling 5s 17s linear infinite backwards;
-  animation: falling 5s 17s linear infinite backwards; }
-
-.thunder_rain div:nth-child(86) {
-  left: 65%;
-  -webkit-box-animation: falling 5s 17.2s linear infinite backwards;
-  -moz-box-animation: falling 5s 17.2s linear infinite backwards;
-  animation: falling 5s 17.2s linear infinite backwards; }
-
-.thunder_rain div:nth-child(87) {
-  left: 58%;
-  -webkit-box-animation: falling 5s 17.4s linear infinite backwards;
-  -moz-box-animation: falling 5s 17.4s linear infinite backwards;
-  animation: falling 5s 17.4s linear infinite backwards; }
-
-.thunder_rain div:nth-child(88) {
-  left: 96%;
-  -webkit-box-animation: falling 5s 17.6s linear infinite backwards;
-  -moz-box-animation: falling 5s 17.6s linear infinite backwards;
-  animation: falling 5s 17.6s linear infinite backwards; }
-
-.thunder_rain div:nth-child(89) {
-  left: 44%;
-  -webkit-box-animation: falling 5s 17.8s linear infinite backwards;
-  -moz-box-animation: falling 5s 17.8s linear infinite backwards;
-  animation: falling 5s 17.8s linear infinite backwards; }
-
-.thunder_rain div:nth-child(90) {
-  left: 39%;
-  -webkit-box-animation: falling 5s 18s linear infinite backwards;
-  -moz-box-animation: falling 5s 18s linear infinite backwards;
-  animation: falling 5s 18s linear infinite backwards; }
-
-.thunder_rain div:nth-child(91) {
-  left: 28%;
-  -webkit-box-animation: falling 5s 18.2s linear infinite backwards;
-  -moz-box-animation: falling 5s 18.2s linear infinite backwards;
-  animation: falling 5s 18.2s linear infinite backwards; }
-
-.thunder_rain div:nth-child(92) {
-  left: 31%;
-  -webkit-box-animation: falling 5s 18.4s linear infinite backwards;
-  -moz-box-animation: falling 5s 18.4s linear infinite backwards;
-  animation: falling 5s 18.4s linear infinite backwards; }
-
-.thunder_rain div:nth-child(93) {
-  left: 13%;
-  -webkit-box-animation: falling 5s 18.6s linear infinite backwards;
-  -moz-box-animation: falling 5s 18.6s linear infinite backwards;
-  animation: falling 5s 18.6s linear infinite backwards; }
-
-.thunder_rain div:nth-child(94) {
-  left: 29%;
-  -webkit-box-animation: falling 5s 18.8s linear infinite backwards;
-  -moz-box-animation: falling 5s 18.8s linear infinite backwards;
-  animation: falling 5s 18.8s linear infinite backwards; }
-
-.thunder_rain div:nth-child(95) {
-  left: 35%;
-  -webkit-box-animation: falling 5s 19s linear infinite backwards;
-  -moz-box-animation: falling 5s 19s linear infinite backwards;
-  animation: falling 5s 19s linear infinite backwards; }
-
-.thunder_rain div:nth-child(96) {
-  left: 8%;
-  -webkit-box-animation: falling 5s 19.2s linear infinite backwards;
-  -moz-box-animation: falling 5s 19.2s linear infinite backwards;
-  animation: falling 5s 19.2s linear infinite backwards; }
-
-.thunder_rain div:nth-child(97) {
-  left: 74%;
-  -webkit-box-animation: falling 5s 19.4s linear infinite backwards;
-  -moz-box-animation: falling 5s 19.4s linear infinite backwards;
-  animation: falling 5s 19.4s linear infinite backwards; }
-
-.thunder_rain div:nth-child(98) {
-  left: 12%;
-  -webkit-box-animation: falling 5s 19.6s linear infinite backwards;
-  -moz-box-animation: falling 5s 19.6s linear infinite backwards;
-  animation: falling 5s 19.6s linear infinite backwards; }
-
-.thunder_rain div:nth-child(99) {
-  left: 15%;
-  -webkit-box-animation: falling 5s 19.8s linear infinite backwards;
-  -moz-box-animation: falling 5s 19.8s linear infinite backwards;
-  animation: falling 5s 19.8s linear infinite backwards; }
-
-.thunder_rain div:nth-child(2n + 1) {
-  height: 35px; }
-
-.thunder_rain div:nth-child(3n) {
-  height: 25px; }
-
-.thunder_rain div:nth-child(5n) {
-  height: 20px;
-  border-color: #b3d0eb; }
+.windy div {
+  position: absolute; }
+
+.windy div:nth-child(1) {
+  background: transparent url(../images/wind.png) 0 0 no-repeat;
+  background-size: contain;
+  width: 400px;
+  height: 400px;
+  transform: rotate(-40deg);
+  left: 0;
+  top: 45%; }
+
+.tornado div {
+  position: absolute; }
+
+.tornado div:nth-child(1) {
+  background: transparent url(../images/tornado.png) 0 0 no-repeat;
+  background-size: contain;
+  width: 400px;
+  height: 400px;
+  transform: rotate(30deg);
+  left: 0; }
 
 @media (max-width: 600px) {
   .main-name {
@@ -2730,7 +3209,10 @@ span:nth-child(8) {
       height: 30px; }
     .sun div:nth-child(6), .moon div:nth-child(6) {
       width: 10px;
-      height: 10px; } }
+      height: 10px; }
+  .tornado div:nth-child(1) {
+    width: 300px;
+    height: 300px; } }
 
 @media (max-width: 360px) {
   .main-name {
@@ -2769,4 +3251,14 @@ span:nth-child(8) {
       height: 10px; }
     .sun div:nth-child(6), .moon div:nth-child(6) {
       width: -10px;
-      height: -10px; } }
+      height: -10px; }
+  .windy div:nth-child(1) {
+    top: 55%;
+    width: 300px;
+    height: 300px; }
+  .thunder div:nth-child(1) {
+    width: 300px;
+    height: 300px; }
+  .tornado div:nth-child(1) {
+    width: 200px;
+    height: 200px; } }

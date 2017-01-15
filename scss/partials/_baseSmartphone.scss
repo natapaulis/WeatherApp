@@ -30,4 +30,26 @@
             }
         }
     }
+
+    .windy {
+        div:nth-child(1) {
+            top: 55%;
+            width: 300px;
+            height: 300px;
+        }
+    }
+
+    .thunder {
+        div:nth-child(1) {
+            width: 300px;
+            height: 300px;
+        }
+    }
+
+    .tornado {
+        div:nth-child(1) {
+            width: 200px;
+            height: 200px;
+        }
+    }
 }
