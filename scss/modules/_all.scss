@@ -42,12 +42,12 @@ $center: 0 auto;
   to {transform: scale(1.5, 1.5);}
 }
 
-
-@keyframes snowFall {
+@keyframes falling {
 	from {transform: translateY(5vh);}
-	to {transform: translatey(110vh);}
+	to {transform: translateY(110vh);}
 }
 
-@keyframes rotateSnow {
-	100% {transform: rotate(180deg);}
+@keyframes drift {
+	from{transform: translateX(-350px);}
+	to {transform: translateX(1350px);}
 }

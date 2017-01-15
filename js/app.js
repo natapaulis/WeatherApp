@@ -15,6 +15,9 @@ $(document).ready(function(){
     var $sunMoon = $('.sun-moon');
     var $stars = $('.star');
     var $weatherEffect = $('#weather');
+    var $weatherIcon = $('#weather-icon');
+    var $clouds = $('#clouds');
+    var $mist = $('#mist');
 
     function showSearch() {
         $searchBtn.on('click', function() {
@@ -85,9 +88,13 @@ $(document).ready(function(){
         var date = new Date();
         var currentTimeWar = date.getHours();
         var hourInZone = currentTimeWar + time;
+        var rest;
         if (hourInZone > 23) {
             hourInZone = 0 + (hourInZone - 24);
             return hourInZone;
+        } else if (hourInZone < 0) {
+            rest = currentTimeWar + hour;
+            hourInZone = 24 - rest;
         } else {
             return hourInZone;
         }
@@ -146,34 +153,80 @@ $(document).ready(function(){
     //Adjusting background animation depending on weather conditions
 
     function ilustrateWeather(weatherID) {
-        if(weatherID >= 200 && weatherID <= 234) {
-            $weatherEffect.removeClass();
-            console.log("thunderstorm");
-        } else if(weatherID >= 300 && weatherID <= 321){
-            $weatherEffect.removeClass();
-            console.log("drizzle");
-        } else if(weatherID >= 500 && weatherID <= 531){
-            console.log("rain");
+        $weatherIcon.removeClass();
+        $weatherEffect.removeClass();
+        $clouds.removeClass();
+        $body.removeClass('sky_overcast');
+        $mist.removeClass('misty');
+
+        if(weatherID >= 200 && weatherID <= 234) { //thunderstorm
+            $weatherIcon.addClass("thunderIcon");
+            if($body.hasClass('day')) {
+                $body.removeClass('day');
+                $body.addClass('sky_overcast');
+            }
+        } else if(weatherID >= 300 && weatherID <= 321){ //drizzle
             $stars.fadeOut();
-            $weatherEffect.removeClass();
+            $weatherEffect.addClass("drizzle");
+            $weatherIcon.addClass("rainIcon");
+            if($body.hasClass('day')) {
+                $body.removeClass('day');
+                $body.addClass('sky_overcast');
+                $sunMoon.removeClass("sun");
+            } else {
+                $sunMoon.removeClass("moon");
+            }
+        } else if(weatherID >= 500 && weatherID <= 531){ //rain
+            $stars.fadeOut();
+            $weatherIcon.addClass("rainIcon");
             $weatherEffect.addClass("rain");
-        } else if(weatherID >= 600 && weatherID <= 622){
-            console.log("snow");
+            $clouds.addClass('clouds-overcast');
+            if($body.hasClass('day')) {
+                $body.removeClass('day');
+                $body.addClass('sky_overcast');
+                $sunMoon.removeClass("sun");
+            } else {
+                $sunMoon.removeClass("moon");
+            }
+        } else if(weatherID >= 600 && weatherID <= 622){ //snow
             $stars.fadeOut();
-            $weatherEffect.removeClass();
-            $weatherEffect.addClass("snowflake");
-        } else if(weatherID >= 701 && weatherID <= 781){
-            $weatherEffect.removeClass();
-            console.log("atmosphere");
-        } else if(weatherID == 800){
-            $weatherEffect.removeClass();
-            console.log("clear");
-        } else if(weatherID >= 801 && weatherID <= 804){
-            $weatherEffect.removeClass();
-            console.log("clouds");
-        } else if(weatherID >= 900 && weatherID <= 962){
-            $weatherEffect.removeClass();
-            console.log("extreme/additional");
+            $weatherEffect.addClass("snow");
+            $weatherIcon.addClass("snowIcon");
+            if($body.hasClass('day')) {
+                $body.removeClass('day');
+                $body.addClass('sky_overcast');
+                $sunMoon.removeClass("sun");
+            }
+        } else if(weatherID >= 701 && weatherID <= 781){ //atmosphere - mist
+            $weatherIcon.addClass("mistIcon");
+            $mist.addClass('misty');
+        } else if(weatherID >= 801 && weatherID <= 804){ // clouds
+            switch (weatherID) {
+                case 801: //few clouds
+                    $clouds.addClass("clouds-few");
+                    $weatherIcon.addClass("fewCloudsIcon");
+                    break;
+                case 802: //scattered clouds
+                    $weatherIcon.addClass("fewCloudsIcon");
+                    $clouds.addClass("clouds-scattered");
+                    break;
+                case 803: //broken clouds
+                    $clouds.addClass("clouds-broken");
+                    $weatherIcon.addClass("cloudyIcon");
+                    break;
+                case 804: //overcast
+                    $weatherIcon.addClass("overcastIcon");
+                    if($body.hasClass('day')) {
+                        $body.removeClass('day');
+                        $sunMoon.removeClass("sun");
+                        $body.addClass('sky_overcast');
+                    } else {
+                        $sunMoon.removeClass("moon");
+                    }
+                    break;
+            }
+        } else if(weatherID >= 900 && weatherID <= 962){ //extreme weather
+
         }
     }
 

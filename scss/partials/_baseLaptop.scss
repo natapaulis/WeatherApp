@@ -47,6 +47,8 @@ input[type=text] {
     transform: translate(-50%, -50%);
     font-size: 90px;
     z-index: 400;
+    width: 90vw;
+    text-align: center;
     p {
         font-size: 40px;
         line-height: 40px;
@@ -87,6 +89,39 @@ input[type=text] {
     font-size: 55px;
     z-index: 200;
 }
+#weather-icon {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    transform: translate(-50%, -50%);
+    padding: 0;
+    z-index: 200;
+    background-size: contain;
+}
+
+.snowIcon {
+    background: url(../images/weather_snow.png) 0 0 no-repeat;
+}
+.rainIcon {
+    background: url(../images/weather_rain.png) 0 0 no-repeat;
+}
+.thunderIcon {
+    background: url(../images/weather_thunder.png) 0 0 no-repeat;
+}
+.overcastIcon {
+    background: url(../images/weather_overcast.png) 0 0 no-repeat;
+}
+.cloudyIcon {
+    background: url(../images/weather_cloud.png) 0 0 no-repeat;
+}
+.fewCloudsIcon {
+    background: url(../images/weather_sun_cloud.png) 0 0 no-repeat;
+}
+.mistIcon {
+    background: url(../images/weather_mist.png) 0 0 no-repeat;
+}
 
 $j: 0;
 @for $i from 1 through 8 {
@@ -98,40 +133,6 @@ $j: 0;
 
 .animate-name {
     animation: flipSide 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) both;
-}
-
-
-.cloud {
-    width: 250px;
-    height: 150px;
-    position:absolute;
-    background:transparent url(../images/front_cloud.png) 0 0 no-repeat;
-}
-
-.cloud-dark {
-    width: 250px;
-    height:200px;
-    position:absolute;
-    background:transparent url(../images/back_cloud.png) 0 0 no-repeat;
-}
-
-.fcloud01 {
-    top:50%;
-    z-index:100;
-    animation: drift 25s linear infinite;
-
-}
-
-.fcloud02 {
-    top: 70%;
-    z-index: 200;
-    animation: drift 35s 10s linear infinite backwards reverse;
-}
-
-.fcloud03 {
-    top: 10%;
-    z-index: 50;
-    animation: drift 20s 3s linear infinite backwards reverse;
 }
 
 
@@ -157,6 +158,17 @@ $j: 0;
     background: linear-gradient(to bottom, rgba(134,174,204,1) 0%, rgba(212,228,239,1) 50%, rgba(212,228,239,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#86aecc', endColorstr='#d4e4ef', GradientType=0 );
     color: #0E1A2A;
+}
+
+.sky_overcast {
+    background: rgba(74,80,84,1);
+    background: -moz-linear-gradient(top, rgba(74,80,84,1) 0%, rgba(212,228,239,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(74,80,84,1)), color-stop(100%, rgba(212,228,239,1)));
+    background: -webkit-linear-gradient(top, rgba(74,80,84,1) 0%, rgba(212,228,239,1) 100%);
+    background: -o-linear-gradient(top, rgba(74,80,84,1) 0%, rgba(212,228,239,1) 100%);
+    background: -ms-linear-gradient(top, rgba(74,80,84,1) 0%, rgba(212,228,239,1) 100%);
+    background: linear-gradient(to bottom, rgba(74,80,84,1) 0%, rgba(212,228,239,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4a5054', endColorstr='#d4e4ef', GradientType=0 );
 }
 
 .sun, .moon {
@@ -267,10 +279,15 @@ $j: 0;
     }
 }
 
-.snowflake {
+#weather {
     div {
         position: absolute;
         top: -11vh;
+    }
+}
+
+.snow {
+    div {
         width: 20px;
         height: 20px;
         background: url(../images/snowflake_white.png) 0 0 no-repeat;
@@ -279,7 +296,7 @@ $j: 0;
     @for $i from 1 through 72 {
         div:nth-child(#{$i}) {
             left: random(100)* 1%;
-            @include animation(snowFall 10s $i * .5s linear infinite backwards);
+            @include animation(falling 10s $i * .5s linear infinite backwards);
         }
     }
     div:nth-child(2n + 1) {
@@ -298,17 +315,15 @@ $j: 0;
 
 .rain {
     div {
-        position: absolute;
-        top: -11vh;
         width: 20px;
         height: 20px;
-        background: url(../images/raindrop_1.png) 0 0 no-repeat;
+        background: url(../images/raindrop_2.png) 0 0 no-repeat;
         background-size: contain;
     }
     @for $i from 1 through 72 {
         div:nth-child(#{$i}) {
             left: random(100)* 1%;
-            @include animation(snowFall 5s $i * .2s linear infinite backwards);
+            @include animation(falling 5s $i * .2s linear infinite backwards);
         }
     }
 
@@ -323,5 +338,181 @@ $j: 0;
     div:nth-child(5n) {
         width: 5px;
         height: 5px;
+    }
+}
+
+.drizzle {
+    div {
+        width: 2px;
+        border-left: 2px solid white;
+    }
+    @for $i from 1 through 72 {
+        div:nth-child(#{$i}) {
+            left: random(100)* 1%;
+            @include animation(falling 5s $i * .2s linear infinite backwards);
+        }
+    }
+
+    div:nth-child(2n + 1) {
+        height: 25px;;
+    }
+    div:nth-child(3n) {
+        height: 20px;
+    }
+    div:nth-child(5n) {
+        height: 15px;
+    }
+}
+
+#clouds {
+    div {
+        position: absolute;
+        background-size: contain;
+        z-index: 200;
+    }
+}
+
+.clouds-few {
+    @for $i from 1 through 4 {
+        div:nth-child(#{$i}) {
+            top: random(70)* 1%;
+            @include animation(drift $i + 20s $i * 3s linear infinite backwards);
+            background:transparent url(../images/clouds_light.png) 0 0 no-repeat;
+            width: 250px - ($i * 5);
+            height: 150px - ($i * 10);
+        }
+    }
+    div:nth-child(2) {
+        width: 250px;
+        height: 150px;
+        @include animation(drift 35s 3s linear infinite reverse backwards);
+        background: transparent url(../images/clouds_light.png) 0 0 no-repeat;
+    }
+}
+
+.clouds-broken {
+    @for $i from 1 through 3 {
+        div:nth-child(#{$i}) {
+            top: random(70)* 1%;
+            @include animation(drift $i + 20s $i * 3s linear infinite backwards);
+            background:transparent url(../images/clouds_light.png) 0 0 no-repeat;
+            width: 250px - ($i * 5);
+            height: 150px - ($i * 10);
+        }
+    }
+
+    @for $i from 4 through 6 {
+        div:nth-child(#{$i}) {
+            top: random(70)* 1%;
+            @include animation(drift $i + 20s $i * 3s linear infinite reverse backwards);
+            background:transparent url(../images/cloud_dark.png) 0 0 no-repeat;
+            width: 250px + ($i * 5);
+            height: 150px - ($i * 5);
+        }
+    }
+
+    @for $i from 7 through 8 {
+        div:nth-child(#{$i}) {
+            top: random(70)* 1%;
+            @include animation(drift $i + 20s $i * 3s linear infinite reverse backwards);
+            background:transparent url(../images/clouds_light.png) 0 0 no-repeat;
+            width: 250px - ($i * 5);
+            height: 150px - ($i * 5);
+        }
+    }
+
+    div:nth-child(9){
+        top: random(70)* 1%;
+        @include animation(drift 20s 5s linear infinite reverse backwards);
+        background: transparent url(../images/clouds_group.png) 0 0 no-repeat;
+        width: 300px;
+        height: 200px;
+    }
+
+    div:nth-child(10){
+        top: random(70)* 1%;
+        @include animation(drift 20s 5s linear infinite backwards);
+        background:transparent url(../images/clouds_group.png) 0 0 no-repeat;
+        width: 250px;
+        height: 150px;
+    }
+
+}
+
+.clouds-scattered {
+    @for $i from 1 through 3 {
+        div:nth-child(#{$i}) {
+            top: random(70)* 1%;
+            @include animation(drift $i + 20s $i * 3s linear infinite backwards);
+            background:transparent url(../images/clouds_light.png) 0 0 no-repeat;
+            width: 250px - ($i * 5);
+            height: 150px - ($i * 10);
+        }
+    }
+
+    @for $i from 4 through 5 {
+        div:nth-child(#{$i}) {
+            top: random(70)* 1%;
+            @include animation(drift $i + 20s $i * 3s linear infinite reverse backwards);
+            background:transparent url(../images/cloud_dark.png) 0 0 no-repeat;
+            width: 250px + ($i * 5);
+            height: 150px - ($i * 5);
+        }
+    }
+    div:nth-child(6){
+        top: random(70)* 1%;
+        @include animation(drift 20s 5s linear infinite reverse backwards);
+        background:transparent url(../images/clouds_light.png) 0 0 no-repeat;
+        width: 250px;
+        height: 150px;
+    }
+
+}
+
+.clouds-overcast {
+    @for $i from 1 through 4 {
+        div:nth-child(#{$i}) {
+            top: random(70)* 1%;
+            @include animation(drift $i + 40s $i * 3s linear infinite backwards);
+            background:transparent url(../images/cloud_dark.png) 0 0 no-repeat;
+            width: 250px - ($i * 5);
+            height: 150px - ($i * 10);
+        }
+    }
+    @for $i from 5 through 7 {
+        div:nth-child(#{$i}) {
+            top: random(70)* 1%;
+            @include animation(drift $i + 40s $i * 3s linear reverse infinite backwards);
+            background:transparent url(../images/cloud_dark.png) 0 0 no-repeat;
+            width: 350px - ($i * 5);
+            height: 250px - ($i * 10);
+        }
+    }
+}
+
+.misty {
+    width: 95vw;
+    height: 95vh;
+    margin: 2.5vh auto;
+    background-color: rgba(190,192,194,.75);
+    position: absolute;
+    margin: 0;
+    top: 0;
+    left: 0;
+    div:nth-child(1) {
+        top: random(70)* 1%;
+        @include animation(drift 40s 2s linear infinite backwards);
+        background: transparent url(../images/mist.png) 0 0 no-repeat;
+        background-size: contain;
+        width: 400px;
+        height: 300px;
+    }
+    div:nth-child(2) {
+        top: random(70)* 1%;
+        @include animation(drift 50s 1s linear infinite reverse backwards);
+        background: transparent url(../images/mist_1.png) 0 0 no-repeat;
+        background-size: contain;
+        width: 400px;
+        height: 300px;
     }
 }
