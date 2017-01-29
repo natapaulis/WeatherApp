@@ -54,17 +54,16 @@ $(document).ready(function(){
                 $tempToShow = $("<div class='weather-info'>").text($temp.toFixed(1) + " C");
                 $tempField.replaceWith($tempToShow);
 
-                //Add weather description
+                //Adding weather description
                 $descriptionToShow = $("<p class='weather-description'>").text(response.weather[0].description);
                 $descriptionField.replaceWith($descriptionToShow);
 
-                //check time in search city based on longitude
-                var latitude = response.coord.lat;
+                //Checking time in a search city based on longitude
                 var longitude = response.coord.lon;
                 var $timeInCity = timeZone(longitude);
-                console.log($timeInCity);
+                console.log("Approximate time in a searched city: " + $timeInCity);
 
-                // checking time in unix and converting it to readable time. Then depending if it is after sunrise or after sunset changing the background for day or night
+                // Checking time in unix and converting it to readable time. Then depending if it is after sunrise or after sunset changing the background for day or night
                 var sunset = response.sys.sunset;
                 var sunrise = response.sys.sunrise;
                 var timeOfSunset = convertUnix(sunset);
@@ -106,8 +105,7 @@ $(document).ready(function(){
     function convertUnix(timestamp) {
         var date = new Date(timestamp * 1000);
         var hours = date.getHours();
-        var formattedTime = hours;
-        return formattedTime;
+        return hours;
     }
 
     //Function to change background depending whether it is day or night

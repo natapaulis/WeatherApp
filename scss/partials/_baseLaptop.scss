@@ -137,11 +137,6 @@ $j: 0;
     }
 }
 
-.animate-name {
-    animation: flipSide 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) both;
-}
-
-
 .night {
     background: rgba(0,10,69,1);
     background: -moz-linear-gradient(top, rgba(0,10,69,1) 0%, rgba(60,116,150,1) 100%);
@@ -596,8 +591,6 @@ $j: 0;
         left: 0;
     }
 }
-
-
 
 .windy {
     div {
