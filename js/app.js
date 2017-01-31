@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    var weatherURL = 'https://api.openweathermap.org/data/2.5/weather?APPID=c85501c8cd41a23e007c0b2b14c3edc2&units=metric&q=';
+    var weatherURL = 'http://api.openweathermap.org/data/2.5/weather?APPID=c85501c8cd41a23e007c0b2b14c3edc2&units=metric&q=';
     var $body = $(".main-body");
     var $name = $(".main-name");
     var $searchBtn = $(".search-btn");
